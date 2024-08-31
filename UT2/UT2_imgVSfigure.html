@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparación entre img y figure</title>
+</head>
+<body>
+
+    <h1>Comparación entre img y figure</h1>
+
+    <h2>Ejemplo usando img</h2>
+    <p>En este ejemplo, se utiliza la etiqueta <code>img</code> para insertar una imagen directamente en el documento. La imagen se muestra sin ninguna leyenda o texto asociado. Este es el uso más común cuando solo necesitas mostrar una imagen sin necesidad de proporcionar una explicación adicional.</p>
+    <img src="https://jumillaturismo.es/content-jumilla/uploads/castillo-jumilla-800.webp" alt="Imagen descriptiva">
+    <p>La etiqueta <code>img</code> es simple y adecuada para mostrar imágenes que no requieren contexto adicional o explicación.</p>
+
+    <hr>
+
+    <h2>Ejemplo usando figure</h2>
+    <p>En este ejemplo, la imagen se coloca dentro de una etiqueta <code>figure</code>, que es un contenedor semántico. Además, se agrega una leyenda utilizando <code>figcaption</code> para proporcionar un contexto o descripción de la imagen.</p>
+    <figure>
+        <img src="https://jumillaturismo.es/content-jumilla/uploads/castillo-jumilla-800.webp" alt="Imagen descriptiva">
+        <figcaption>Esta es una leyenda explicativa de la imagen.</figcaption>
+    </figure>
+    <p>El uso de <code>figure</code> junto con <code>figcaption</code> es ideal cuando la imagen necesita ser interpretada o explicada en contexto, lo que mejora la accesibilidad y la comprensión del contenido visual.</p>
+    <h2>Ejemplos de img con width y height</h2>
+    <p>A continuación, se muestra la misma imagen utilizando diferentes combinaciones de los atributos <code>width</code> y <code>height</code>:</p>
+
+    <h3>1. Solo width (ancho) establecido</h3>
+    <img src="https://via.placeholder.com/300" alt="Imagen con solo width" width="40">
+    <p>En este ejemplo, solo se establece el atributo <code>width</code> a 40. La altura se ajusta proporcionalmente.</p>
+
+    <h3>2. Solo height (altura) establecido</h3>
+    <img src="https://via.placeholder.com/300" alt="Imagen con solo height" height="200">
+    <p>Aquí, solo se establece el atributo <code>height</code> a 200. El ancho se ajusta proporcionalmente.</p>
+
+    <h3>3. Width y height establecidos (no proporcionales)</h3>
+    <img src="https://via.placeholder.com/300" alt="Imagen con width y height no proporcionales" width="50" height="300">
+    <p>Aquí, se establecen ambos atributos <code>width="50"</code> y <code>height="300"</code> con valores que no mantienen las proporciones originales de la imagen, lo que provoca una distorsión.</p>
+
+
+</body>
+</html>
