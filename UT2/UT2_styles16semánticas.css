@@ -3,24 +3,54 @@ body {
     line-height: 1.6;
     margin: 20px;
     color: #333;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 header, footer {
     background-color: #f4f4f4;
     padding: 10px;
     margin-bottom: 10px;
+    width: 100%;
 }
 
 nav {
     background-color: #ccc;
     padding: 10px;
     margin-bottom: 10px;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
 }
 
 main {
     background-color: #e2e2e2;
     padding: 10px;
     margin-bottom: 10px;
+    width: 70%;
+    order: 2;
+}
+
+aside {
+    background-color: #c2c2c2;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+    margin-left: 5%;
+    order: 1;
 }
 
 section {
@@ -35,17 +65,12 @@ article {
     margin-bottom: 10px;
 }
 
-aside {
-    background-color: #c2c2c2;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
 figure {
     background-color: #f8f8f8;
     padding: 10px;
     margin-bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 
 figcaption {
@@ -57,6 +82,7 @@ details {
     padding: 10px;
     margin-bottom: 10px;
     cursor: pointer;
+    width: 100%;
 }
 
 summary {
@@ -69,6 +95,7 @@ fieldset {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
+    width: 100%;
 }
 
 legend {
@@ -80,4 +107,12 @@ div {
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    aside, main {
+        width: 100%;
+        margin-left: 0;
+    }
 }
