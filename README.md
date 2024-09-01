@@ -11,4 +11,4 @@ Apuntes, ejemplo y ampliaciones de Lenguaje de Marcas
 
 # UT3
 
-[Asociar CSS a XML](/UT3%20CSS/Asociar%20CSS%20a%20XML%20directamente.md)
+[Asociar CSS a XML](./UT3%20CSS/Asociar%20CSS%20a%20XML%20directamente.md)
