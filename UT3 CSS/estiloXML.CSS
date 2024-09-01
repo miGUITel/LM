@@ -1,0 +1,32 @@
+libro {
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+titulo {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+autor {
+    display: block;
+    font-size: 18px;
+    color: #555;
+}
+
+fecha {
+    display: block;
+    font-size: 16px;
+    color: #777;
+}
+
+editorial {
+    display: block;
+    font-size: 16px;
+    color: #777;
+}

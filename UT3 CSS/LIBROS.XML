@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estiloXML.css"?>
+<biblioteca>
+    <libro>
+        <titulo>Aprendiendo XML</titulo>
+        <autor>Juan Pérez</autor>
+        <fecha>2024</fecha>
+        <editorial>Editorial Tech</editorial>
+    </libro>
+
+    <libro>
+        <titulo>Introducción a la Programación</titulo>
+        <autor>María López</autor>
+        <fecha>2022</fecha>
+        <editorial>Editorial Educativa</editorial>
+    </libro>
+
+    <libro>
+        <titulo>Desarrollo Web Moderno</titulo>
+        <autor>Pedro Martínez</autor>
+        <fecha>2023</fecha>
+        <editorial>Editorial WebDev</editorial>
+    </libro>
+
+    <libro>
+        <titulo>Inteligencia Artificial Aplicada</titulo>
+        <autor>Ana Rodríguez</autor>
+        <fecha>2025</fecha>
+        <editorial>Editorial Innovación</editorial>
+    </libro>
+
+    <libro>
+        <titulo>Seguridad en Redes</titulo>
+        <autor>Javier Fernández</autor>
+        <fecha>2021</fecha>
+        <editorial>Editorial Seguridad</editorial>
+    </libro>
+</biblioteca>
