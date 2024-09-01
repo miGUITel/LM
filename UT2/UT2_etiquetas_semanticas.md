@@ -1,4 +1,5 @@
 ![Muestra de la función semántica/estructural de algunas etiquetas HTML5](image.png)
+![alt text](image-2.png)
 
 Muestra de la función semántica/estructural de algunas etiquetas HTML5.
 
