@@ -1,3 +1,7 @@
+![Muestra de la función semántica/estructural de algunas etiquetas HTML5](image.png)
+
+Muestra de la función semántica/estructural de algunas etiquetas HTML5.
+
 Aquí tienes una lista de las etiquetas HTML5 que sirven para agrupar elementos, junto con una breve descripción de su propósito:
 
 1. **`<header>`**: Representa la cabecera de una sección o de la página completa. Suele contener el logo, título, menú de navegación, etc.
