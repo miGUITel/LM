@@ -56,7 +56,7 @@ editorial {
     color: #777;
 }
 ```
-[Visualizar biblioteca](/UT3%20CSS/LIBROS.XML)
+[Visualizar biblioteca](LIBROS.XML)
 
 ### Explicación:
 
