@@ -1,4 +1,6 @@
-Puedes usar la instrucción de procesamiento `xml-stylesheet` en un documento XML para vincularlo a un archivo CSS, lo que permitirá que los navegadores apliquen estilos al XML cuando lo visualicen. Sin embargo, ten en cuenta que el soporte para CSS en XML es limitado en comparación con HTML, y los resultados pueden variar dependiendo del navegador.
+Puedes usar la instrucción de procesamiento `xml-stylesheet` en un documento XML para vincularlo a un archivo CSS, lo que permitirá que los navegadores apliquen estilos al XML cuando lo visualicen.
+
+**Sin embargo, ten en cuenta que el soporte para CSS en XML es limitado en comparación con HTML, y los resultados pueden variar dependiendo del navegador.**
 
 ### Cómo Usar `xml-stylesheet` en XML
 
@@ -56,7 +58,8 @@ editorial {
     color: #777;
 }
 ```
-[Visualizar biblioteca](./LIBROS.XML)
+[archivoXML](./LIBROS.XML)
+[archivoCSS](./estiloXML.CSS)
 
 ### Explicación:
 
