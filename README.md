@@ -21,7 +21,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Elementos html en bloque](./UT2/LM02p29_elementos_bloque.md)
 
-[Diferencia entre `em` y `strong`](./ut2/LM02p29_em_strong_dif.md)
+[Diferencia entre `em` y `strong`](./UT2/LM02p29_em_strong_dif.md)
 
 # UT3
 
