@@ -17,6 +17,9 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Etiqueta meta](./UT2/LM02p23_meta.md)
 
+[Elementos html en línea](./UT2/LM02p29_elementos_linea.md)
+
+[Elementos html en bloque](./UT2/LM02p29_elementos_bloque.md)
 # UT3
 
 [Asociar CSS a XML](./UT3/Asociar_CSSaXML_directamente.md)
