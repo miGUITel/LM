@@ -15,6 +15,8 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Ejemplos html](https://miguitel.github.io/AWEB_disenioWeb/menu.html)
 
+[Etiqueta meta](./UT2/LM02p23_meta.md)
+
 # UT3
 
 [Asociar CSS a XML](./UT3/Asociar_CSSaXML_directamente.md)
