@@ -11,9 +11,8 @@ Las etiquetas `<strong>` y `<em>` en HTML se utilizan para dar un significado se
    ```html
    <p>Por favor, lea las <strong>instrucciones</strong> antes de continuar.</p>
    ```
-
-   **Visualización en Markdown**:
-   **Por favor, lea las instrucciones antes de continuar.**
+  
+   Por favor, lea las **instrucciones** antes de continuar.
 
 ### 2. `<em>`: **Énfasis o entonación**
    - **Propósito semántico**: Se utiliza para indicar **énfasis** o **entonación** en una frase o palabra, lo que a menudo implica un cambio en la manera en que se debería leer o interpretar ese texto.
@@ -22,11 +21,10 @@ Las etiquetas `<strong>` y `<em>` en HTML se utilizan para dar un significado se
 
    **Ejemplo**:
    ```html
-   <p>No olvides que debes <em>siempre</em> hacer una copia de seguridad.</p>
+   <p>No olvides que debes siempre hacer <em>una copia de seguridad</em>.</p>
    ```
 
-   **Visualización en Markdown**:
-   *No olvides que debes siempre hacer una copia de seguridad.*
+   No olvides que debes siempre hacer *una copia de seguridad*.
 
 ### Resumen de diferencias:
 - **`<strong>`** indica **importancia** (señala un texto crucial o relevante).
