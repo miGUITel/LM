@@ -22,3 +22,4 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 ## links interesantes
 
 * [vídeo de bootstrap](https://www.youtube.com/watch?v=XXllX0A_9KQ)
+* [trucos VSC](LM00trucos_vsc.md)
