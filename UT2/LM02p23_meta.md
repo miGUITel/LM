@@ -1,6 +1,8 @@
-- [1. **`charset`**:](#1-charset)
-- [2. **`http-equiv`**:](#2-http-equiv)
-- [3. **Par `name` y `content`**:](#3-par-name-y-content)
+## ATRIBUTOS DE LA ETIQUETA META
+- [ATRIBUTOS DE LA ETIQUETA META](#atributos-de-la-etiqueta-meta)
+  - [1. **`charset`**:](#1-charset)
+  - [2. **`http-equiv`**:](#2-http-equiv)
+  - [3. **`Par`, `name` y `content`**:](#3-par-name-y-content)
 
 La etiqueta `<meta>` en HTML se utiliza para proporcionar metadatos sobre la página web al navegador o a otros servicios. Estos metadatos no se muestran directamente en la página, pero pueden influir en su funcionamiento y en cómo es interpretada por motores de búsqueda o navegadores. A continuación te explico las funciones de los metadatos más comunes asociados a la etiqueta `<meta>`.
 
@@ -46,7 +48,7 @@ Esta propiedad actúa como un encabezado HTTP que puedes enviar desde la página
   ```
   Redirige al usuario a otra página después de 5 segundos.
 
-### 3. **Par `name` y `content`**: 
+### 3. **`Par`, `name` y `content`**: 
 Estos metadatos proporcionan información adicional sobre la página que puede ser utilizada por los motores de búsqueda y navegadores.
 
 - **`robots`**: Indica a los motores de búsqueda cómo deben tratar la página (indexarla o no, seguir los enlaces o no).
