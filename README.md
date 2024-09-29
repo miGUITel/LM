@@ -3,7 +3,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT1
 
-[Funciones en java para manejar cadenas](./UT1/UT01_java_strings.md)
+[Funciones en java para manejar cadenas](./01/UT01_java_strings.md)
 
 # UT2
 
@@ -25,7 +25,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT3
 
-[Asociar CSS a XML](./UT3/Asociar_CSSaXML_directamente.md)
+[Asociar CSS a XML](./03/Asociar_CSSaXML_directamente.md)
 
 ## links interesantes
 

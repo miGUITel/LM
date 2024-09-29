@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h2, h1, p, ul{
+    margin-top: 20px;
+}
+
+.container {
+    margin-bottom: 40px;
+}
+
+/* Estilos generales para los elementos en bloque */
+.box {
+    background-color: #e0f7fa; /* Azul suave */
+    border-radius: 5px;
+    width: 100%;
+    max-width: 800px; /* Asegura que el bloque no exceda el ancho de la página */
+    margin: 10px auto; /* Centra los elementos en la página */
+}
+
+/* Variantes de elementos en bloque */
+.block-1 {
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #81c784; /* Verde suave */
+    background-color: #e1f5fe; /* Azul aún más suave */
+}
+
+.block-2 {
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #81c784; /* Verde suave */
+    background-color: #e1f5fe;
+}
+
+.block-3 {
+    margin: 30px;
+    padding: 30px;
+    border: 15px solid #81c784; /* Verde suave */
+    background-color: #e1f5fe;
+}
+
+.block-4 {
+    margin: 40px;
+    padding: 40px;
+    border: 20px solid #81c784; /* Verde suave */
+    background-color: #e1f5fe;
+}
+
+/* Estilos generales para los elementos en línea */
+.inline-box {
+    display: inline-block;
+    background-color: #e1f5fe; /* Azul muy suave */
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Variantes de elementos en línea */
+.inline-1 {
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #81c784; /* Verde suave */
+}
+
+.inline-2 {
+    margin: 20px;
+    padding: 20px;
+    border: 10px solid #81c784; /* Verde suave */
+}
+
+.inline-3 {
+    margin: 30px;
+    padding: 30px;
+    border: 15px solid #81c784; /* Verde suave */
+}
+
+.inline-4 {
+    margin: 40px;
+    padding: 40px;
+    border: 20px solid #81c784; /* Verde suave */
+}
