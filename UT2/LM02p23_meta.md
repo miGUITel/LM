@@ -9,7 +9,7 @@ La etiqueta `<meta>` en HTML se utiliza para proporcionar metadatos sobre la pá
 ### 1. **`charset`**: 
 Define el conjunto de caracteres que la página utiliza. Esto es esencial para asegurar que los caracteres especiales o acentuados se muestren correctamente. 
 
-Ejemplo: 
+Ejemplo de etiqueta meta: 
 ```html
 <meta charset="UTF-8">
 ```
