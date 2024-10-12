@@ -22,6 +22,7 @@ En este caso:
 - **Declaraciones**: 
   - `background-color: #f0f0f0;` (color de fondo)
   - `color: #333;` (color del texto)
+  - Se pueden añadir todas las declaraciones necesarias
 
 ### Selectores en CSS
 
