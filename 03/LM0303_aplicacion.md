@@ -1,4 +1,4 @@
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)
 
 # LM0303 Aplicación: Externo, Interno, Inline
 
@@ -117,4 +117,4 @@ En este ejemplo, los estilos para el encabezado `h1` y el párrafo `p` están de
 
 La manera en que se aplica CSS depende del contexto y del tamaño del proyecto. Las hojas de estilo **externas** son ideales para proyectos grandes donde se busca consistencia y facilidad de mantenimiento, mientras que los estilos **internos** o **en línea** pueden ser útiles en casos más simples o específicos. Sin embargo, siempre es recomendable seguir la práctica de mantener separados el contenido y el estilo para garantizar un código más limpio y fácil de mantener.
 
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)

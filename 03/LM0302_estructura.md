@@ -1,4 +1,4 @@
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)
 
 # LM0302 Estructura y sintaxis de CSS
 
@@ -101,4 +101,4 @@ Este conjunto de reglas establece la apariencia básica del documento, garantiza
 
 La estructura y sintaxis de CSS son sencillas, pero poderosas. Cada regla se compone de un selector y un bloque de declaraciones, donde se define el estilo de los elementos seleccionados. El uso de comentarios y selectores precisos ayuda a mantener un código CSS claro y fácil de gestionar a medida que los proyectos se vuelven más complejos.
 
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)

@@ -1,4 +1,4 @@
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)
 
 # LM0301 Introducción a CSS
 
@@ -15,4 +15,4 @@ CSS (Cascading Style Sheets) es el lenguaje que permite definir la presentación
 
 CSS es fundamental en el diseño web moderno, proporcionando una forma eficiente y escalable de gestionar la apariencia de las páginas sin comprometer la estructura ni el contenido.
 
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)

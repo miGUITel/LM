@@ -1,4 +1,4 @@
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)
 
 # LM0304 Prioridad y orden: Cascada, Especificidad y Herencia
 
@@ -157,4 +157,4 @@ En este ejemplo:
 
 La cascada, la especificidad y la herencia son mecanismos clave que CSS utiliza para determinar qué estilos se aplican en un documento cuando múltiples reglas coinciden con el mismo elemento. Comprender estos conceptos es esencial para resolver conflictos de estilos y asegurarse de que el diseño se aplique correctamente según lo esperado.
 
-[Volver al índice](../index.md)
+[Volver al índice](./LM03.md)
