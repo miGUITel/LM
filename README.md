@@ -25,6 +25,8 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Diferencia entre `em` y `strong`](./UT2/LM02p29_em_strong_dif.md)
 
+[Atributos id y name, particularidades](./UT2/LM02p45_id-name.md)
+
 # UT3
 
 [Asociar CSS a XML](./03/Asociar_CSSaXML_directamente.md)
