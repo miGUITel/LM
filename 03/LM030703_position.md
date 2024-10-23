@@ -106,6 +106,7 @@ En este ejemplo:
 - **Cuadro morado (sticky)**: Este cuadro se comporta como `relative` hasta que el usuario hace scroll más allá de los 10px desde la parte superior de la ventana, momento en el cual se comporta como `fixed` y permanece visible.
 
 
+### Renderizamos el ejemplo:
 
 <html lang="es">
 <head>
@@ -187,6 +188,8 @@ En este ejemplo:
 </body>
 </html>
 
-
+### RECURSOS
 
 [inicio](./LM03.md)
+
+[vídeo](https://www.youtube.com/watch?v=_e0ddNlc0Y8)
