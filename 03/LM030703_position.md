@@ -151,8 +151,8 @@ En este ejemplo:
             height: 100px;
             background-color: orange;
             position: fixed;
-            left: 800px;
-            top: 100px;
+            left: 900px;
+            top: 10px;
             text-align: center;
             line-height: 100px;
         }
@@ -174,17 +174,19 @@ En este ejemplo:
         <div class="absolute-box">absolute</div>
         <div class="fixed-box">fixed</div>
         <div class="sticky-box">sticky</div>
+        <p>Scroll para ver el efecto de "sticky" y "fixed".</p>
+    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."</p>
     </div>
-    <p>Scroll para ver el efecto de "sticky" y "fixed".</p>
+    
 </body>
 </html>
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 
 [inicio](./LM03.md)
