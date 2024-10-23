@@ -1,6 +1,6 @@
 ### LM030703-position-property.md
 
-[Back to Index](../index.md)
+[inicio](./LM03.md)
 
 La propiedad `position` en CSS se utiliza para controlar la colocación de los elementos en una página web, permitiendo que se ubiquen de diferentes maneras en relación con otros elementos o con la ventana del navegador. Los valores más comunes de `position` son `static`, `relative`, `absolute`, `fixed`, y `sticky`. A continuación se explica cómo funciona cada valor y se proporciona un ejemplo práctico.
 
@@ -105,9 +105,8 @@ En este ejemplo:
 - **Cuadro naranja (fixed)**: Este cuadro está fijado a 300px a la derecha y 100px hacia abajo en la ventana del navegador, y no se moverá al hacer scroll.
 - **Cuadro morado (sticky)**: Este cuadro se comporta como `relative` hasta que el usuario hace scroll más allá de los 10px desde la parte superior de la ventana, momento en el cual se comporta como `fixed` y permanece visible.
 
-[Back to Index](../index.md)
 
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -152,7 +151,7 @@ En este ejemplo:
             height: 100px;
             background-color: orange;
             position: fixed;
-            left: 300px;
+            left: 800px;
             top: 100px;
             text-align: center;
             line-height: 100px;
@@ -179,3 +178,13 @@ En este ejemplo:
     <p>Scroll para ver el efecto de "sticky" y "fixed".</p>
 </body>
 </html>
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ligula at tortor convallis vulputate sit amet et arcu. Ut venenatis, nulla in tristique cursus, nisi magna ultricies neque, vel suscipit est leo in odio. Aliquam erat volutpat. Cras tincidunt neque sed nulla interdum, ac dictum turpis ultricies. Integer condimentum libero et ante tincidunt sollicitudin. Curabitur quis ipsum a odio fermentum congue sed a nisi. Nulla facilisi. Donec pulvinar nisi ut augue gravida, vel dictum ligula porttitor. Suspendisse id dictum leo, non dapibus risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+
+[inicio](./LM03.md)
