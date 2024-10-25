@@ -97,7 +97,7 @@ p {
 }
 ```
 
-[Ejemplo más detallado](./LM0305_colores.md)
+[Ejemplo más detallado](./LM0305_color.md)
 
 ### 5. Tipos de letra
 
