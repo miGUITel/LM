@@ -89,6 +89,8 @@ Sin embargo, no todas las propiedades se heredan. Las propiedades que generalmen
 
 Por otro lado, propiedades como `margin`, `border` y `padding` **no** se heredan de forma predeterminada.
 
+[Listado de propiedades que se heredan y la que no](./LM0304+_listado_herencia.md)
+
 #### Ejemplo de herencia:
 
 ```css

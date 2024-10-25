@@ -2,7 +2,7 @@
 
 # LM0301 Introducción a CSS
 
-En esta página se presenta una introducción a CSS, explicando la importancia de separar la estructura del contenido utilizando HTML5 y la aplicación de estilos con CSS. Además, se destacan las ventajas que ofrece esta metodología en el desarrollo web.
+Explicamos la importancia de separar la estructura del contenido utilizando HTML5 y la aplicación de estilos con CSS. Además, se destacan las ventajas que ofrece esta metodología en el desarrollo web.
 
 CSS (Cascading Style Sheets) es el lenguaje que permite definir la presentación visual de una página web. Mientras que HTML5 se encarga de estructurar el contenido, CSS se encarga del diseño y formato, permitiendo mantener una clara separación entre ambos. Esta separación facilita la modificación del estilo sin alterar la estructura del contenido, lo que mejora la eficiencia en el desarrollo y el mantenimiento de sitios web.
 

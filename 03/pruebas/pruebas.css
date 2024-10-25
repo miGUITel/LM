@@ -1,0 +1,12 @@
+
+/* Los párrafos se mostrarán en rojo */
+p { color: blue; }
+p { color: red; }
+
+/* Los párrafos se mostrarán en azul */
+p { color: blue !important; }
+p { color: red; }
+
+
+
+
