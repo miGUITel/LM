@@ -98,7 +98,7 @@ Aquí tienes un ejemplo en HTML con CSS interno para demostrar cómo aplicar col
 </body>
 </html>
 ```
-[ver en el navedador](./LM0305_colores.html)
+[ver en una pestaña independiente](./LM0305_colores.html)
 
 Este código crea un conjunto de `<div>` en tres secciones diferentes: colores en hexadecimal, en RGB y usando palabras clave. Cada `<div>` muestra el color aplicado y el código utilizado para lograrlo, permitiendo una clara comparación entre las tres formas de codificación de color en CSS.
 
