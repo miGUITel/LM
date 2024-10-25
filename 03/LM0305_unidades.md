@@ -97,6 +97,8 @@ p {
 }
 ```
 
+[Ejemplo más detallado](./LM0305_colores.md)
+
 ### 5. Tipos de letra
 
 En CSS, las fuentes se definen utilizando la propiedad `font-family`, que puede especificar una lista de fuentes a usar, de forma que el navegador utilizará la primera disponible en el sistema del usuario. Además, es posible controlar otros aspectos de la tipografía como el tamaño, el estilo o el peso de la fuente.
