@@ -136,19 +136,20 @@ Aquí tienes un ejemplo en HTML con CSS interno que muestra los selectores CSS b
             background-color: lightgray;
             padding: 10px;
             border-radius: 5px;
+            color: red;
         }
 
         /* Selector adyacente: aplica estilo al <p> que sigue inmediatamente a un <h2> */
         h2 + p {
-            color: darkorange;
+            color: blue;
             font-weight: bold;
         }
 
         /* Selector de hermano general: aplica estilo a todos los <p> hermanos de <h3> */
         h3 ~ p {
-            border-left: 4px solid darkgray;
-            padding-left: 10px;
-            margin-top: 10px;
+            border: 4px solid darkgray;
+            padding-left: 20px;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -163,9 +164,9 @@ Aquí tienes un ejemplo en HTML con CSS interno que muestra los selectores CSS b
 
     <!-- Selector de Agrupación -->
     <section>
-        <h2>Selector de Agrupación</h2>
-        <h3>Este título <h2> y el siguiente <h3> comparten el mismo estilo.</h3>
-        <p>Usamos un selector de agrupación para aplicar el mismo estilo a ambos elementos <h2> y <h3>.</p>
+        <h2>&lt;h2&gt; Selector de Agrupación. Este título &lt;h2&gt; y el siguiente &lt;h3&gt; comparten el mismo estilo.</h2>
+        <h3>Título con &lt;h3&gt;</h3>
+        <p>Usamos un selector de agrupación para aplicar el mismo estilo a ambos elementos h2 y h3.</p>
     </section>
 
     <!-- Selector Descendiente -->
