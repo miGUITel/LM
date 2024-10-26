@@ -182,6 +182,31 @@ Los pseudoelementos permiten aplicar estilos a partes específicas de un element
 
   En este caso, solo la primera línea del párrafo estará en negrita.
 
+### 6. Selector de Atributo Básico `[atributo]`
+Este selector selecciona todos los elementos que **poseen** un atributo específico, sin importar su valor.
+
+- **Ejemplo**:
+    ```css
+    [selected] {
+            background-color: lightblue;
+            font-weight: bold;
+            padding: 5px;
+            border: 1px solid blue;
+            }
+    ```
+    Esto aplicará las propiedades a todos los elementos que tengan un atributo `selected`.
+
+### 7. Selector de Atributo con Valor Exacto `[atributo="valor"]`
+Este selector selecciona solo los elementos que tienen un atributo con un valor **exacto** especificado.
+
+- **Ejemplo**:
+    ```css
+    [type="text"] {
+        background-color: lightyellow;
+    }
+    ```
+    Aquí, el fondo amarillo claro se aplicará solo a los elementos con `type="text"`, por ejemplo, `<input type="text">`.
+
 ### Conclusión
 
 Los selectores en CSS ofrecen una poderosa herramienta para aplicar estilos de manera precisa y eficiente a los elementos de un documento HTML. Desde los selectores básicos hasta las combinaciones, pseudoclases y pseudoelementos, entender su uso permite crear diseños flexibles y específicos para diferentes interacciones y estructuras del DOM.

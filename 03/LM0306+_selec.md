@@ -1,4 +1,4 @@
-Aquí tienes un ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agrupación, descendiente, hijo, adyacente y hermano. Cada elemento HTML incluye texto explicativo para describir el selector que se le aplica y cómo afecta su formato.
+Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agrupación, descendiente, hijo, adyacente y hermano.
 
 ```html
 <!DOCTYPE html>
@@ -102,8 +102,10 @@ Aquí tienes un ejemplo en HTML con CSS interno que muestra los selectores CSS b
 - **Selector de Agrupación**: Permite aplicar el mismo estilo a múltiples elementos (`h2, h3`).
 - **Selector Descendiente**: Aplica estilo a elementos que están dentro de otro elemento, sin importar la profundidad (`section p`).
 - **Selector Hijo Directo**: Estiliza solo a los elementos que son hijos directos del contenedor (`article > p`).
-- **Selector Adyacente**: Estiliza el elemento que sigue inmediatamente al especificado (`h2 + p`).
+- **Selector Adyacente (hermano contiguo)**: Estiliza el elemento que sigue inmediatamente al especificado (`h2 + p`).
 - **Selector de Hermano General**: Aplica estilo a todos los elementos hermanos que siguen al elemento especificado (`h3 ~ p`).
+
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -115,7 +117,7 @@ Aquí tienes un ejemplo en HTML con CSS interno que muestra los selectores CSS b
             color: darkblue;
             font-size: 24px;
             text-align: center;
-        }
+        }       
 
         /* Selector de agrupación: aplica el mismo estilo a <h2> y <h3> */
         h2, h3 {
@@ -198,5 +200,3 @@ Aquí tienes un ejemplo en HTML con CSS interno que muestra los selectores CSS b
     </section>
 </body>
 </html>
-
-Este código muestra cómo aplicar los diferentes selectores en CSS y ayuda a ver sus efectos con ejemplos concretos en una estructura semántica.
