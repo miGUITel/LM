@@ -91,7 +91,7 @@ Los selectores combinados permiten seleccionar elementos según su relación en 
 
   En este caso, se seleccionan todos los párrafos `p` que sean hermanos de un `h1` en el mismo contenedor.
 
-### 4. Pseudoclases  [+](LM0306a.md)
+### 4. Pseudoclases  [+ listado completo](LM0306a.md)
 
 Las pseudoclases permiten aplicar estilos a los elementos en un estado específico, como cuando el usuario interactúa con ellos o según su posición en el árbol DOM.
 
@@ -135,7 +135,7 @@ Las pseudoclases permiten aplicar estilos a los elementos en un estado específi
 
   Aquí, todos los párrafos que no tienen la clase `excluido` serán verdes.
 
-### 5. Pseudoelementos [+](LM0306a.md)
+### 5. Pseudoelementos [+ listado completo](LM0306a.md)
 
 Los pseudoelementos permiten aplicar estilos a partes específicas de un elemento, como la primera letra o línea de un bloque de texto, o insertar contenido antes o después de un elemento.
 
