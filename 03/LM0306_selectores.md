@@ -4,7 +4,7 @@
 
 En esta página exploraremos los **selectores** en CSS, que permiten elegir qué elementos de un documento HTML recibirán los estilos definidos. CSS ofrece una amplia variedad de selectores que permiten seleccionar elementos de manera precisa y flexible. Estos incluyen selectores básicos, agrupación, combinación, pseudoclases y pseudoelementos.
 
-### 1. Selectores básicos
+### 1. Selectores básicos [ejemplo](https://miguitel.github.io/AWEB_disenioWeb/9%20index.html)
 
 Los selectores básicos permiten seleccionar elementos individuales o grupos de elementos según su tipo, clase o ID.
 
@@ -47,11 +47,11 @@ h1, h2, p {
 
 En este ejemplo, se aplican los mismos estilos de color y margen a todos los encabezados `h1`, `h2` y párrafos `p`.
 
-### 3. Combinación de selectores
+### 3. Combinación de selectores [+ con ejemplo](./LM0306+_selec.md)
 
 Los selectores combinados permiten seleccionar elementos según su relación en el árbol del DOM, lo que facilita la aplicación de estilos basados en el contexto de los elementos.
 
-- **Selector descendiente**: Selecciona los elementos que están dentro de un contenedor. Se indica mediante un espacio entre los selectores.
+- **Selector descendiente**: Selecciona los elementos que están dentro de un contenedor, sin importar el nivel. (hijos, nietos, etc.) Se indica mediante un espacio entre los selectores.
 
   ```css
   div p {
@@ -61,7 +61,7 @@ Los selectores combinados permiten seleccionar elementos según su relación en 
 
   Este ejemplo selecciona todos los párrafos `p` que están dentro de un elemento `div`.
 
-- **Selector hijo**: Selecciona los elementos que son hijos directos de un contenedor. Se indica mediante el símbolo `>`.
+- **Selector hijo**: Selecciona los elementos que son hijos directos de un contenedor. **No se aplica a nietos.** Se indica mediante el símbolo `>`.
 
   ```css
   div > p {
