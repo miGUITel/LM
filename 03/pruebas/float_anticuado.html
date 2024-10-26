@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flujo de Texto alrededor de una Imagen</title>
+    <style>
+        .imagen {
+            float: left; /* Alinea la imagen a la izquierda */
+            margin: 10px;
+            width: 200px;
+            height: 200px;
+            shape-outside: circle(50%); /* Define una forma circular alrededor de la imagen */
+            clip-path: circle(50%); /* Ajusta la forma visual de la imagen */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quia iure quas sequi laudantium dignissimos atque, dolorem earum in placeat officiis soluta molestias facilis repudiandae similique velit est alias rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit odio aperiam recusandae error ad, dolorem molestiae quibusdam vel omnis ea repellendus beatae corrupti labore voluptatibus quasi rem cupiditate soluta voluptas.</p>
+    <img src="../image-1.png" alt="Ejemplo de imagen" class="imagen">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore beatae possimus quisquam, magni labore porro ea ipsam quod. Voluptatibus tempore, minima minus hic laboriosam quam possimus magnam autem. Hic, minima? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt eaque obcaecati minima et dolorem omnis doloribus inventore necessitatibus officiis quia, architecto quam exercitationem possimus vel. Quaerat temporibus consectetur quos delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, inventore eveniet corporis nesciunt quis aliquam quae ratione suscipit rem, maiores vel ullam sequi corrupti optio iure quisquam aspernatur sed quam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore maxime saepe accusamus consectetur culpa non nulla explicabo et, vel sapiente! Eos, esse. Ipsum nulla error ipsam deserunt consectetur? Perferendis, odit?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odio est, alias eum praesentium rerum quos! Commodi eius facilis architecto, nostrum dolor hic ut. Corporis iste sequi impedit labore dolorem! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ipsam quisquam quidem unde amet rem temporibus, laboriosam dignissimos praesentium nobis alias assumenda, illum illo architecto repudiandae aliquam consequuntur, pariatur qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit repellendus rem, omnis adipisci dolore odit ipsam temporibus dolores alias. Aperiam aliquam quae, ducimus atque soluta saepe praesentium voluptatem deserunt! Mollitia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate fuga voluptatem totam, ipsam reprehenderit, facilis, eaque tenetur corporis numquam ex maxime aperiam. Neque iure perspiciatis id voluptatibus unde mollitia natus. Este es un texto de ejemplo que fluirá alrededor de una imagen con forma circular. Usamos la propiedad `shape-outside` para que el texto siga el contorno de la imagen y `clip-path` para que la imagen se vea como un círculo. Es una técnica útil para crear diseños visualmente atractivos sin usar `float` como método de maquetación general.</p>
+</body>
+</html>
