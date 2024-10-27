@@ -41,6 +41,10 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # GIT
 
+[Configuración inicial de git](./git/LM00_git_configInicial.md)
+
 [Crear repositorio](./git/1_crear_compartido.md)
 
 [Compartir repositorio](./git/1_alumno.md)
+
+[Solucionar conflicto tras un pull](./git/LM00_git_conflicto_pull.md)
