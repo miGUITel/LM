@@ -37,6 +37,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 * [vídeo de bootstrap](https://www.youtube.com/watch?v=XXllX0A_9KQ)
 * [trucos VSC](LM00trucos_vsc.md)
+* [actualizar el navegador atuomáticamente](./LM00live_server.md)
 
 # GIT
 
