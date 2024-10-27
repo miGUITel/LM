@@ -22,6 +22,8 @@ La propiedad `z-index` define el orden de apilamiento de los elementos cuando se
 
 #### Ejemplos de cada valor de `position`
 
+[ver en el navegador](./position/LM0307_position.html)
+
 ```html
 <!DOCTYPE html>
 <html lang="es">
