@@ -10,15 +10,16 @@
 3. **Ir a definición**: `F12`
 4. **Abrir la paleta de comandos**: `Ctrl + Shift + P` o `F1`
 5. **Seleccionar todo**: `Ctrl + A`
-6. **Comentar/descomentar línea**: `Ctrl + ç`
-7. **Comentar bloques**: `Shift + Alt + A`
-8. **Deshacer**: `Ctrl + Z`
-9. **Rehacer**: `Ctrl + Y`
-10. **Guardar archivo**: `Ctrl + S`
-11. **Cerrar pestaña actual**: `Ctrl + W`
-12. **Reabrir pestaña cerrada**: `Ctrl + Shift + T`
-13. **Dividir editor en múltiples ventanas**: `Ctrl + \`
-14. **Mover entre editores divididos**: `Ctrl + 1/2/3` (números dependiendo del panel)
+6. **Seleccionar línea completa**: `Ctrl + L`
+7. **Comentar/descomentar línea**: `Ctrl + ç`
+8. **Comentar bloques**: `Shift + Alt + A`
+9. **Deshacer**: `Ctrl + Z`
+10. **Rehacer**: `Ctrl + Y`
+11. **Guardar archivo**: `Ctrl + S`
+12. **Cerrar pestaña actual**: `Ctrl + W`
+13. **Reabrir pestaña cerrada**: `Ctrl + Shift + T`
+14. **Dividir editor en múltiples ventanas**: `Ctrl + \`
+15. **Mover entre editores divididos**: `Ctrl + 1/2/3` (números dependiendo del panel)
 
 ### Atajos para trabajar con cursores múltiples
 1. **Añadir un cursor en otra línea (cursos múltiples)**: `Alt + Click`
