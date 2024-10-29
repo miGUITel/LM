@@ -61,6 +61,10 @@ Las propiedades de CSS relacionadas con fondos, bordes y contornos permiten defi
 
 6. **border-top**, **border-right**, **border-bottom**, **border-left**: Propiedades individuales que permiten definir los bordes de cada lado de forma independiente.
 
+[Regla del reloj](https://eliseovega.github.io/css_modelbox.html#:~:text=Relleno%20interno%20izquierdo-,T%C3%A9cnica%20del%20Reloj%20para%20Padding,-Ejemplo%20de%20las)
+
+![alt text](image-7.png)
+
 ### **Propiedades de Contorno (`outline`)**
 
 1. **outline-width**: Define el grosor del contorno de un elemento.
