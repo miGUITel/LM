@@ -32,7 +32,8 @@ Cuando se define un elemento en una DTD, existen varios tipos de contenido que s
    ```
    En este ejemplo, el elemento `<imagen>` no tiene contenido ni hijos.
 
-5. **Cualquier Contenido (ANY)**: Indica que el elemento puede contener cualquier tipo de contenido (texto, elementos, etc.). Se debe usar con cuidado ya que reduce la validación.
+5. **Cualquier Contenido (ANY)**: Indica que el elemento puede contener cualquier tipo de contenido (texto, elementos, etc.).
+> **ANY** se debe usar con cuidado ya que reduce la validación.
    ```xml
    <!ELEMENT contenedor ANY>
    ```
@@ -92,7 +93,7 @@ Las **cardinalidades** se utilizan para especificar cuántas veces un elemento p
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE biblioteca [
     <!ELEMENT biblioteca (libro+)>
-    <!ELEMENT libro (titulo, autor, año, genero?)>
+    <!ELEMENT libro (titulo, autor, año, genero?, reseña?)>
     <!ELEMENT titulo (#PCDATA)>
     <!ELEMENT autor (#PCDATA)>
     <!ELEMENT año (#PCDATA)>

@@ -31,13 +31,13 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Apuntes](./03/LM03.md)
 
-[Asociar CSS a XML](./03/asociar%20CCS%20XML/Asociar_CSSaXML_directamente.md)
+[Asociar CSS a XML](./03/asociar_CCS-XML/Asociar_CSSaXML_directamente.md)
 
 # UT4
 
 [Apuntes](./04/LM0400_indice.md)
 
-[Asociar CSS a XML](./03/asociar%20CCS%20XML/Asociar_CSSaXML_directamente.md)
+[Asociar CSS a XML](./03/asociar_CCS-XML/Asociar_CSSaXML_directamente.md)
 
 ## links interesantes
 

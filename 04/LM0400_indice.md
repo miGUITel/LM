@@ -24,9 +24,9 @@
 
 * [DTD Notaciones](./LM040302c_anotaciones.md)
 
-* [DTD Definición de elementos](./LM040302d_elementos.md)
+* [**DTD Definición de elementos**](./LM040302d_elementos.md)
 
-* [DTD Definición de atributos](./LM040302e_atributos.md)
+* [**DTD Definición de atributos**](./LM040302e_atributos.md)
 
 ---
 
