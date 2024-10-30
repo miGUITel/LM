@@ -37,6 +37,8 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Apuntes](./04/LM0400_indice.md)
 
+[Asociar CSS a XML](./03/asociar%20CCS%20XML/Asociar_CSSaXML_directamente.md)
+
 ## links interesantes
 
 * [vídeo de bootstrap](https://www.youtube.com/watch?v=XXllX0A_9KQ)
