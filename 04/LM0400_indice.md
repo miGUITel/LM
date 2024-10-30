@@ -8,25 +8,25 @@
 
 [Estructura y sintáxis: elementos y atributos](./LM040202_ele_atri.md)
 
-[Comentarios](./LM040203_comentarios.md)
+* [Comentarios](./LM040203_comentarios.md)
 
-[Espacios de nombres](./LM040204_espa_nomb.md)
+* [Espacios de nombres](./LM040204_espa_nomb.md)
 
-[Entidades](./LM040205_entidades.md)
+* [Entidades](./LM040205_entidades.md)
 
-[Elementos CDATA](./LM040206_CDATA.md)
+* [Elementos CDATA](./LM040206_CDATA.md)
 
 [XML Bien Formado y XML Válido](./LM040301_val_BF.md)
 
-[DTD interna-externa](./LM040302a_int-ext.md)
+* [DTD interna-externa](./LM040302a_int-ext.md)
 
-[DTD Definición de entidades](./LM040302b_entidades.md)
+* [DTD Definición de entidades](./LM040302b_entidades.md)
 
-[DTD Notaciones](./LM040302c_anotaciones.md)
+* [DTD Notaciones](./LM040302c_anotaciones.md)
 
-[DTD Definición de elementos](./LM040302d_elementos.md)
+* [DTD Definición de elementos](./LM040302d_elementos.md)
 
-[DTD Definición de atributos](./LM040302e_atributos.md)
+* [DTD Definición de atributos](./LM040302e_atributos.md)
 
 ---
 
@@ -37,5 +37,7 @@
 Usaremos VSC para escribir y validar los documentos xml y los esquemas dtd
 
 Utilizaremos el navegador para comprobar cómo se renderiza nuestro documento xml
+
+Podemos [asociar un CSS](../03/asociar_CCS-XML/Asociar_CSSaXML_directamente.md) a nuestros XML para que se visualicen con estilos en el navegador
 
 
