@@ -20,3 +20,5 @@ Aunque XML no reemplaza otros lenguajes de marcado, se utiliza comúnmente en co
 XML se mantiene como un lenguaje de marcado esencial en tecnología, especialmente en sistemas donde la integridad y validación de datos son críticos.
 
 [Volver al índice principal](./LM0400_indice.md)
+
+[Más info](https://www.mclibre.org/consultar/xml/lecciones/xml-quees.html)

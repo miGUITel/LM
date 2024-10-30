@@ -101,3 +101,7 @@ Definir un documento XML con reglas específicas tiene varias ventajas fundament
 Un documento XML bien formado es la base para cualquier intercambio de datos estructurados, mientras que un documento válido asegura que dichos datos cumplen con las reglas específicas de una aplicación o contexto. Definir reglas claras mediante DTD, XSD u otras tecnologías es crucial para garantizar la interoperabilidad, la consistencia y la calidad de los datos en aplicaciones modernas.
 
 [índice](./LM0400_indice.md)
+
+[DTD detallado](https://www.mclibre.org/consultar/xml/lecciones/xml-dtd.html#ddiv-declaracion-notaciones)
+
+[Resumen DTD](https://www.mclibre.org/consultar/xml/lecciones/xml-dtd-resumen.html)
