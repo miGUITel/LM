@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cursosInformaticos>
+    <curso>
+        <nombre>Introducción a la Programación</nombre>
+        <campo>Desarrollo de Software</campo>
+        <descripcion>Curso básico sobre fundamentos de programación utilizando Python.</descripcion>
+    </curso>
+    <curso>
+        <nombre>Redes de Computadoras</nombre>
+        <campo>Redes y Comunicaciones</campo>
+        <descripcion>Estudio de los conceptos fundamentales de redes de computadoras y protocolos de comunicación.</descripcion>
+    </curso>
+    <curso>
+        <nombre>Base de Datos</nombre>
+        <campo>Administración de Datos</campo>
+        <descripcion>Introducción a los sistemas de gestión de bases de datos relacionales.</descripcion>
+    </curso>
+    <curso>
+        <nombre>Sistemas Operativos</nombre>
+        <campo>Infraestructura y Sistemas</campo>
+        <descripcion>Estudio de los sistemas operativos, incluyendo procesos, memoria y sistemas de archivos.</descripcion>
+    </curso>
+</cursosInformaticos>

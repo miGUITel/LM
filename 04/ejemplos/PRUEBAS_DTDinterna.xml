@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alumnos [
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, apellido, curso?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ENTITY pais "España">
+]>
+<alumnos>
+  <alumno>
+    <nombre>Miguel</nombre>
+    <apellido>Triigueros</apellido>
+    <curso>DAM</curso>
+  </alumno>
+  <alumno>
+    <nombre>Juan</nombre>
+    <apellido>Muñoz</apellido>
+    <curso>DAW</curso>
+  </alumno>
+  <alumno>
+    <nombre>Vicente</nombre>
+    <apellido>Muñoz</apellido>
+    <curso>SMR</curso>
+  </alumno>
+  <alumno>
+    <nombre>Pedro</nombre>
+    <apellido>dfad</apellido>
+    <curso>&pais;</curso>
+  </alumno>
+</alumnos>

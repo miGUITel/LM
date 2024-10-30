@@ -1,0 +1,6 @@
+<!ELEMENT alumnos (alumno+)>
+<!ELEMENT alumno (nombre, apellido, curso?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ENTITY pais "España">

@@ -82,6 +82,8 @@ En este ejemplo, se utilizan `&lt;` y `&gt;` para representar los caracteres `<`
 ```
 En este ejemplo, la entidad `&editorial;` se utiliza para insertar el mismo nombre de editorial en diferentes lugares del documento, haciendo que sea fácil de actualizar si el nombre cambia.
 
+> Si definimos una ENTIDAD en una DTD externa, al tratar de visualizar el xml en un navegador, obtendremos un error.
+
 ## Limitaciones de las Entidades
 
 1. **DTD Necesario:** Para definir entidades personalizadas o externas, es necesario incluir una DTD, lo cual puede ser una limitación en situaciones donde se prefiera evitar la complejidad adicional de los DTD.

@@ -32,4 +32,10 @@
 
 > [Configuración de VSC para trabajar con XML]()
 
+**Guía de uso**
+
+Usaremos VSC para escribir y validar los documentos xml y los esquemas dtd
+
+Utilizaremos el navegador para comprobar cómo se renderiza nuestro documento xml
+
 
