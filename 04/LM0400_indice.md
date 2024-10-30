@@ -28,4 +28,8 @@
 
 [DTD Definición de atributos](./LM040302e_atributos.md)
 
+---
+
+> [Configuración de VSC para trabajar con XML]()
+
 
