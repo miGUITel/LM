@@ -1,12 +1,14 @@
 # Apuntes de la UT04: XML Creación, validación y utilización
 
-[índice](./LM0400_indice.md)
+[**GUÍA DE EVALUACIÓN**](./LM04_guia_eval.md)
 
-[Introducción](./LM0401_intro.md)
+[Introducción RA1f](./LM0401_intro.md)
 
-[Declaración](./LM040201_declaracion.md)
+[Otros lenguajes de marcas RA1f](./LM0401b_otros.md)
 
-[Estructura y sintáxis: elementos y atributos](./LM040202_ele_atri.md)
+[Declaración RA1g](./LM040201_declaracion.md)
+
+[Estructura y sintáxis: elementos y atributos RA1g](./LM040202_ele_atri.md)
 
 * [Comentarios](./LM040203_comentarios.md)
 
@@ -16,17 +18,17 @@
 
 * [Elementos CDATA](./LM040206_CDATA.md)
 
-[XML Bien Formado y XML Válido](./LM040301_val_BF.md)
+[XML Bien Formado y XML Válido RA4ab](./LM040301_val_BF.md)
 
 * [DTD interna-externa](./LM040302a_int-ext.md)
 
-* [DTD Definición de entidades](./LM040302b_entidades.md)
+* [DTD Definición de entidades RA4c](./LM040302b_entidades.md)
 
-* [DTD Notaciones](./LM040302c_anotaciones.md)
+* [DTD Notaciones RA4c](./LM040302c_anotaciones.md)
 
-* [**DTD Definición de elementos**](./LM040302d_elementos.md)
+* [**DTD Definición de elementos RA4c**](./LM040302d_elementos.md)
 
-* [**DTD Definición de atributos**](./LM040302e_atributos.md)
+* [**DTD Definición de atributos RA4c**](./LM040302e_atributos.md)
 
 ---
 

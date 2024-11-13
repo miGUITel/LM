@@ -8,7 +8,7 @@ XML, o *eXtensible Markup Language*, es un lenguaje de marcado que define una es
 
 XML se ha convertido en un estándar fundamental en el mundo de la tecnología debido a su flexibilidad, legibilidad y compatibilidad con diversos sistemas y plataformas. Su independencia de plataforma y capacidad de ser interpretado en distintos lenguajes de programación facilita su adopción en aplicaciones web, servicios de API y bases de datos. XML permite que los datos sean compartidos entre diferentes sistemas sin la necesidad de realizar conversiones o transformaciones complejas, lo cual optimiza la integración y comunicación entre plataformas heterogéneas.
 
-## Relación con otros lenguajes de marcado
+## Relación con [otros](./LM0401b_otros.md) lenguajes de marcado
 
 Aunque XML no reemplaza otros lenguajes de marcado, se utiliza comúnmente en combinación con ellos. Algunas de las principales relaciones incluyen:
 
