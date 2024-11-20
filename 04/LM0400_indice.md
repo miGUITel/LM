@@ -22,21 +22,24 @@
 
 * [DTD interna-externa](./LM040302a_int-ext.md)
 
-* [DTD Definición de entidades RA4c](./LM040302b_entidades.md)
-
-* [DTD Notaciones RA4c](./LM040302c_anotaciones.md)
-
 * [**DTD Definición de elementos RA4c**](./LM040302d_elementos.md)
 
 * [**DTD Definición de atributos RA4c**](./LM040302e_atributos.md)
 
+* [DTD Definición de entidades RA4c](./LM040302b_entidades.md)
+
+* [DTD Notaciones RA4c](./LM040302c_anotaciones.md)
+
+
 ---
 
-> [Configuración de VSC para trabajar con XML]()
+<!-- > [Configuración de VSC para trabajar con XML]() -->
 
 **Guía de uso**
 
-Usaremos VSC para escribir y validar los documentos xml y los esquemas dtd
+Utilizaremos XML copy editor para aprender
+
+<!-- Usaremos VSC para escribir y validar los documentos xml y los esquemas dtd con más agilidad -->
 
 Utilizaremos el navegador para comprobar cómo se renderiza nuestro documento xml
 

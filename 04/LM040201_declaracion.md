@@ -46,4 +46,7 @@ Ejemplo:
 
 Cada uno de estos elementos de la declaración XML proporciona información esencial que permite a los procesadores leer e interpretar el archivo de manera correcta y sin ambigüedades, facilitando así la interoperabilidad y confiabilidad de los documentos XML en distintos sistemas.
 
+Además de la declaración, puede haber instrucciones de procesamiento, como la que [asocia un CSS a nuestro XML.](../03/asociar_CCS-XML/Asociar_CSSaXML_directamente.md)
+
+
 [Volver al índice principal](./LM0400_indice.md)
