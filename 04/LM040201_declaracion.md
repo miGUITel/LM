@@ -6,14 +6,16 @@ Todo documento XML comienza con una declaración que establece ciertos parámetr
 
 ## Componentes de la Declaración XML
 
-La declaración XML se define comúnmente como sigue:
+La declaración es opcional, pero si está, la declaración XML se define comúnmente como sigue:
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 ```
 
 ### Versión (`version`)
 
-El atributo `version` es obligatorio y especifica la versión de XML que el documento sigue. La versión más utilizada es `1.0`, aunque en algunos casos puede usarse `1.1` para mayor compatibilidad con caracteres especiales. Esta versión asegura que el documento XML sea interpretado según las reglas definidas por el estándar específico de XML.
+El atributo `version` es obligatorio (si hay declaración).
+
+Especifica la versión de XML que el documento sigue. La versión más utilizada es `1.0`, aunque en algunos casos puede usarse `1.1` para mayor compatibilidad con caracteres especiales. Esta versión asegura que el documento XML sea interpretado según las reglas definidas por el estándar específico de XML.
 
 Ejemplo:
 ```xml
@@ -21,6 +23,8 @@ Ejemplo:
 ```
 
 ### Codificación (`encoding`)
+
+Es opcional pero, si está , debe aparecer después de `version`.
 
 El atributo `encoding` define la codificación de caracteres utilizada en el documento XML, siendo `UTF-8` la opción predeterminada y más utilizada. Esto garantiza que el documento sea interpretado correctamente, especialmente si contiene caracteres especiales o distintos alfabetos. En caso de no especificarse, se asume `UTF-8` por defecto.
 
@@ -30,6 +34,8 @@ Ejemplo:
 ```
 
 ### Standalone (`standalone`)
+
+Es opcional y deber ir al final de la declaración.
 
 El atributo `standalone` indica si el documento es independiente o requiere referencias externas para ser interpretado completamente. Cuando se establece en `"yes"`, el documento no necesita archivos externos como definiciones de entidades o *DTDs* (Document Type Definitions). Si se indica `"no"`, significa que el archivo depende de recursos adicionales para ser procesado adecuadamente.
 

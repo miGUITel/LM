@@ -24,4 +24,55 @@ Características básicas de XML, YAML y JSON, los cuales son ampliamente utiliz
 - **Uso común:** Ideal para transferencia de datos entre cliente y servidor, y se utiliza ampliamente en APIs RESTful.
 - **Formato:** Más compacto que XML y YAML, manteniendo legibilidad para humanos y siendo eficiente para máquinas.
 
+
+### EJEMPLOS
+
+### YAML
+```yaml
+cursosInformaticos:
+  curso:
+    - nombre: Introducción a la Programación
+      campo: Desarrollo de Software
+      descripcion: Curso básico sobre fundamentos de programación utilizando Python.
+    - nombre: Redes de Computadoras
+      campo: Redes y Comunicaciones
+      descripcion: Estudio de los conceptos fundamentales de redes de computadoras y protocolos de comunicación.
+    - nombre: Base de Datos
+      campo: Administración de Datos
+      descripcion: Introducción a los sistemas de gestión de bases de datos relacionales.
+    - nombre: Sistemas Operativos
+      campo: Infraestructura y Sistemas
+      descripcion: Estudio de los sistemas operativos, incluyendo procesos, memoria y sistemas de archivos.
+```
+
+### JSON
+```json
+{
+  "cursosInformaticos": {
+    "curso": [
+      {
+        "nombre": "Introducción a la Programación",
+        "campo": "Desarrollo de Software",
+        "descripcion": "Curso básico sobre fundamentos de programación utilizando Python."
+      },
+      {
+        "nombre": "Redes de Computadoras",
+        "campo": "Redes y Comunicaciones",
+        "descripcion": "Estudio de los conceptos fundamentales de redes de computadoras y protocolos de comunicación."
+      },
+      {
+        "nombre": "Base de Datos",
+        "campo": "Administración de Datos",
+        "descripcion": "Introducción a los sistemas de gestión de bases de datos relacionales."
+      },
+      {
+        "nombre": "Sistemas Operativos",
+        "campo": "Infraestructura y Sistemas",
+        "descripcion": "Estudio de los sistemas operativos, incluyendo procesos, memoria y sistemas de archivos."
+      }
+    ]
+  }
+}
+```
+
 [Volver al índice principal](./LM0400_indice.md)
