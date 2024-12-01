@@ -38,9 +38,10 @@ En este ejemplo:
 
 2. **Enumerados**: Permiten definir un conjunto fijo de valores posibles para el atributo. Es útil cuando el valor debe ser uno entre varias opciones específicas.
 
-   \<!ATTLIST libro
-
-   &#x20;         genero (Ficción | NoFicción | Ciencia | Historia) "Ficción">
+   ```xml
+   <!ATTLIST libro
+             genero (Ficción | NoFicción | Ciencia | Historia) "Ficción">
+   ```
 
    En este caso, el atributo genero debe ser uno de los valores listados, y si no se especifica un valor, se asume "Ficción".
 

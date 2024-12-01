@@ -26,6 +26,8 @@ Cuando se define un elemento en una DTD, existen varios tipos de contenido que s
    ```
    En este caso, el elemento `<descripcion>` puede contener texto y elementos `<enfasis>` en cualquier orden y cantidad.
 
+   [aclaración](./LM040302d_aclaramixto.md)
+
 4. **Contenido Vacio (EMPTY)**: Indica que el elemento no contiene ningún contenido.
    ```xml
    <!ELEMENT imagen EMPTY>
