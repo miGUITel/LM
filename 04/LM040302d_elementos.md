@@ -2,6 +2,8 @@
 
 # Definición de Elementos en las DTD
 
+[Ejemplos](./LM0403_ejemplosDTD.md)
+
 En una DTD (Document Type Definition), la **definición de elementos** es fundamental para establecer la estructura y los tipos de contenido que debe tener un documento XML. La declaración de elementos define qué etiquetas están permitidas, qué tipo de contenido pueden contener, y cómo se relacionan con otros elementos dentro del documento. A continuación, veremos los **tipos de contenido**, las **cardinalidades**, y ejemplos parciales y completos de cómo definir elementos en una DTD.
 
 ## Tipos de Contenido en la Definición de Elementos
