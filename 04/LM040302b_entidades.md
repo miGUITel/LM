@@ -45,11 +45,34 @@ Las **entidades externas** permiten incluir contenido que se encuentra en un arc
 
 En este ejemplo, la entidad `&datosExternos;` incluirá el contenido del archivo `datos.txt` en el lugar donde se haga referencia. Esto permite mantener el contenido actualizado en un solo lugar y reutilizarlo en múltiples documentos.
 
+### Entidades [Paramétricas](./LM040302b_entParametricas.md)
+
+Las **entidades paramétricas** son un tipo especial de entidad que se utiliza dentro de las propias DTDs para definir fragmentos reutilizables de contenido en las definiciones de los elementos o atributos. Estas entidades se definen también con la palabra clave `<!ENTITY>` pero su nombre comienza con un símbolo `%`. Se referencian usando el símbolo `%` seguido del nombre de la entidad y el carácter `;`.
+
+**Ejemplo de Entidad Paramétrica:**
+
+```xml
+<!DOCTYPE ejemplo [
+    <!ENTITY % tipoElemento "(#PCDATA)">
+    <!ELEMENT titulo %tipoElemento;>
+    <!ELEMENT autor %tipoElemento;>
+]>
+<ejemplo>
+    <titulo>Ejemplo de entidad paramétrica</titulo>
+    <autor>Juan Pérez</autor>
+</ejemplo>
+```
+
+En este caso, la entidad `%tipoElemento;` define un fragmento de contenido reutilizable que se usa en la definición de varios elementos.
+
+Las entidades paramétricas son especialmente útiles para mantener consistencia y reducir la redundancia en las DTDs.
+
 ## Ventajas de Usar Entidades en DTD
 
 1. **Reutilización de Información**: Permiten definir fragmentos de información una sola vez y utilizarlos en todo el documento, lo cual hace que sea fácil mantener el documento actualizado.
 2. **Facilita la Gestión de Cambios**: Si una entidad definida se usa en múltiples lugares, un cambio en su definición se reflejará en todas las instancias, lo cual reduce errores y ahorra tiempo.
 3. **Modularización del Contenido**: Las entidades externas permiten que el contenido se mantenga en archivos separados, facilitando la organización y el mantenimiento de grandes volúmenes de datos.
+4. **Consistencia en las DTDs**: Las entidades paramétricas ayudan a definir patrones reutilizables, reduciendo errores y mejorando la claridad del diseño.
 
 ## Ejemplo Completo con DTD Interna y Entidades
 
@@ -58,11 +81,12 @@ En este ejemplo, la entidad `&datosExternos;` incluirá el contenido del archivo
 <!DOCTYPE catalogo [
     <!ENTITY editorial "Editorial Ejemplo S.A.">
     <!ENTITY datosExternos SYSTEM "notas.txt">
+    <!ENTITY % tipoTexto "(#PCDATA)">
     <!ELEMENT catalogo (libro+)>
     <!ELEMENT libro (titulo, autor, notas)>
-    <!ELEMENT titulo (#PCDATA)>
-    <!ELEMENT autor (#PCDATA)>
-    <!ELEMENT notas (#PCDATA)>
+    <!ELEMENT titulo %tipoTexto;>
+    <!ELEMENT autor %tipoTexto;>
+    <!ELEMENT notas %tipoTexto;>
 ]>
 <catalogo>
     <libro>
@@ -73,11 +97,14 @@ En este ejemplo, la entidad `&datosExternos;` incluirá el contenido del archivo
 </catalogo>
 ```
 
-En este ejemplo, la entidad `&editorial;` se utiliza para definir la editorial del libro, mientras que `&datosExternos;` incluye el contenido del archivo externo `notas.txt` en la sección de notas del libro.
+En este ejemplo, se utilizan las tres tipos de entidades:
+
+- `&editorial;` como una entidad general para definir la editorial del libro.
+- `&datosExternos;` como una entidad externa para incluir el contenido de un archivo.
+- `%tipoTexto;` como una entidad paramétrica para definir la estructura de varios elementos.
 
 ## Conclusión
 
 Las entidades en las DTD proporcionan una forma poderosa de simplificar la gestión y reutilización de información dentro de documentos XML. Al definir texto o referencias externas como entidades, se puede mantener la consistencia y reducir la redundancia, lo cual resulta especialmente útil para proyectos que requieren el manejo de grandes volúmenes de datos o documentos interrelacionados.
-
 
 [índice](./LM0400_indice.md)
