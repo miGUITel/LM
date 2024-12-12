@@ -56,6 +56,7 @@ Supongamos que queremos definir una DTD para un documento que incluye una lista 
 3. **Ideal para DTDs grandes y complejas**: Ayuda a mantener la organización en proyectos más grandes.
 
 ### Diferencias con las entidades generales
+
 | Característica             | Entidades Generales             | Entidades Paramétricas       |
 |----------------------------|---------------------------------|------------------------------|
 | **Prefijo**                | `&`                             | `%`                          |
