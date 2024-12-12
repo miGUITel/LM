@@ -62,4 +62,39 @@ Supongamos que queremos definir una DTD para un documento que incluye una lista 
 | **Alcance**                | Documento XML                   | DTD                          |
 | **Uso**                    | Representar texto o caracteres  | Representar partes de la DTD |
 
+
+### EJEMPLO MÁS COMPLEJO
+
+Aquí tienes un ejemplo más elaborado en el que se reutiliza una entidad paramétrica para definir elementos relacionados con libros y revistas dentro de una biblioteca. Esto muestra claramente cómo la entidad permite simplificar y mantener consistente la definición de elementos que comparten características comunes:
+
+```xml
+<!DOCTYPE biblioteca [
+  <!-- Definimos una entidad paramétrica para los elementos comunes -->
+  <!ENTITY % publicacionElementos "titulo, autor, anio, editorial">
+  
+  <!-- Utilizamos la entidad para definir elementos comunes a libros y revistas -->
+  <!ELEMENT libro (%publicacionElementos;, genero)>
+  <!ELEMENT revista (%publicacionElementos;, volumen, numero)>
+  
+  <!-- Definimos cada elemento utilizado por las publicaciones -->
+  <!ELEMENT titulo (#PCDATA)>
+  <!ELEMENT autor (#PCDATA)>
+  <!ELEMENT anio (#PCDATA)>
+  <!ELEMENT editorial (#PCDATA)>
+  <!ELEMENT genero (#PCDATA)>
+  <!ELEMENT volumen (#PCDATA)>
+  <!ELEMENT numero (#PCDATA)>
+  
+  <!-- Definimos la biblioteca como un conjunto de libros y revistas -->
+  <!ELEMENT biblioteca (libro | revista)+>
+]>
+```
+
+### Explicación de las ventajas:
+1. **Reutilización y consistencia:** La entidad `%publicacionElementos` se usa tanto para los libros como para las revistas, evitando repetir las definiciones de elementos comunes.
+2. **Facilidad de mantenimiento:** Si necesitas cambiar la estructura de los elementos comunes (por ejemplo, agregar un nuevo elemento como `idioma`), solo debes actualizar la entidad `%publicacionElementos`, y el cambio se aplicará automáticamente a los libros y revistas.
+3. **Lectura más clara:** Al usar la entidad paramétrica, la estructura es más compacta y comprensible, ya que se evita la redundancia en las definiciones.
+
+Este ejemplo es más claro y resalta la ventaja de usar entidades paramétricas en documentos DTD para definir estructuras más complejas y reutilizables.
+
 [índice](./LM0400_indice.md)
