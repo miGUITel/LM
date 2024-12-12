@@ -57,9 +57,9 @@ Supongamos que queremos definir una DTD para un documento que incluye una lista 
 
 ### Diferencias con las entidades generales
 | Característica             | Entidades Generales             | Entidades Paramétricas       |
-|----------------------------|----------------------------------|------------------------------|
+|----------------------------|---------------------------------|------------------------------|
 | **Prefijo**                | `&`                             | `%`                          |
 | **Alcance**                | Documento XML                   | DTD                          |
-| **Uso**                    | Representar texto o caracteres | Representar partes de la DTD |
+| **Uso**                    | Representar texto o caracteres  | Representar partes de la DTD |
 
 [índice](./LM0400_indice.md)
