@@ -1,0 +1,20 @@
+<concesionario nombre="AutoWorld" ciudad="Madrid">
+    <coche matricula="1234ABC" marca="Toyota" modelo="Corolla">
+        <precio moneda="EUR">18000</precio>
+        <stock unidades="5"/>
+        <color>Rojo</color>
+        <cilindrada>1800</cilindrada>
+    </coche>
+    <coche matricula="5678DEF" marca="Honda" modelo="Civic">
+        <precio moneda="EUR">22000</precio>
+        <stock unidades="3"/>
+        <color>Azul</color>
+        <cilindrada>2000</cilindrada>
+    </coche>
+    <coche matricula="9101GHI" marca="Ford" modelo="Focus">
+        <precio moneda="USD">20000</precio>
+        <stock unidades="8"/>
+        <color>Blanco</color>
+        <cilindrada>1500</cilindrada>
+    </coche>
+</concesionario>
