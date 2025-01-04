@@ -1,3 +1,5 @@
+## Abrir desde el explorador de windows `cmd /c code .`
+
 - [Atajos básicos de navegación y edición](#atajos-básicos-de-navegación-y-edición)
 - [Atajos para trabajar con cursores múltiples](#atajos-para-trabajar-con-cursores-múltiples)
 - [Edición avanzada](#edición-avanzada)
