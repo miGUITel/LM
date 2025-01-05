@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="1-value-of.xsl" type="text/xsl"?>
+<concesionario>
+    <detalles>
+        <nombre>Concesionario Central</nombre>
+        <direccion>Avenida Principal 123, Ciudad</direccion>
+        <telefono>+34 123 456 789</telefono>
+    </detalles>
+    <coches>
+        <coche>
+            <marca>Toyota</marca>
+            <modelo>Corolla</modelo>
+            <año>2022</año>
+            <precio>20000</precio>
+            <combustible>Gasolina</combustible>
+        </coche>
+        <coche>
+            <marca>Ford</marca>
+            <modelo>Focus</modelo>
+            <año>2021</año>
+            <precio>18000</precio>
+            <combustible>Diésel</combustible>
+        </coche>
+        <coche>
+            <marca>Volkswagen</marca>
+            <modelo>Golf</modelo>
+            <año>2023</año>
+            <precio>25000</precio>
+            <combustible>Eléctrico</combustible>
+        </coche>
+        <coche>
+            <marca>Honda</marca>
+            <modelo>Civic</modelo>
+            <año>2020</año>
+            <precio>22000</precio>
+            <combustible>Híbrido</combustible>
+        </coche>
+        <coche>
+            <marca>Chevrolet</marca>
+            <modelo>Malibu</modelo>
+            <año>2019</año>
+            <precio>17000</precio>
+            <combustible>Gasolina</combustible>
+        </coche>
+        <coche>
+            <marca>Toyota</marca>
+            <modelo>RAV4</modelo>
+            <año>2023</año>
+            <precio>30000</precio>
+            <combustible>Híbrido</combustible>
+        </coche>
+        <coche>
+            <marca>Ford</marca>
+            <modelo>Kuga</modelo>
+            <año>2022</año>
+            <precio>28000</precio>
+            <combustible>Gasolina</combustible>
+        </coche>
+        <coche>
+            <marca>Volkswagen</marca>
+            <modelo>Polo</modelo>
+            <año>2021</año>
+            <precio>19000</precio>
+            <combustible>Diésel</combustible>
+        </coche>
+        <coche>
+            <marca>Honda</marca>
+            <modelo>CR-V</modelo>
+            <año>2023</año>
+            <precio>35000</precio>
+            <combustible>Híbrido</combustible>
+        </coche>
+        <coche>
+            <marca>Chevrolet</marca>
+            <modelo>Camaro</modelo>
+            <año>2020</año>
+            <precio>40000</precio>
+            <combustible>Gasolina</combustible>
+        </coche>
+    </coches>
+</concesionario>
