@@ -18,6 +18,11 @@
                     Teléfono: <xsl:value-of select="concesionario/detalles/telefono" />
                 </h3>
                 <xsl:for-each select="concesionario/coches/coche">
+                    <xsl:sort select="marca" order="ascending" />
+                    <!-- Para ordenar por año: -->
+                    <!-- <xsl:sort select="año" order="ascending" /> -->
+                    <!-- Para ordenar por precio: -->
+                    <!-- <xsl:sort select="precio" order="ascending" /> -->
                     <h2>
                         <xsl:value-of select="marca" /> - <xsl:value-of select="marca/@modelo" />
                     </h2>

@@ -60,7 +60,7 @@ Funciona como una estructura condicional más compleja, similar a `if-else` en o
 ## **6. `key`**
 
 ### **Descripción**
-Define claves para realizar búsquedas rápidas en el XML, mejorando la eficiencia en ciertas transformaciones.
+Define claves para realizar búsquedas rápidas en el XML, mejorando la eficiencia en ciertas transformaciones. Genera un índice por lo que es más eficiente, reutilizable y semánticamente claro.
 
 - **Enlace XML:** [6-key.xml](./ejemplosXslt/6-key.xml)
 - **Enlace XSL:** [6-key.xsl](./ejemplosXslt/6-key.xsl)
