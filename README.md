@@ -45,6 +45,8 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [xml concesionario](./05/LM05xpathEjemploClase.xml)
 
+[Guía xsl](./05/LM05xsltGuion.md)
+
 ## links interesantes
 
 * [curso de XML](https://www.mclibre.org/consultar/xml/index.html)
