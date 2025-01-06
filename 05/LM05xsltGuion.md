@@ -71,6 +71,8 @@ Define claves para realizar búsquedas rápidas en el XML, mejorando la eficienc
 
 ### **Descripción**
 Permite enviar mensajes al procesador XSLT, útil para depuración o mostrar información durante la transformación.
+El mensaje se muestra en la consola de los programas procesadores xslt específicos.
+Chrome no procesa estas instrucciones.
 
 - **Enlace XML:** [7-message.xml](./ejemplosXslt/7-message.xml)
 - **Enlace XSL:** [7-message.xsl](./ejemplosXslt/7-message.xsl)
@@ -87,8 +89,4 @@ Los templates en XSLT permiten definir bloques reutilizables de transformaciones
 
 ---
 
-### **Próximos pasos**
-
-- Generar los archivos XML y XSL indicados.
-- Realizar las pruebas para cada elemento y observar cómo afectan al XML transformado.
 

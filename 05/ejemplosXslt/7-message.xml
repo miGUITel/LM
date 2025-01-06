@@ -29,7 +29,7 @@
             <marca modelo="Civic">Honda</marca>
             <año>2020</año>
             <precio>22000</precio>
-            <combustible>Híbrido</combustible>
+            <!-- <combustible>Híbrido</combustible> -->
         </coche>
         <coche>
             <marca modelo="Malibu">Chevrolet</marca>
