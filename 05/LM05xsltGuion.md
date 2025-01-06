@@ -1,3 +1,5 @@
+![alt text](799c4105-d4bb-46fa-963e-22aa089fab21.webp)
+
 # **Introducción a XSLT**
 
 ### **Transformación de datos XML en HTML utilizando elementos XSLT**
