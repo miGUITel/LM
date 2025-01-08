@@ -30,7 +30,7 @@
    git push -u origin main
    ```
 
-## Paso 3: Permitir que Tus Alumnos Colaboren
+## Paso 3: Permitir que Tus Compañeros Colaboren
 1. **Configura el acceso al repositorio**:
    - Ve a la página de tu repositorio en GitHub.
    - Haz clic en la pestaña **"Settings"**.
