@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE valores SYSTEM "valores2.dtd">
+<valores>
+	<accion recomendacion="Mantener">
+		<mercado>Madrid</mercado>
+		<nombre>Aceralia</nombre>
+		<mercado-abierto>SÍ</mercado-abierto>
+		<fecha>
+			<día>12</día>
+			<mes>07</mes>
+			<año>2002</año>
+		</fecha>
+	</accion>
+	<accion recomendacion="Mantener">
+		<mercado>Madrid</mercado>
+		<nombre>Repsol</nombre>
+		<mercado-abierto>SÍ</mercado-abierto>
+		<fecha>
+			<día>12</día>
+			<mes>07</mes>
+			<año>2002</año>
+		</fecha>
+	</accion>
+	<accion recomendacion="Comprar">
+		<mercado>Barcelona</mercado>
+		<nombre>Endesa</nombre>
+		<mercado-abierto>No</mercado-abierto>
+		<fecha>
+			<día>15</día>
+			<mes>08</mes>
+			<año>2005</año>
+		</fecha>
+	</accion>
+	<accion recomendacion="Vender">
+		<mercado>Bilbao</mercado>
+		<nombre>Telefónica</nombre>
+		<mercado-abierto>SÍ</mercado-abierto>
+		<fecha>
+			<día>10</día>
+			<mes>01</mes>
+			<año>2010</año>
+		</fecha>
+	</accion>
+	<accion recomendacion="Mantener">
+		<mercado>Madrid</mercado>
+		<nombre>Iberdrola</nombre>
+		<mercado-abierto>SÍ</mercado-abierto>
+		<fecha>
+			<día>05</día>
+			<mes>06</mes>
+			<año>2018</año>
+		</fecha>
+	</accion>
+</valores>
