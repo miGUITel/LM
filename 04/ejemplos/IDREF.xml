@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coches SYSTEM "idref.dtd">
+<coches>
+<coche matricula="GGG">
+RENAULT
+</coche>
+<compra matricula="GGG">
+LO COMPRO
+</compra>
+</coches>
+
+<!-- qué pasa si el atributo matricula se llama código?-->
+<!-- qué pasa si un valor de GGG lo cambio por AAA? -->
+<!-- qué pasa si el valor de GGG en compra lo cambio por RANAULT?-->
+<!-- qué pasa si la definición de matricula en coche no es un ID? -->

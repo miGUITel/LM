@@ -1,0 +1,5 @@
+<!ELEMENT coches (coche, compra)*>
+<!ELEMENT coche (#PCDATA)>
+<!ATTLIST coche matricula ID #REQUIRED>
+<!ELEMENT compra (#PCDATA)>
+<!ATTLIST compra matricula IDREF #REQUIRED>

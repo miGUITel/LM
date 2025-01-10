@@ -63,6 +63,8 @@ En este ejemplo:
 
    En este ejemplo, `libroID` hace referencia al atributo `id` de algún elemento `<libro>` definido previamente en el documento.
 
+   [Ejemplo IDREF para probar con XML Copy Editor](./ejemplos/IDREF.xml) [DTD asociada](./ejemplos/idref.dtd)
+
 5. **ENTITY**: Hace referencia a una entidad definida en la DTD.
 
    ```xml
