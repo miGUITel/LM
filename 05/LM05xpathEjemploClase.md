@@ -1,8 +1,8 @@
-## Lista de expresiones **XPath** categorizadas según su funcionalidad. 
+# Lista de expresiones **XPath** categorizadas según su funcionalidad. 
 
 ---
 
-### **XML de ejemplo: Concesionario de coches**
+## **XML de ejemplo: Concesionario de coches**
 ```xml
 <concesionario nombre="AutoWorld" ciudad="Madrid">
     <coche matricula="1234ABC" marca="Toyota" modelo="Corolla">
@@ -28,9 +28,9 @@
 
 ---
 
-### **Lista de expresiones XPath**
+## **Lista de expresiones XPath**
 
-#### **1. Localización de nodos básicos**:
+### **1. Localización de nodos básicos**:
 - **Seleccionar el nodo raíz**:
   ```xpath
   /
@@ -56,7 +56,7 @@
   ```
 ---
 
-#### **2. Filtrado**:
+### **2. Filtrado**:
 - **Seleccionar coches de la marca "Toyota" (filtrado por atributo)**:
   ```xpath
   /concesionario/coche[@marca='Toyota']
@@ -72,7 +72,11 @@
 
 ---
 
-#### **3. Funciones sobre cadenas**:
+### **3. Funciones sobre cadenas**:
+- **Obtener el valor de un elemento (sin las etiquetas)**:
+  ```xpath
+  //coche/precio/text()
+  ```
 - **Convertir el color del primer cohce a minúsculas**:
   ```xpath
   lower-case(//coche[1]/color)
@@ -104,7 +108,7 @@
 
 ---
 
-#### **4. Funciones de contexto**:
+### **4. Funciones de contexto**:
 - **Seleccionar el segundo coche**:
   ```xpath
   /concesionario/coche[2]
@@ -120,7 +124,7 @@
 
 ---
 
-#### **5. Funciones agregadas**:
+### **5. Funciones agregadas**:
 - **Contar el número de coches**:
   ```xpath
   count(//coche)
@@ -140,7 +144,7 @@
 
 ---
 
-#### **6. Operadores (+, -, =)**:
+### **6. Operadores (+, -, =)**:
 - **Filtrar coches cuyo precio sea igual a 20000**:
   ```xpath
   //coche[precio = 20000]
