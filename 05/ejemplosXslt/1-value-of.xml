@@ -2,7 +2,7 @@
 <?xml-stylesheet href="1-value-of.xsl" type="text/xsl"?>
 <concesionario>
     <detalles>
-        <nombre>Concesionario Central</nombre>
+        <nombre>Concesionario Central de Jumilla</nombre>
         <direccion>Avenida Principal 123, Ciudad</direccion>
         <telefono>+34 123 456 789</telefono>
     </detalles>
