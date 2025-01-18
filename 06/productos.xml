@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<productos>
+  <producto>
+    <nombre>Pantalla</nombre>
+    <precio>10.99</precio>
+    <categoria>Electronica</categoria>
+  </producto>
+  <producto>
+    <nombre>Bombilla</nombre>
+    <precio>15.50</precio>
+    <categoria>Hogar</categoria>
+  </producto>
+</productos>
