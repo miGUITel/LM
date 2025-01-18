@@ -41,11 +41,17 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT5
 
-[Ejemplos Xpath](./05/LM05xpathEjemploClase.md)
+[Guía XPath](./05/LM05xpathEjemploClase.md)
 
 [xml concesionario](./05/LM05xpathEjemploClase.xml)
 
-[Guía xsl](./05/LM05xsltGuion.md)
+[Guía Xsl](./05/LM05xsltGuion.md)
+
+# UT6
+
+[Guía XQuery](./06/LM0601_introBaseX.md)
+
+[xml productos](./06/productos.xml)
 
 ## links interesantes
 
