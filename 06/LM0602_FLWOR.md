@@ -32,7 +32,7 @@ No todos los elementos de FLWOR son obligatorios. Por ejemplo, una consulta pued
 ---
 
 ### **XML de ejemplo**
-Usaremos el siguiente archivo XML llamado `productos.xml` para los ejemplos:
+Usaremos el siguiente archivo XML llamado `productos.xml` para el [ejemplo](./productos.xml):
 
 ```xml
 <productos>
@@ -62,7 +62,7 @@ Usaremos el siguiente archivo XML llamado `productos.xml` para los ejemplos:
 Listar todos los productos con su precio:
 
 ```xquery
-for $producto in doc("productos.xml")/productos/producto
+for $producto in /productos/producto
 return <li>{ $producto/nombre/text() } - { $producto/precio/text() } €</li>
 ```
 
@@ -79,7 +79,7 @@ return <li>{ $producto/nombre/text() } - { $producto/precio/text() } €</li>
 Mostrar solo los productos de la categoría "Electronica":
 
 ```xquery
-for $producto in doc("productos.xml")/productos/producto
+for $producto in /productos/producto
 where $producto/categoria = "Electronica"
 return <li>{ $producto/nombre/text() }</li>
 ```
@@ -96,7 +96,7 @@ return <li>{ $producto/nombre/text() }</li>
 Listar los productos ordenados de menor a mayor precio:
 
 ```xquery
-for $producto in doc("productos.xml")/productos/producto
+for $producto in /productos/producto
 order by $producto/precio
 return <li>{ $producto/nombre/text() } - { $producto/precio/text() } €</li>
 ```
@@ -114,7 +114,7 @@ return <li>{ $producto/nombre/text() } - { $producto/precio/text() } €</li>
 Calcular un precio con descuento del 10% para cada producto:
 
 ```xquery
-for $producto in doc("productos.xml")/productos/producto
+for $producto in /productos/producto
 let $precioConDescuento := $producto/precio * 0.9
 return <li>{ $producto/nombre/text() } - { format-number($precioConDescuento, '#.00') } €</li>
 ```
