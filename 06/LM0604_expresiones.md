@@ -1,4 +1,4 @@
-### ** Tipos de expresiones útiles en XQuery para comenzar**
+## **Tipos de expresiones útiles en XQuery para comenzar**
 #### **1. Expresiones aritméticas**  
    - Suma (`+`), resta (`-`), multiplicación (`*`), división (`div`), módulo (`mod`)  
    - Ejemplo: `let $precioTotal := 10.5 + 5.25 return $precioTotal`

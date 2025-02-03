@@ -55,9 +55,9 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Expresiones útiles en XQuery](./06/LM0604_expresiones.md)
 
-[.](./06/LM06TA01git.md)
+<!-- [.](./06/LM06TA01git.md) -->
 
-[.](./06/LM0605TA02_practica.md)
+<!-- [.](./06/LM0605TA02_practica.md) -->
 
 ## links interesantes
 
