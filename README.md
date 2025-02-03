@@ -51,11 +51,13 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Guía XQuery](./06/LM0601_introBaseX.md)
 
-[Expresiones útiles en XQuery](./06/LM0604_expresiones.md)
-
 [xml productos](./06/productos.xml)
 
-[Practiquemos XQuery](./06/LM0605_practica.md)
+[Expresiones útiles en XQuery](./06/LM0604_expresiones.md)
+
+[.](./06/LM06TA01git.md)
+
+[.](./06/LM0605TA02_practica.md)
 
 ## links interesantes
 
