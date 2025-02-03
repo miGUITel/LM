@@ -54,7 +54,7 @@
      return $precioPromedio
      ```
 
-#### **10. Expresiones de unión y diferencia**  
+#### **10. Expresiones de unión y diferencia** [+](./LM0607_union.md) 
    - `union`, `except`, `intersect`  
    - Ejemplo:  
      ```xquery
