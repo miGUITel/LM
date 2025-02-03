@@ -112,7 +112,7 @@ Para eliminar nodos o elementos, usa `delete node`.
 Eliminaremos el "Producto B":
 
 ```xquery
-delete node db:open("nombre_de_tu_base")/productos/producto[nombre="Producto B"]
+delete node productos/producto[nombre="Producto C"]
 ```
 
 **Resultado:**
