@@ -66,7 +66,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 * [trucos VSC](LM00trucos_vsc.md)
 * [actualizar el navegador atuomáticamente](./LM00live_server.md)
 
-# GIT
+# GIT [+ en ED](https://miguitel.github.io/ED/)
 
 [Configuración inicial de git](./git/LM00_git_configInicial.md)
 
