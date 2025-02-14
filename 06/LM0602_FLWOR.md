@@ -14,9 +14,9 @@ En esta sección aprenderás los conceptos básicos y verás ejemplos prácticos
 Una consulta FLWOR se estructura como sigue:
 
 ```xquery
-for $variable in expresión
-let $otraVariable := expresiónOpcional
-where condición
+for $variable in expresion
+let $otraVariable := expresionOpcional
+where condicion
 order by criterio
 return resultado
 ```
