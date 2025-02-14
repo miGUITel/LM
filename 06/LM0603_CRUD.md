@@ -112,7 +112,7 @@ Para eliminar nodos o elementos, usa `delete node`.
 Eliminaremos el "Producto B":
 
 ```xquery
-delete node productos/producto[nombre="Producto C"]
+delete node productos/producto[nombre="Producto B"]
 ```
 
 **Resultado:**
