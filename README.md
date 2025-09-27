@@ -5,7 +5,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Funciones en java para manejar cadenas](./01/UT01_java_strings.md)
 
-[Clasificación de los Lenguajes de Marcas](./UT1/UT01_clasificación.md)
+[Clasificación de los Lenguajes de Marcas](./01/UT01_clasificación.md)
 
 # UT2
 
