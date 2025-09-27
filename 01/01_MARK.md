@@ -35,13 +35,15 @@ Se usan asteriscos o guiones bajos:
 ```md
 *texto en cursiva*  
 **texto en negrita**  
-***negrita y cursiva***
+*** negrita y  cursiva ***
 ```
 
 **Resultado:**
 
 *texto en cursiva*
+
 **texto en negrita**
+
 ***negrita y cursiva***
 
 ---
@@ -109,18 +111,20 @@ El comando `git status` muestra el estado del repositorio.
 
 Para bloques de código se usan tres comillas invertidas (```):
 
-````md
-```python
-print("Hola mundo")
-````
-
-````
+![alt text](image.png)
 
 **Resultado:**
 
 ```python
 print("Hola mundo")
-````
+```
+Se puede incluir el lenguaje y cambiará la presentación del código:
+
+![alt text](image-1.png)
+
+```java
+System.out.println("Hola mundo");
+```
 
 ---
 
@@ -133,5 +137,17 @@ print("Hola mundo")
 **Resultado:**
 
 > Esto es una cita en Markdown.
+
+---
+
+## 7. Separadores
+
+El siguiente código:
+
+```md
+---
+```
+
+Genera la línea horizontal:
 
 ---
