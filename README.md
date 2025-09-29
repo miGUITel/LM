@@ -77,3 +77,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 [Compartir repositorio](./git/1_alumno.md)
 
 [Solucionar conflicto tras un pull](./git/LM00_git_conflicto_pull.md)
+
+## OTRAS COSAS
+
+[Resetear el depósito de claves](./extra/solucionarDepositoClaves.md)
