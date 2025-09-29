@@ -151,3 +151,6 @@ El siguiente código:
 Genera la línea horizontal:
 
 ---
+
+> sito web para practicar:
+> [live preview](https://markdownlivepreview.com/)
