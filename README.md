@@ -15,6 +15,8 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 [Etiquetas semánticas](./UT2/UT2_etiquetas_semanticas.md)
 
+[Elementos autocerrados en HTML5 vs XML](./UT2/LM02_15aclaraAutocerradas.md)
+
 [Ejemplo del uso de las etiquetas semánticas](./UT2/UT2_index_16semánicas.html)
 
 [Ejemplos html](https://miguitel.github.io/AWEB_disenioWeb/menu.html)
