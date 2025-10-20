@@ -2,4 +2,6 @@
 
 Crea una tabla con el horario de 1º de DAM.
 
-Utiliza la plantilla adjunta sin borrar nada, tan solo añade lo que necesites.
+Utiliza esta [plantilla](./LMTA0205v1plantilla_tablas.html) sin borrar nada, tan solo añade lo que necesites.
+
+
