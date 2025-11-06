@@ -131,17 +131,6 @@ Debes realizar **cinco copias** de este documento, que enlazarás con su **respe
 
 ## Entrega
 
-📁 Entrega en una carpeta zip con la siguiente estructura:
-
-
-LM03TA02/
-├── estilos1.css
-├── estilos2.css
-├── estilos3.css
-├── estilos4.css
-├── estilos5.css
-├── mine_plantilla1.html
-├── mine_plantilla2.html
-├── mine_plantilla3.html
-├── mine_plantilla4.html
-└── mine_plantilla5.html
+Debes entregar 10 archivos
+**No los metas en una carpeta**
+**NO los comprimas en un zip**

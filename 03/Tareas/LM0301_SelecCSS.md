@@ -1,8 +1,3 @@
-Perfecto.
-Aquí tienes el **enunciado de la tarea `LM03TA01_selectores.docx`** transformado a formato **Markdown**, manteniendo la estructura y el sentido original:
-
----
-
 # UT2 – TAREA 1: Selectores CSS
 
 > **Importante:**
