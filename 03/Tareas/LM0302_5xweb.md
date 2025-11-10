@@ -102,7 +102,7 @@ Debes realizar **cinco copias** de este documento, que enlazarás con su **respe
 
 **Párrafos**  
 - Fuente de estilo **serif**.  
-- Algunas palabras clave en **marrón suave** → `rgb(153,102,77)`.
+- Destaca en cada párrafo algunas palabras clave en **marrón suave** → `rgb(153,102,77)`.
 
 ---
 
