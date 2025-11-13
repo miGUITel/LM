@@ -46,7 +46,7 @@ Cada alumno deberá diseñar una tarjeta informativa centrada en la página sobr
 La entrega debe incluir:
 
 - Un documento **PDF explicativo**.
-- Los archivos **HTML** y **CSS**.
+- Un archivo **HTML** y un archivo **CSS**.
 
 En el documento PDF, se debe justificar el uso de `position` en cada elemento de la tarjeta. Incluye además una captura de la renderización de tu web en FireFox.
 
@@ -57,7 +57,7 @@ En el documento PDF, se debe justificar el uso de `position` en cada elemento de
 | Calificación | Descripción                                                                                                                                          |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0           | No se ha entregado la tarea o no cumple con los requisitos básicos.                                                                                  |
-| 3           | La tarjeta incluye al menos un elemento de cada tipo solicitado, pero el uso de `position` es inadecuado o insuficiente.                             |
+| 3           | No se incluyen todos los elementos CSS solicitados. No se incluyen todos los archivos solicitados.                             |
 | 6           | La tarjeta contiene la mayoría de los elementos correctamente posicionados según los requisitos.                                                     |
 | 9           | La tarjeta cumple con todos los requisitos, mostrando un uso correcto y comentado de `position`.                                                     |
 | 10          | Además de cumplir con todos los requisitos, la tarjeta incluye un elemento adicional o mejora significativa en el uso de `position` u otras funcionalidades extra. |
