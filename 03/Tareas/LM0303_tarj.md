@@ -1,3 +1,10 @@
+- [Lenguaje de Marcas – UT03 – Tarea 03](#lenguaje-de-marcas--ut03--tarea-03)
+  - [Tarea: Maquetación con Position](#tarea-maquetación-con-position)
+    - [Objetivo](#objetivo)
+    - [Descripción de la Tarea](#descripción-de-la-tarea)
+    - [Restricciones](#restricciones)
+    - [Instrucciones de entrega](#instrucciones-de-entrega)
+    - [Rúbrica](#rúbrica)
 # Lenguaje de Marcas – UT03 – Tarea 03  
 ## Tarea: Maquetación con Position
 
@@ -41,7 +48,7 @@ La entrega debe incluir:
 - Un documento **PDF explicativo**.
 - Los archivos **HTML** y **CSS**.
 
-En el documento PDF, se debe justificar el uso de `position` en cada elemento de la tarjeta.
+En el documento PDF, se debe justificar el uso de `position` en cada elemento de la tarjeta. Incluye además una captura de la renderización de tu web en FireFox.
 
 ---
 
