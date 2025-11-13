@@ -30,6 +30,7 @@ Debes realizar **cinco copias** de este documento, que enlazarás con su **respe
 
 **Contenedor general**  
 - Bordes **negros** de `3px`.
+- Fondo amarillo suave. //NUEVO REQUISITO PARA LA ENTREGA
 
 **Párrafos**  
 - Texto en **azul suave** → `rgb(102,153,204)`.
@@ -134,3 +135,13 @@ Debes realizar **cinco copias** de este documento, que enlazarás con su **respe
 Debes entregar 10 archivos
 **No los metas en una carpeta**
 **NO los comprimas en un zip**
+
+### Rúbrica
+
+| Calificación | Descripción                                                                                                                                          |
+|-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0           | No se ha entregado la tarea o no cumple con los requisitos básicos.                                                                                  |
+| 3           | No están todas las reglas solicitadas. No se incluyen todos los archivos solicitados o están comprimidos en un ZIP.                             |
+| 6           | Alguna regla tiene errores de sintaxis.                                                     |
+| 9           | Todas las reglas son correctas y el renderizado se acerca notablemente a los requisitos.                                                     |
+| 10          | Además de cumplir con todos los requisitos, se incluye un elemento adicional y se solicita la nota máxima, explicando qué se ha hecho para merecerla.|
