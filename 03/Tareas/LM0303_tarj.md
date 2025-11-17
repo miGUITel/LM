@@ -5,6 +5,7 @@
     - [Restricciones](#restricciones)
     - [Instrucciones de entrega](#instrucciones-de-entrega)
     - [Rúbrica](#rúbrica)
+      - [Una ayuda visual para comprender mejor lo que se pide, aproximadamente:](#una-ayuda-visual-para-comprender-mejor-lo-que-se-pide-aproximadamente)
 # Lenguaje de Marcas – UT03 – Tarea 03  
 ## Tarea: Maquetación con Position
 
@@ -19,15 +20,16 @@ Cada alumno deberá diseñar una tarjeta informativa centrada en la página sobr
 
 1. **Título Fuera de la Tarjeta**
    - El título debe ubicarse fuera de la tarjeta, en la parte superior de la página, y configurarse como **sticky** para que permanezca visible al hacer scroll.
+   - Asegúrate de que se aprecia el efecto de **sticky**.
 
 2. **Imagen de Fondo**
-   - Añadir una imagen de fondo que ocupe toda la tarjeta.
+   - Añadir una imagen de fondo a la tarjeta utilizando absolute y z-index.
 
 3. **Descripción**
-   - Incluir una breve descripción dentro de la tarjeta, con `position: relative` para situarla en el centro de la tarjeta.
+   - Incluir una breve descripción dentro de la tarjeta, con `position: relative` para desplazarla de su posición en el flujo normal.
 
 4. **Botón de Acción**
-   - Colocar un botón en la esquina inferior derecha de la tarjeta usando `position: absolute`.
+   - Colocar un botón en la esquina inferior derecha **de la tarjeta** usando `position: absolute`.
 
 5. **Elemento Fijo**
    - Incluir un elemento (como un icono o un breve mensaje) que se mantenga fijo en la pantalla cuando el usuario haga scroll, utilizando `position: fixed`.
@@ -57,8 +59,10 @@ En el documento PDF, se debe justificar el uso de `position` en cada elemento de
 | Calificación | Descripción                                                                                                                                          |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0           | No se ha entregado la tarea o no cumple con los requisitos básicos.                                                                                  |
-| 3           | No se incluyen todos los elementos CSS solicitados. No se incluyen todos los archivos solicitados.                             |
+| 3           | No se incluyen todos los elementos CSS solicitados. No se incluyen todos los archivos solicitados. No se entrega memoria en pdf.                             |
 | 6           | La tarjeta contiene la mayoría de los elementos correctamente posicionados según los requisitos.                                                     |
 | 9           | La tarjeta cumple con todos los requisitos, mostrando un uso correcto y comentado de `position`.                                                     |
 | 10          | Además de cumplir con todos los requisitos, la tarjeta incluye un elemento adicional o mejora significativa en el uso de `position` u otras funcionalidades extra. |
 
+#### Una ayuda visual para comprender mejor lo que se pide, aproximadamente:
+![alt text](image.png)
