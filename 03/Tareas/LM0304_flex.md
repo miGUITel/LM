@@ -23,7 +23,7 @@ El archivo HTML proporcionado debe mantenerse sin cambios:
 Queda prohibido usar `position` en cualquiera de sus variantes:
 `absolute`, `relative`, `fixed`, `sticky` o `static`.
 
-### **R3. Cabecera con altura fija**
+### **R3. Header con altura fija**
 
 La cabecera debe tener exactamente **100px de alto**.
 
