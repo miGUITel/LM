@@ -1,4 +1,4 @@
-# **LM03 – UT03 – Tarea 04: Maquetación con Flexbox**
+# **LM03 – UT03 – Tarea 04: Maquetación con Flexbox v2**
 
 El objetivo de esta tarea es aplicar las propiedades fundamentales de **Flexbox** para distribuir varios elementos de una página web sin modificar el HTML original y sin utilizar ninguna propiedad de `position`.
 Solo puedes trabajar en el archivo **CSS**.
@@ -91,7 +91,8 @@ La entrega debe consistir exactamente en **tres elementos**:
 | **0**            | La solución no funciona o no respeta la estructura HTML. No se ha aplicado Flexbox o la página no se visualiza.                                                                                                     |
 | **3**            | Se cumple solo una parte mínima. La cabecera o el menú se muestran, pero Flexbox está mal aplicado, o hay incumplimiento de varios requisitos.                                                                      |
 | **6**            | La estructura general funciona: la cabecera está construida, el menú aparece en columna, pero hay errores importantes (alineación incorrecta, orden no invertido, falta de centrado, colores erróneos).             |
-| **9**            | El trabajo está prácticamente completo: todos los requisitos están implementados salvo uno menor (p. ej. alineación ligeramente incorrecta o un detalle de estilo). No se han modificado el HTML ni usado position. |
-| **10**           | La tarea cumple **todos los requisitos R1–R9** con precisión, aplicando Flexbox correctamente, sin modificar el HTML y sin usar `position`. El resultado final coincide completamente con lo solicitado.            |
+| **9**            | El trabajo está prácticamente completo: todos los requisitos están implementados (puede haber ligeras variaciones de color)  |
+| **10**           | El alumno realizar una aportación extra y solicita su nota másxima          |
 
+(He actualizado la rúbrica para que el 10 se obtenga como de costumbre)
 
