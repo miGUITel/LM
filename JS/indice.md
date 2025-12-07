@@ -1,4 +1,19 @@
 # JS
+
+## **0. LO QUE HAY QUE SABER**
+* [1.3 Características](1INTRO/1.3caract.md)
+* [2.1 Variables](2CONCEPTOS/2.1variables.md)
+* [2.2 Sintaxis](2CONCEPTOS/2.2sintaxis.md)
+* [2.5 Tipos de datos](2CONCEPTOS/2.5tipos.md)
+* [2.6 Dinámico](2CONCEPTOS/2.6dinamico.md)
+* [Introducción a las funciones](3FUNCION/1_intro.md)
+* [Funciones con parámetros y argumentos](3FUNCION/2_paramYargu.md)
+* [Funciones anónimas](3FUNCION/4_funcAnonimas.md)
+* [Condicional](4AMByCON/1_condicional.md)
+* [Operadores](4AMByCON/2_operadores.md)
+
+
+
 **Índice de contenidos**
 
 ## **1. INTRO**
@@ -31,12 +46,14 @@
 
 ---
 
-## **4. ÁMBITO Y CONTEXTO**
+## **4. ÁMBITO, CONDICIONALES. BUCLES**
 
-* [Introducción](4AMByCON/1_intro.md)
+* [Condicional](4AMByCON/1_condicional.md)
 * [Operadores](4AMByCON/2_operadores.md)
 * [Ámbito](4AMByCON/3_ambito.md)
 * [Comentarios](4AMByCON/4_coment.md)
+* [For](4AMByCON/for.md)
+* 
 
 ---
 

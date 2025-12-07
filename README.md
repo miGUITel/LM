@@ -39,7 +39,9 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT JS
 
-[Apuntes](./JS/indice.md)
+[Apuntes completos](./JS/completo.md)
+
+[Lo que hay que saber](./JS/indice.md)
 
 
 # UT4
