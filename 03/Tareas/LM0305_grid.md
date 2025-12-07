@@ -37,7 +37,7 @@ La zona de artículos debe situarse a la derecha, con fondo verde o similar, y m
 Debe existir espacio razonable entre columnas y entre bloques de contenido (márgenes, rellenos, separación entre elementos).
 
 **R6. Restricciones de maquetación**
-No está permitido usar `position` (en ninguna variante), `float` ni tablas HTML para maquetar. La solución debe basarse en CSS Grid.
+No está permitido usar `position` (en ninguna variante), `float`, `flex` ni tablas HTML para maquetar. La solución debe basarse en CSS Grid de la forma en que lo hemos explicado en clase.
 
 **R7. Formato de entrega**
 La entrega debe incluir exactamente:
