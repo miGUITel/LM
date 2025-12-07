@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 ## 🔹 Funciones autoinvocadas (IIFE)
 
 Una **función autoinvocada** o **IIFE** (*Immediately Invoked Function Expression*) es una función que **se declara y ejecuta inmediatamente**.

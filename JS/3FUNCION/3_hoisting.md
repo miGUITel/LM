@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 En JavaScript, el **hoisting** significa que durante la fase de compilación, el intérprete **reserva en memoria el espacio necesario** para las funciones y variables **antes de ejecutar el código**.
 
 En el caso de las **funciones declaradas**, su definición completa se guarda en memoria desde el inicio, por lo que pueden utilizarse incluso antes de aparecer en el código fuente.

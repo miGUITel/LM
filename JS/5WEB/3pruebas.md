@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 - [Guía: Probando la Web API en la consola del navegador](#guía-probando-la-web-api-en-la-consola-del-navegador)
   - [0. Preparación: abrir la consola](#0-preparación-abrir-la-consola)
   - [1. Interfaz **Window**](#1-interfaz-window)

@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 - [¿Qué es una función?](#qué-es-una-función)
 - [Declarar e invocar](#declarar-e-invocar)
   - [Ejemplo 1](#ejemplo-1)

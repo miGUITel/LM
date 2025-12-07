@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 ### **Operadores de comparación en JavaScript**
 
 Los operadores de comparación permiten **evaluar relaciones entre valores** y devuelven siempre un resultado booleano: `true` o `false`. Son la base de cualquier decisión en un programa.

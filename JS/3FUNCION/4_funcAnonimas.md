@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 **Las funciones anónimas cambian el comportamiento de una función principal**
 
 ---

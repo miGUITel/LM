@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 ## Parámetros y argumentos en funciones
 
 Un parámetro es un valor externo que se recibe como argumento al invocar una función.

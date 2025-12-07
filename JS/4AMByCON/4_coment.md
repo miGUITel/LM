@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 - [**1. Comentarios de línea**](#1-comentarios-de-línea)
 - [**2. Comentarios de bloque**](#2-comentarios-de-bloque)
 - [- Cuándo usarlos](#--cuándo-usarlos)

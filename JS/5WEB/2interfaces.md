@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 - [**1. Window**](#1-window)
 - [**2. Document**](#2-document)
 - [**3. Event**](#3-event)

@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 - [**1. JavaScript necesita una página HTML para funcionar en la web**](#1-javascript-necesita-una-página-html-para-funcionar-en-la-web)
 - [**2. Qué es una Web API**](#2-qué-es-una-web-api)
 - [**3. Qué es el DOM**](#3-qué-es-el-dom)

@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 # Guía de práctica: Eventos básicos del DOM en la consola del navegador
 
 ## 0. Preparación

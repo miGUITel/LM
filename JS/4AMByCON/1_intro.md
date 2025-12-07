@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 Los condicionales en JavaScript permiten que un programa tome decisiones en función de si una expresión es verdadera o falsa. Son una herramienta esencial para que tus alumnos entiendan cómo cambia el flujo de ejecución según las circunstancias, igual que ellos toman decisiones en su día a día (si llueve, cojo paraguas; si además hace frío, llevo abrigo…).
 
 ---

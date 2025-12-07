@@ -1,3 +1,5 @@
+[JS](../indice.md)
+
 En JavaScript, el **ámbito** (scope) determina **dónde está disponible una variable** dentro del programa. Comprenderlo es clave para evitar errores y escribir código mantenible, igual que en un proyecto de clase cada alumno tiene un “espacio de responsabilidad” bien definido.
 
 Aquí tienes los cuatro ámbitos principales explicados de forma clara y con ejemplos.
