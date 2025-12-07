@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Laboratorio de eventos</title>
+  <script src="4eventos.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    #caja {
+      width: 200px;
+      height: 100px;
+      border: 2px solid black;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .espacio-scroll {
+      height: 1500px; /* Para probar scroll */
+      background: linear-gradient(white, lightgray);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Laboratorio de eventos</h1>
+
+  <button id="btnClick">Botón de clic</button>
+  <button id="btnContext">Botón menú contextual</button>
+
+  <div id="caja">Pasa el ratón por aquí</div>
+
+  <form id="formulario">
+    <h2>Formulario de prueba</h2>
+    <label>
+      Nombre:
+      <input type="text" id="inputNombre" placeholder="Escribe tu nombre">
+    </label>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div class="espacio-scroll">
+    Haz scroll hacia abajo y hacia arriba para probar el evento scroll.
+  </div>
+
+</body>
+</html>
