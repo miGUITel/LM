@@ -5,16 +5,19 @@
 * [2.1 Variables](2CONCEPTOS/2.1variables.md)
 * [2.2 Sintaxis](2CONCEPTOS/2.2sintaxis.md)
 * [2.5 Tipos de datos](2CONCEPTOS/2.5tipos.md)
-* [2.6 Dinámico](2CONCEPTOS/2.6dinamico.md)
+* [2.6 Tipado Dinámico](2CONCEPTOS/2.6dinamico.md)
+* [Condicionales](4AMByCON/1_condicional.md)
+* [Operadores](4AMByCON/2_operadores.md)
+* [Bucles](4AMByCON/for.md)
 * [Introducción a las funciones](3FUNCION/1_intro.md)
 * [Funciones con parámetros y argumentos](3FUNCION/2_paramYargu.md)
 * [Funciones anónimas](3FUNCION/4_funcAnonimas.md)
-* [Condicional](4AMByCON/1_condicional.md)
-* [Operadores](4AMByCON/2_operadores.md)
 
 
 
-**Índice de contenidos**
+**Índice completo de contenidos**
+
+* [Cómo escribir JS: Hola Mundo Web](./1INTRO/hola.md)
 
 ## **1. INTRO**
 
@@ -53,7 +56,6 @@
 * [Ámbito](4AMByCON/3_ambito.md)
 * [Comentarios](4AMByCON/4_coment.md)
 * [For](4AMByCON/for.md)
-* 
 
 ---
 
