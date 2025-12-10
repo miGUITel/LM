@@ -6,6 +6,7 @@
 * [2.2 Sintaxis](2CONCEPTOS/2.2sintaxis.md)
 * [2.5 Tipos de datos](2CONCEPTOS/2.5tipos.md)
 * [2.6 Tipado Dinámico](2CONCEPTOS/2.6dinamico.md)
+* [E/S](./2CONCEPTOS/2.8E-S.md)
 * [Condicionales](4AMByCON/1_condicional.md)
 * [Operadores](4AMByCON/2_operadores.md)
 * [Bucles](4AMByCON/for.md)
