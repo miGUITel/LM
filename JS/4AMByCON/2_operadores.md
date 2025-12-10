@@ -23,11 +23,7 @@ Los operadores de comparación permiten **evaluar relaciones entre valores** y d
 
 Los operadores lógicos permiten **combinar condiciones**. Son esenciales para expresar decisiones complejas dentro de un `if`, igual que en la vida cotidiana combinamos factores antes de actuar.
 
-| Operador | Significado  | Ejemplo                        | Explicación                                            |            |                                                      |
-| -------- | ------------ | ------------------------------ | ------------------------------------------------------ | ---------- | ---------------------------------------------------- |
-| `&&`     | **AND** (y)  | `(edad >= 18 && tieneEntrada)` | Solo es `true` si **ambas** condiciones son verdaderas |            |                                                      |
-| `\|\|`   | **OR** (o)   | `(llueve                       |                                                        | haceFrío)` | Es `true` si **al menos una** condición es verdadera |
-| `!`      | **NOT** (no) | `!tienePermiso`                | Invierte el valor: `true` pasa a `false` y viceversa   |            |                                                      |
+![alt text](image.png)        
 
 ---
 

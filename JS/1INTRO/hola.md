@@ -3,7 +3,9 @@
 # #️⃣ **Tu primer programa en JavaScript: “Hola Mundo”**
 
 Antes de aprender sintaxis o conceptos más avanzados, vamos a comprobar que tenemos todo lo necesario para **escribir y ejecutar JavaScript en un entorno real**, igual que trabaja cualquier desarrollador web:
+
 ➡️ **Visual Studio Code para escribir código**
+
 ➡️ **Firefox para ejecutarlo y analizarlo**
 
 ---
