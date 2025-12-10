@@ -14,7 +14,7 @@
 * [Funciones con parámetros y argumentos](3FUNCION/2_paramYargu.md)
 * [Funciones anónimas](3FUNCION/4_funcAnonimas.md)
 
-
+* [Ejercicios](./ejerciciosPracticar.md)
 
 **Índice completo de contenidos**
 
