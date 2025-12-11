@@ -11,31 +11,37 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT2
 
-[Atributos globales](./UT2/LM02p17_atributos_globales.md)
+[Atributos globales](./02/LM02p17_atributos_globales.md)
 
-[Etiquetas semánticas](./UT2/UT2_etiquetas_semanticas.md)
+[Etiquetas semánticas](./02/UT2_etiquetas_semanticas.md)
 
-[Elementos autocerrados en HTML5 vs XML](./UT2/LM02_15aclaraAutocerradas.md)
+[Elementos autocerrados en HTML5 vs XML](./02/LM02_15aclaraAutocerradas.md)
 
-[Ejemplo del uso de las etiquetas semánticas](./UT2/UT2_index_16semánicas.html)
+[Ejemplo del uso de las etiquetas semánticas](./02/UT2_index_16semánicas.html)
 
 [Ejemplos html](https://miguitel.github.io/AWEB_disenioWeb/menu.html)
 
-[Etiqueta meta](./UT2/LM02p23_meta.md)
+[Etiqueta meta](./02/LM02p23_meta.md)
 
-[Elementos html en línea](./UT2/LM02p29_elementos_linea.md)
+[Elementos html en línea](./02/LM02p29_elementos_linea.md)
 
-[Elementos html en bloque](./UT2/LM02p29_elementos_bloque.md)
+[Elementos html en bloque](./02/LM02p29_elementos_bloque.md)
 
-[Diferencia entre `em` y `strong`](./UT2/LM02p29_em_strong_dif.md)
+[Diferencia entre `em` y `strong`](./02/LM02p29_em_strong_dif.md)
 
-[Atributos id y name, particularidades](./UT2/LM02p45_id-name.md)
+[Atributos id y name, particularidades](./02/LM02p45_id-name.md)
 
 # UT3
 
 [Apuntes](./03/LM03.md)
 
 [Asociar CSS a XML](./03/asociar_CCS-XML/Asociar_CSSaXML_directamente.md)
+
+# UT JS
+
+[Apuntes](./JS/indice.md)
+
+
 
 # UT4
 
