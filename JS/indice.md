@@ -1,4 +1,8 @@
-# JS
+(1ª parte)
+# JS Como lenguaje de programación
+
+(2ª parte)
+[JS y DOM](./dom.md)
 
 ## **0. LO QUE HAY QUE SABER**
 * [1.3 Características](1INTRO/1.3caract.md)

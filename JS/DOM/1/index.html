@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo DOM - Sesión 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1 id="titulo">Demo: JavaScript modifica el DOM</h1>
+
+    <p class="subtitulo">
+      Esta página es estática… hasta que JavaScript empieza a cambiar el DOM.
+    </p>
+
+    <section class="panel">
+      <h2>Zona de cambios</h2>
+      <p id="estado" class="estado">Estado: listo</p>
+
+      <div class="botonera">
+        <button id="btnCambiarTexto">Cambiar texto</button>
+        <button id="btnCrear">Crear elemento</button>
+        <button id="btnEliminarUltimo">Eliminar último</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Lista dinámica</h2>
+      <ul id="lista" class="lista">
+        <li>Elemento inicial (HTML)</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
