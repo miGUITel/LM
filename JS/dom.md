@@ -5,6 +5,7 @@
 - [**Sesión 5 — Introducción a los eventos**](#sesión-5--introducción-a-los-eventos)
 - [**Mapa final de relación con los criterios**](#mapa-final-de-relación-con-los-criterios)
 
+(1ª parte [JS como lenguaje de programación](./indice.md)) (2ª parte) 
 
 ## **[Sesión 1](./DOM/1/s1.md) — JavaScript en la web y el DOM**
 
