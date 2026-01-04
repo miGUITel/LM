@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 30px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.caja {
+  margin-top: 10px;
+  padding: 20px;
+  border: 2px dashed #999;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.resaltado {
+  background: #fff3cd;
+  border-color: #ffecb5;
+}

@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  padding: 30px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.panel {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  margin-bottom: 16px;
+}
+
+.botonera button {
+  padding: 10px 14px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+}
+
+.botonera button:hover {
+  background: #f0f0f0;
+}
+
+.lista li {
+  padding: 8px 0;
+  border-bottom: 1px dashed #ccc;
+}

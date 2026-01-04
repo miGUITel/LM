@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventos en JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Eventos y DOM</h1>
+
+    <section class="panel">
+      <h2>Evento click</h2>
+      <button id="btnClick">Haz click</button>
+      <p id="mensajeClick">Esperando acción…</p>
+    </section>
+
+    <section class="panel">
+      <h2>Eventos mouseover / mouseout</h2>
+      <div id="caja" class="caja">
+        Pasa el ratón por aquí
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Evento submit</h2>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Escribe tu nombre" />
+        <button type="submit">Enviar</button>
+      </form>
+      <p id="mensajeForm"></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
