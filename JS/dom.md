@@ -7,6 +7,8 @@
 
 (1ª parte [JS como lenguaje de programación](./indice.md)) (2ª parte) 
 
+![alt text](<Captura de pantalla 2026-01-07 200756.png>)
+
 ## **[Sesión 1](./DOM/1/s1.md) — JavaScript en la web y el DOM**
 
 **Objetivo conceptual:** entender qué es lo que realmente se modifica cuando usamos JavaScript.
@@ -132,6 +134,8 @@ Contenidos
   * Cambiar estilos.
 
 > En la vida real: botones que muestran información, cambian colores, añaden o quitan contenido.
+
+![alt text](<Captura de pantalla 2026-01-07 200923.png>)
 
 ---
 
