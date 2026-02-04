@@ -71,6 +71,7 @@ Los atributos en XML proporcionan información adicional sobre un elemento y deb
 <autor nombre="Juan" nombre="Pérez">...</autor> <!-- Atributos duplicados -->
 <autor nombre-autor="Juan Pérez">...</autor> <!-- Nombre de atributo con carácter especial no permitido -->
 ```
+> “Si el dato puede crecer o repetirse, suele ser mejor un elemento.”
 
 ## Relaciones entre Elementos: Hijo, Padre y Hermano
 

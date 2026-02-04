@@ -107,4 +107,13 @@ En este ejemplo, se utilizan las tres tipos de entidades:
 
 Las entidades en las DTD proporcionan una forma poderosa de simplificar la gestión y reutilización de información dentro de documentos XML. Al definir texto o referencias externas como entidades, se puede mantener la consistencia y reducir la redundancia, lo cual resulta especialmente útil para proyectos que requieren el manejo de grandes volúmenes de datos o documentos interrelacionados.
 
+> **nota 🔎 Importante:**
+>
+>Las entidades externas insertan el contenido del archivo como texto,  
+>no como una estructura XML independiente.
+>
+>El contenido importado debe ser compatible con el lugar donde se inserta  
+>para que el documento siga siendo válido.
+
+
 [índice](./LM0400_indice.md)

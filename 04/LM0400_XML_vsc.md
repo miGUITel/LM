@@ -92,4 +92,39 @@ Para crear y validar un archivo XML simple con una DTD:
 
 Este archivo se validará automáticamente en VSC con la configuración anterior, y cualquier error en la estructura se mostrará en el editor.
 
+---
+
+### 🔍 Sintaxis XML vs Validación con DTD (muy importante)
+
+Visual Studio Code **no valida documentos XML por sí solo**.
+El editor únicamente puede comprobar errores de validación **si el propio XML indica cómo debe validarse**.
+
+Conviene distinguir claramente dos tipos de errores:
+
+#### 1️⃣ Errores de sintaxis XML (documento *bien formado*)
+
+Son errores propios del lenguaje XML y **no dependen de ninguna DTD**:
+
+* Etiquetas mal cerradas.
+* Elementos mal anidados.
+* Uso incorrecto de caracteres especiales (`<`, `&`, etc.).
+* Más de un elemento raíz.
+
+Si existe alguno de estos errores, el documento **no es XML válido** y no puede procesarse ni validarse.
+
+#### 2️⃣ Errores de validación (documento *válido respecto a una DTD*)
+
+Aparecen **solo cuando el XML referencia correctamente una DTD** mediante `DOCTYPE`.
+
+En este caso, el documento:
+
+* Puede estar bien formado,
+* pero **no cumplir las reglas estructurales definidas en la DTD**
+  (orden de elementos, elementos obligatorios, repeticiones permitidas, etc.).
+
+⚠️ **Muy importante**:
+Si el `DOCTYPE` no existe, es incorrecto o la ruta a la DTD no es válida,
+Visual Studio Code **no puede validar el documento**, aunque la DTD exista.
+
+
 [índice](./LM0400_indice.md)

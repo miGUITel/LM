@@ -4,6 +4,15 @@
 
 Cuando trabajamos con XML, es fundamental comprender los conceptos de **documento bien formado** y **documento válido**. Ambos términos describen distintos niveles de calidad y conformidad de un documento XML, y son esenciales para asegurar la interoperabilidad y la correcta interpretación de los datos contenidos en un archivo XML.
 
+> ⚠️ Importante para entender la validación:
+> 
+>Todo documento XML válido es necesariamente un documento bien formado,  
+>pero un documento bien formado **no tiene por qué ser válido**.
+>
+>Primero el parser comprueba la sintaxis XML (bien formado).  
+>Solo si esta comprobación se supera, se aplica la validación mediante DTD o XSD.
+
+
 ## Documento Bien Formado
 
 Un documento XML **bien formado** es aquel que sigue las reglas básicas de sintaxis del lenguaje XML. Esto significa que cumple con las siguientes características:

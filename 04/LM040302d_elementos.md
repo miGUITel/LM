@@ -38,10 +38,19 @@ Cuando se define un elemento en una DTD, existen varios tipos de contenido que s
 
 5. **Cualquier Contenido (ANY)**: Indica que el elemento puede contener cualquier tipo de contenido (texto, elementos, etc.).
 > **ANY** se debe usar con cuidado ya que reduce la validación.
+
    ```xml
    <!ELEMENT contenedor ANY>
    ```
    Aquí, el elemento `<contenedor>` puede contener cualquier contenido, sin restricciones específicas.
+
+   ⚠️ Advertencia importante:
+
+   El uso de `ANY` prácticamente anula la validación estructural del elemento.  
+   Debe considerarse un recurso excepcional y **no una buena práctica general**.
+
+   Si se utiliza `ANY`, el objetivo de la DTD (controlar la estructura) se pierde en gran medida.
+
 
 ## Cardinalidades en la Definición de Elementos
 

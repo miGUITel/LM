@@ -16,7 +16,7 @@ Características básicas de XML, YAML y JSON, los cuales son ampliamente utiliz
 - **Estructura:** Basado en indentación y estructura jerárquica sin necesidad de etiquetas o llaves, lo que lo hace limpio y fácil de leer.
 - **Simplicidad:** Diseñado para ser legible por humanos, con una sintaxis que minimiza caracteres adicionales.
 - **Uso común:** Popular para archivos de configuración y gestión de datos en sistemas (e.g., configuración de Docker, Kubernetes).
-- **Formato:** No soporta directamente estructuras muy complejas sin perder legibilidad, lo cual lo limita en algunos casos.
+- **Formato:** Cuando las estructuras crecen mucho, la legibilidad puede empeorar, lo cual lo limita en algunos casos.
 
 ### 3. JSON (JavaScript Object Notation)
 - **Estructura:** Usa llaves `{}` para objetos y corchetes `[]` para listas, lo que permite representar datos de forma estructurada y jerárquica.
@@ -24,7 +24,8 @@ Características básicas de XML, YAML y JSON, los cuales son ampliamente utiliz
 - **Uso común:** Ideal para transferencia de datos entre cliente y servidor, y se utiliza ampliamente en APIs RESTful.
 - **Formato:** Más compacto que XML y YAML, manteniendo legibilidad para humanos y siendo eficiente para máquinas.
 
-
+> “XML destaca frente a YAML y JSON cuando necesitamos validar formalmente la estructura de los datos.”
+> 
 ### EJEMPLOS
 
 ### YAML

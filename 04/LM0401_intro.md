@@ -51,7 +51,9 @@ Este ejemplo de XML ilustra cómo se puede definir un documento simple usando ú
 </cursosInformaticos>
 ```
 > Puedes pegarlo en un archivo .xml y visualizarlo en el navegador web
-> 
+> “El navegador no interpreta el XML como una página web, solo lo muestra como texto estructurado.”
+
+
 ## Explicación del Ejemplo
 
 - **Elemento Raíz**: `<cursosInformaticos>` es el elemento raíz que contiene todos los cursos.
@@ -63,7 +65,7 @@ Este ejemplo de XML ilustra cómo se puede definir un documento simple usando ú
 
 Este ejemplo es un buen punto de partida para entender cómo se puede estructurar un documento XML que contiene información jerárquica sin utilizar atributos. Cada curso está claramente definido, y la estructura es fácil de leer y extender. Esto hace que sea adecuado para representar datos relacionados con estudios en informática de manera organizada y lógica.
 
-
+> “En este punto solo nos aseguramos de que el documento esté bien formado; más adelante veremos cómo exigir una estructura concreta usando DTD.”
 
 [Volver al índice principal](./LM0400_indice.md)
 

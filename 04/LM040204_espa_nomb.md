@@ -74,6 +74,8 @@ Los espacios de nombres son fundamentales para trabajar con XML en aplicaciones 
 
 La validación de documentos XML que contienen espacios de nombres se realiza generalmente utilizando esquemas XSD (XML Schema Definition). Los esquemas definen la estructura que debe seguir un documento XML, incluyendo los elementos y atributos permitidos, así como sus tipos de datos. Los espacios de nombres ayudan a garantizar que un documento se adhiera a las reglas del esquema correcto.
 
+> “Por este motivo, cuando usamos namespaces, DTD deja de ser una opción y necesitamos XSD.”
+
 ---
 
 > *DTD no tiene la capacidad de declarar espacios de nombres, por lo que no se puede utilizar para validar documentos XML que utilicen espacios de nombres*
