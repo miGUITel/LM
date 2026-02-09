@@ -154,10 +154,10 @@ Define una DTD que limite los valores posibles del atributo.
 
 ```xml
 <alumnos>
-  <alumno id="a1">
+  <alumno dni="a1">
     <nombre>Ana</nombre>
   </alumno>
-  <alumno id="a2">
+  <alumno dni="a2">
     <nombre>Luis</nombre>
   </alumno>
 </alumnos>
@@ -171,7 +171,9 @@ Crea una DTD que garantice la unicidad del identificador.
 
 ## 🟠 EJERCICIO 10 — Estructura completa
 
-### XML
+### XML proporcionado
+
+Se te entrega el siguiente documento XML:
 
 ```xml
 <biblioteca>
@@ -187,11 +189,15 @@ Crea una DTD que garantice la unicidad del identificador.
     <autor>Carlos Ruiz</autor>
     <anio>2023</anio>
   </libro>
+
+  <prestamos>
+    <prestamo libroRef="l2"/>
+    <prestamo libroRef="l1"/>
+  </prestamos>
 </biblioteca>
 ```
 
 ### Tarea
 
-Define una DTD que valide correctamente este documento.
-
+Define una **DTD** que permita validar correctamente este documento XML. Observa que los préstamos hacen referencia a los libros.
 
