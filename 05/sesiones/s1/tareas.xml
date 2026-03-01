@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="tareas.xsl"?>
+<tareas curso="DAM1" grupo="A">
+    <tarea id="T1" prioridad="1">
+        <titulo>Instalar BaseX</titulo>
+        <fecha>2026-03-02</fecha>
+    </tarea>
+
+    <tarea id="T2" prioridad="3">
+        <titulo>Repasar consultas XPath</titulo>
+        <fecha>2026-03-03</fecha>
+    </tarea>
+
+    <tarea id="T3" prioridad="2">
+        <titulo>Primera transformación XSLT</titulo>
+        <fecha>2026-03-04</fecha>
+    </tarea>
+
+</tareas>
