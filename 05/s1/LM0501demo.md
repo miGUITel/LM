@@ -1,6 +1,21 @@
-# sesión 1: demos xpath y xslt y bases conceptuales
+# Demo xpath y xslt y bases conceptuales
 
-Material mínimo (solo 2 archivos)
+![cabecera](../s5/image-1.png)
+
+- [Demo xpath y xslt y bases conceptuales](#demo-xpath-y-xslt-y-bases-conceptuales)
+  - [`tareas.xml`](#tareasxml)
+  - [`tareas.xsl` (lista ordenada, 2 niveles)](#tareasxsl-lista-ordenada-2-niveles)
+- [Combinación de las tecnologías xpath y xslt](#combinación-de-las-tecnologías-xpath-y-xslt)
+    - [demo 1) 2)](#demo-1-2)
+    - [3) Mostrar dónde está el “selector” (XPath) (5 min)](#3-mostrar-dónde-está-el-selector-xpath-5-min)
+    - [4) Cambio 1: DEMO XPath (8–10 min)](#4-cambio-1-demo-xpath-810-min)
+    - [5) Cambio 2: DEMO XSLT (sort) (5 min)](#5-cambio-2-demo-xslt-sort-5-min)
+    - [6) Explicar plantillas](#6-explicar-plantillas)
+  - [7) ¿Esto dónde se utiliza?](#7-esto-dónde-se-utiliza)
+- [Por qué este planteamiento es muy robusto](#por-qué-este-planteamiento-es-muy-robusto)
+
+
+> Mostraremos cómo se realizan las transformaciones xslt y justificaremos su importancia histórica y uso actual
 
 ## `tareas.xml`
 
@@ -69,25 +84,22 @@ Material mínimo (solo 2 archivos)
 
 ---
 
-# Guion de demostración (55 min) con tus dos cambios
+# Combinación de las tecnologías xpath y xslt
+Guion de demostración (55 min) con tus dos cambios
 
-## 1) Arranque (5–8 min)
+### demo 1) 2)
+1) Arranque (5–8 min)
 
 * Abres la carpeta en VS Code.
 * Arrancas Live Server sobre `tareas.xml`.
 * Mensaje: “XML guarda datos; XSLT decide cómo se ven”.
 
-## 2) Leer el resultado (2 min)
+2) Leer el resultado (2 min)
 
 * Se ve una lista ordenada con tareas y debajo la fecha.
 * Señalas: “Esto lo genera la hoja XSL”.
 
-## 2 BIS explicar plantillas
-
-* match /
-* 
-
-## 3) Mostrar dónde está el “selector” (XPath) (5 min)
+### 3) Mostrar dónde está el “selector” (XPath) (5 min)
 
 * En el XSL, enseñas **solo**:
 
@@ -99,7 +111,7 @@ Frase guía:
 
 > “Lo importante hoy no es memorizar etiquetas, sino ver que aquí hay expresiones que *apuntan* a nodos del XML.”
 
-## 4) Cambio 1: DEMO XPath (8–10 min)
+### 4) Cambio 1: DEMO XPath (8–10 min)
 
 Solo cambias el `select` de la línea de la fecha:
 
@@ -125,7 +137,8 @@ Mensaje:
 
 *(Si quieres remarcar atributos: “@prioridad es un atributo, por eso lleva @”.)*
 
-## 5) Cambio 2: DEMO XSLT (sort) (5 min)
+
+### 5) Cambio 2: DEMO XSLT (sort) (5 min)
 
 Cambias:
 
@@ -145,7 +158,21 @@ Mensaje:
 
 > “Ahora no solo saco datos: también controlo el orden de salida.”
 
-## 6) Cierre conceptual (10–12 min)
+### 6) Explicar plantillas
+
+* `<xsl:template match="/">`
+  Indica la plantilla que se aplica al nodo raíz del documento.
+  El símbolo `/` representa el nodo raíz.
+
+* `<xsl:apply-templates select="/tareas/tarea">`
+  Indica al procesador que busque todos los nodos `/tareas/tarea`
+  y aplique las plantillas que coincidan con ellos.
+
+* `<xsl:template match="/tareas/tarea">`
+  Define la regla que se aplicará a cada nodo `tarea` seleccionado.
+
+## 7) ¿Esto dónde se utiliza?
+Cierre conceptual (10–12 min)
 
 En 3 ideas (CE a,b,c comprimidos):
 
@@ -153,7 +180,9 @@ En 3 ideas (CE a,b,c comprimidos):
 * b) “Aplicaciones: web, informes, integración.”
 * c) “Tecnologías: XML + XPath (selección) + XSLT (transformación) + procesador.”
 
-## 7) Puente a la sesión 2 (últimos 2–3 min)
+![alt text](<ChatGPT Image 1 mar 2026, 19_09_00.png>)
+
+8) Puente a la sesión 2 (últimos 2–3 min)
 
 > “Mañana empezamos con XPath en serio, porque todo XSLT se apoya en saber seleccionar bien.”
 

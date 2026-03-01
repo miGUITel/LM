@@ -1,3 +1,5 @@
+![cabecera](./s5/image-1.png)
+
 # 📘 PLANIFICACIÓN UT XPATH + XSLT (16 HORAS)
 
 Sesiones de 55 minutos
@@ -6,6 +8,8 @@ Sesiones de 55 minutos
 ---
 
 # 🔹 SESIÓN 1
+
+[Guia web](./s1/LM0501demo.md)
 
 ## Visión global + marco conceptual (CE a, b, c)
 
@@ -29,7 +33,9 @@ Sesiones de 55 minutos
 
 # 🔹 SESIÓN 2
 
-## XPath básico
+[Guia web](./s23/LM05xpathEjemploClase.md)
+
+## XPath básico: uso de BaseX
 
 * Nodo raíz vs elemento raíz
 * Rutas absolutas y relativas
@@ -61,6 +67,8 @@ Sesiones de 55 minutos
 
 ## Evaluación práctica XPath
 
+***Tarea en aula virtual***
+
 Ejercicio evaluable tipo tarea:
 
 * Selección de nodos
@@ -74,6 +82,9 @@ Ejercicio evaluable tipo tarea:
 ---
 
 # 🔹 SESIONES 5–6
+
+[Guia web](./s5/LM05xsltGuion.md)
+
 
 ## XSLT básico
 

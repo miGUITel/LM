@@ -1,4 +1,4 @@
-![alt text](799c4105-d4bb-46fa-963e-22aa089fab21.webp)
+![cabecera](image-1.png)
 
 # **Introducción a XSLT**
 
