@@ -92,6 +92,13 @@
   //precio[@moneda='EUR']
   ```
 
+* **Selección que cumple más de un criterio: and**:
+
+  ```xpath
+ //coche[@modelo='Corolla' and @marca="Toyota"]
+ //coche[@modelo='Corolla'][marca="Toyota"]
+  ```
+
 ---
 
 ### **3. Funciones sobre cadenas (XPath 1.0)**
