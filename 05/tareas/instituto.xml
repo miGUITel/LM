@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<escuela>
+    <nombre>Instituto Central</nombre>
+    <direccion>Calle Principal 123, Ciudad</direccion>
+    <alumnos>
+        <alumno>
+            <nombre>Juan Pérez</nombre>
+            <edad>16</edad>
+            <curso>4º ESO</curso>
+            <notas>
+                <nota asignatura="Matemáticas">8.5</nota>
+                <nota asignatura="Historia">7.2</nota>
+                <nota asignatura="Física">9.0</nota>
+            </notas>
+        </alumno>
+        <alumno>
+            <nombre>María López</nombre>
+            <edad>17</edad>
+            <curso>1º Bachillerato</curso>
+            <notas>
+                <nota asignatura="Matemáticas">9.3</nota>
+                <nota asignatura="Historia">8.7</nota>
+                <nota asignatura="Física">8.8</nota>
+            </notas>
+        </alumno>
+        <alumno>
+            <nombre>Carlos Sánchez</nombre>
+            <edad>15</edad>
+            <curso>3º ESO</curso>
+            <notas>
+                <nota asignatura="Matemáticas">7.5</nota>
+                <nota asignatura="Historia">6.8</nota>
+                <nota asignatura="Física">8.2</nota>
+            </notas>
+        </alumno>
+        <alumno>
+            <nombre>Laura García</nombre>
+            <edad>16</edad>
+            <curso>4º ESO</curso>
+            <notas>
+                <nota asignatura="Matemáticas">8.7</nota>
+                <nota asignatura="Historia">9.0</nota>
+                <nota asignatura="Física">7.8</nota>
+            </notas>
+        </alumno>
+        <alumno>
+            <nombre>Pedro López</nombre>
+            <edad>14</edad>
+            <curso>2º ESO</curso>
+            <notas>
+                <nota asignatura="Matemáticas">6.5</nota>
+                <nota asignatura="Historia">7.0</nota>
+                <nota asignatura="Física">6.8</nota>
+            </notas>
+        </alumno>
+        <alumno>
+            <nombre>Sofía Rodríguez</nombre>
+            <edad>18</edad>
+            <curso>2º Bachillerato</curso>
+            <notas>
+                <nota asignatura="Matemáticas">9.8</nota>
+                <nota asignatura="Historia">9.5</nota>
+                <nota asignatura="Física">9.0</nota>
+            </notas>
+        </alumno>
+    </alumnos>
+</escuela>
