@@ -95,8 +95,9 @@ Si solo queremos unir los **nombres de los productos de dos categorías**, podem
 ---
 
 ## **📌 Diferencia entre `union`, `except` e `intersect`**
+
 | Operador | Descripción | Ejemplo |
-|----------|------------|---------|
+|----------|-------------|---------|
 | **`union`** | Combina dos conjuntos y **elimina duplicados** | `(//producto[categoria="Electronica"]) union (//producto[categoria="Hogar"])` |
 | **`except`** | Devuelve los elementos que están en el primer conjunto **pero no en el segundo** | `(//producto) except (//producto[categoria="Hogar"])` |
 | **`intersect`** | Devuelve los elementos que están en **ambos conjuntos** | `(//producto) intersect (//producto[precio > 50])` |
