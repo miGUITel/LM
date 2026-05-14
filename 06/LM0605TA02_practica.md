@@ -103,6 +103,11 @@
 ---
 
 **Instrucciones:**  
-- Usa **BaseX** para ejecutar las consultas.  
-- Guarda cada consulta en un archivo `.xq` para organizar tu trabajo.  
-- Si tienes dudas, prueba la consulta en partes más pequeñas antes de ejecutarla completa.  
+- Usa **BaseX** para ejecutar las consultas.
+- Haz una captura de cada consulta y su resultado.
+- Puedes incrustarla en este mismos `.md`.  
+- Guarda cada consulta en un archivo `.xq` para facilitar tu trabajo.  
+- Si tienes dudas, prueba la consulta en partes más pequeñas antes de ejecutarla completa.
+
+**Entrega:**
+- Entrega una memoria en pdf con los recortes
