@@ -11,25 +11,9 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT2
 
-[Atributos globales](./02/LM02p17_atributos_globales.md)
+[Guía de HTML: proyecto, talleres, apuntes y ejemplos](./02/README.md)
 
-[Etiquetas semánticas](./02/UT2_etiquetas_semanticas.md)
-
-[Elementos autocerrados en HTML5 vs XML](./02/LM02_15aclaraAutocerradas.md)
-
-[Ejemplo del uso de las etiquetas semánticas](./02/UT2_index_16semánicas.html)
-
-[Ejemplos html](https://miguitel.github.io/AWEB_disenioWeb/menu.html)
-
-[Etiqueta meta](./02/LM02p23_meta.md)
-
-[Elementos html en línea](./02/LM02p29_elementos_linea.md)
-
-[Elementos html en bloque](./02/LM02p29_elementos_bloque.md)
-
-[Diferencia entre `em` y `strong`](./02/LM02p29_em_strong_dif.md)
-
-[Atributos id y name, particularidades](./02/LM02p45_id-name.md)
+La presentación del profesor es la guía principal. El índice anterior enlaza el arranque con VS Code y Git, los seis talleres y sus materiales de consulta.
 
 # UT3
 

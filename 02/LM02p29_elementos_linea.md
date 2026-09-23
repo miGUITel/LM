@@ -1,3 +1,5 @@
+> Esta clasificación describe la presentación habitual sin CSS, no las categorías normativas de contenido de HTML. CSS puede cambiar la presentación. Consultad estos ejemplos como ampliación; no hay que incorporar todas las etiquetas al proyecto.
+
 - [1. `<a>` (Enlace)](#1-a-enlace)
 - [2. `<abbr>` (Abreviación)](#2-abbr-abreviación)
 - [3. `<bdi>` (Aislamiento de Texto Bidireccional)](#3-bdi-aislamiento-de-texto-bidireccional)
@@ -13,7 +15,7 @@
 - [13. `<q>` (Cita en Línea)](#13-q-cita-en-línea)
 - [14. `<script>` (Script de JavaScript)](#14-script-script-de-javascript)
 - [15. `<span>` (Contenedor en Línea)](#15-span-contenedor-en-línea)
-- [16. `<strong>` (Fuerte Énfasis)](#16-strong-fuerte-énfasis)
+- [16. `<strong>` (Importancia)](#16-strong-importancia)
 - [17. `<var>` (Variable)](#17-var-variable)
 
 ---
@@ -196,7 +198,9 @@ Ella dijo: "La práctica hace al maestro."
 
 ---
 
-### 14. `<script>` (Script de JavaScript)
+### 14. `<script>` (Consulta adicional: JavaScript)
+
+`script` no genera una caja visible en línea. Su inclusión aquí no lo convierte en un elemento visual; no se utiliza en este miniproyecto.
 **Descripción**: El elemento `<script>` se utiliza para incrustar o referenciar scripts de JavaScript en la página.
 
 **Ejemplo en HTML**:
@@ -223,7 +227,7 @@ Este es un texto con color rojo.
 
 ---
 
-### 16. `<strong>` (Fuerte Énfasis)
+### 16. `<strong>` (Importancia)
 **Descripción**: El elemento `<strong>` se utiliza para marcar texto con una importancia fuerte, por defecto se muestra en negrita.
 
 **Ejemplo en HTML**:
@@ -248,4 +252,3 @@ Esto es **muy importante**.
 La variable *x* es igual a 5.
 
 ---
-

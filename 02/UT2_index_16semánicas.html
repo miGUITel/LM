@@ -1,73 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de Etiquetas Semánticas HTML5</title>
-    <link rel="stylesheet" href="UT2_styles16semanticas.css">
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ejemplo de estructura semántica</title></head>
 <body>
-
-    <header>
-        <h1>header</h1>
-        <p>Esta es la cabecera de la página. Aquí normalmente se coloca el logo y la navegación principal.</p>
-    </header>
-
-    <nav>
-        <h2>nav</h2>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <h2>main</h2>
-        <p>Contenido principal de la página.</p>
-
-        <article>
-            <h3>article</h3>
-            <p>Un artículo dentro del contenido principal.</p>
-
-            <section>
-                <h4>section</h4>
-                <p>Una sección dentro del artículo.</p>
-            </section>
-
-            <section>
-                <h4>section</h4>
-                <p>Otra sección dentro del artículo.</p>
-            </section>
-
-            <section>
-                <h4>section</h4>
-                <p>Otra sección dentro del artículo.</p>
-            </section>
-        </article>
-    </main>
-
-    <aside>
-        <h2>aside</h2>
-        <p>Contenido relacionado, como una barra lateral o anuncios.</p>
-    </aside>
-
-    <footer>
-        <h2>footer</h2>
-        <p>El pie de página, que contiene información de contacto o derechos de autor.</p>
-    </footer>
-
-    <figure>
-        <img src="https://via.placeholder.com/150" alt="Ejemplo de imagen">
-        <figcaption>figcaption</figcaption>
-        <p>Una imagen con una leyenda descriptiva.</p>
-    </figure>
-
-    <details>
-        <summary>summary</summary>
-        <p>Información adicional que puede mostrarse o esconderse.</p>
-    </details>
-
-    <fieldset>
-      
+<header id="inicio"><h1>Un pequeño boletín</h1><p>Ejemplo de etiquetas semánticas, sin CSS.</p></header>
+<nav aria-label="Navegación principal"><ul><li><a href="#noticia">Noticia</a></li><li><a href="#glosario">Glosario</a></li><li><a href="#contacto">Contacto</a></li></ul></nav>
+<main>
+ <article id="noticia"><h2>Aprender HTML</h2><p>Un artículo es una unidad de contenido que puede entenderse por sí misma.</p>
+  <section><h3>El contenido</h3><p>El significado guía la elección de las etiquetas.</p></section>
+  <section><h3>La comprobación</h3><p><strong>Revisa el código</strong> y prueba también el resultado.</p></section>
+ </article>
+ <section id="glosario"><h2>Glosario</h2><dl><dt>Elemento</dt><dd>Una parte del documento HTML.</dd><dt>Atributo</dt><dd>Información que se escribe en la etiqueta de apertura.</dd></dl></section>
+ <figure><img src="TAREAS/recursos/favicon.svg" alt="Iniciales FA sobre fondo azul" width="64" height="64"><figcaption>Un recurso local con su pie.</figcaption></figure>
+ <details><summary>Una comprobación adicional</summary><p>Los enlaces del menú llevan a identificadores existentes.</p></details>
+</main>
+<aside><h2>Para ampliar</h2><p>Una etiqueta semántica no coloca por sí sola el contenido a un lado de la pantalla.</p></aside>
+<footer id="contacto"><p>Ejemplo de clase. <a href="#inicio">Volver al inicio</a></p></footer>
+</body>
+</html>

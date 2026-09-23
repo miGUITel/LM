@@ -1,3 +1,5 @@
+> Esta clasificación describe la presentación habitual sin CSS, no las categorías normativas de contenido de HTML. CSS puede cambiar la presentación. Consultad estos ejemplos como ampliación; no hay que incorporar todas las etiquetas al proyecto.
+
 # Elementos html en bloque
 
 ### 1. `<address>` (Dirección de Contacto)
@@ -137,7 +139,7 @@ HTML
 ```
 
 
-![Descripción de la imagen](imagen.jpg)  
+[Ver un ejemplo local de imagen y pie](UT2_imgVSfigure.html)  
 Esta es una imagen con un subtítulo.
 
 ---

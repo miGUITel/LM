@@ -8,7 +8,7 @@
 
 4. **`lang`**: Indica el idioma del contenido del elemento. Este atributo es importante para la accesibilidad y para motores de búsqueda, ya que define el lenguaje utilizado.
 
-5. **`tabindex`**: Controla el orden de tabulación de los elementos interactivos cuando el usuario navega usando la tecla "Tab". Un valor positivo permite definir el orden manualmente, y `0` permite seguir el orden natural del documento.
+5. **`tabindex`**: Controla el orden de tabulación de los elementos interactivos cuando el usuario navega usando la tecla "Tab". `0` incorpora un elemento al orden natural; `-1` lo excluye del recorrido secuencial aunque puede recibir foco por otros medios. Evitad valores positivos y no añadáis tabindex a enlaces o controles que ya funcionan con el teclado.
 
 6. **`accesskey`**: Define una tecla de acceso rápido que permite al usuario enfocar o activar el elemento utilizando el teclado, facilitando la navegación para usuarios que no pueden usar un ratón.
 
@@ -20,4 +20,4 @@
 
 10. **`spellcheck`**: Indica si se debe realizar una revisión ortográfica y gramatical del contenido editable del elemento. Puede estar establecido en `true` o `false`.
 
-Estos atributos son claves para mejorar tanto la funcionalidad como la accesibilidad de los sitios web, y su correcto uso permite una mejor interacción y experiencia de usuario.
+En el proyecto, usad los atributos necesarios y comprobad su efecto. No se pide utilizar toda la lista. La combinación de teclas de accesskey depende del navegador y puede entrar en conflicto con otros atajos.

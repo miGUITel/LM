@@ -1,0 +1,23 @@
+/* Incorporar solo al cierre de HTML, cuando lo indique el profesor.
+   Apariencia: sin tamaños de caja, espaciados, distribución ni posición. */
+body {
+  font-family: Arial, sans-serif;
+  color: #202c36;
+  background-color: #faf9f5;
+}
+h1, h2, h3, legend, caption {
+  color: #245875;
+}
+a { color: #005a80; }
+a:visited { color: #654078; }
+th { background-color: #e3edf2; }
+th, td { outline: 1px solid #9aaeb9; }
+fieldset { border-color: #9aaeb9; }
+input, select, textarea, button {
+  color: #202c36;
+  background-color: #ffffff;
+}
+a:focus-visible, input:focus-visible, select:focus-visible,
+textarea:focus-visible, button:focus-visible {
+  outline: 2px solid #245875;
+}
