@@ -32,25 +32,6 @@ Cada alumno documentará una categoría de expresiones en XQuery.
 | Alumno 9  | Uso de Variables (`let`) |
 | Alumno 10 | Operaciones de Conjunto (`union`, `except`, `intersect`) |
 
-Aquí tienes la tabla con los nombres asignados aleatoriamente:
-
-| **Alumno**       | **Categoría de Expresiones XQuery** |
-|-----------------|---------------------------------|
-| Illia          | Expresiones Aritméticas |
-| Pablo          | Comparadores |
-| Carlos        | Expresiones Lógicas (`and`, `or`, `not()`) |
-| Ángel         | Manipulación de Cadenas |
-| Gabriel       | Funciones Agregadas (`count()`, `sum()`, etc.) |
-| Abel          | Expresiones Condicionales (`if-then-else`) |
-| Samuel        | Ordenación (`order by`) |
-| Adrián        | Creación de Nuevos Elementos XML |
-| Abraham       | Uso de Variables (`let`) |
-| Juan          | Operaciones de Conjunto (`union`, `except`, `intersect`) |
-| Iván          | Funciones Agregadas (`count()`, `sum()`, etc.) |
-| Mila          | Expresiones Condicionales (`if-then-else`) |
-| Iván Marino   | Ordenación (`order by`) |
-
-He distribuido los nombres aleatoriamente y asignado tareas repetidas a Iván y Mila. ¡Dime si quieres algún ajuste! 😊
 
 ### **Cada alumno debe incluir en su documento `.md`**:
 ✅ **Explicación teórica** de su categoría.  
