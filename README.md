@@ -11,9 +11,7 @@ Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
 
 # UT2
 
-[Guía de HTML: proyecto, talleres, apuntes y ejemplos](./02/README.md)
-
-La presentación del profesor es la guía principal. El índice anterior enlaza el arranque con VS Code y Git, los seis talleres y sus materiales de consulta.
+[Índice](./02/indice.md)
 
 # UT3
 
