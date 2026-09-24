@@ -55,10 +55,10 @@ Ambos copian la dirección HTTPS del repositorio desde **Code**. En VS Code, abr
 En el terminal, dentro de `ficha-alumno`, cada integrante configura su identidad para este repositorio. Sustituid los ejemplos por vuestro nombre y el correo verificado de vuestra cuenta, o el correo privado `noreply` que os muestre GitHub:
 
 ```text
-git config user.name "Tu nombre"
-git config user.email "Tu correo de GitHub"
-git config user.name
-git config user.email
+git config --global user.name "Tu nombre"
+git config --global user.email "Tu correo de GitHub"
+git config --global user.name
+git config --global user.email
 ```
 
 Los dos últimos comandos comprueban la identidad. No escribáis la contraseña en estos comandos.
