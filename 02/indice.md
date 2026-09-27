@@ -1,24 +1,23 @@
 # Índice de UT02
 
 - [I. Introducción general · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
-- [II. Preparar herramientas](TAREAS/0200_arranque_guiado.md)
-- <a aria-disabled="true">III. Análisis del miniproyecto</a> <!-- Enunciado disponible desde Aula Virtual. -->
-- [IV. Preparar repositorio](TAREAS/0200_arranque_guiado.md)
-- [V. Estructura y corrección · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
-- <a aria-disabled="true">VI. Tarea 1 · Ficha válida</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- [VII. Semántica y multimedia · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
-- <a aria-disabled="true">VIII. Tarea 2 · Multimedia</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- [IX. Comprobar e integrar](TAREAS/0200_entrega.md)
-- [X. Listas y navegación · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
-- <a aria-disabled="true">XI. Tarea 3 · Navegación</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- [XII. Tablas HTML · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
-- <a aria-disabled="true">XIII. Tarea 4 · Horario</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- [XIV. Formularios HTML · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
-- <a aria-disabled="true">XV. Tarea 5 · Formulario</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- [XVI. Integración y documentación](TAREAS/0200_plantilla_documentacion.md)
-- [XVII. Revisión y correcciones](TAREAS/0200_entrega.md)
-- [XVIII. Incorporar CSS](cierre_css/README.md)
-- <a aria-disabled="true">XIX. Entrega del miniproyecto</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- <a aria-disabled="true">XX. Examen UT · Test</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- <a aria-disabled="true">XXI. Examen UT · Miniproyecto</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
-- [XXII. Cierre de UT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
+- [II. Preparar herramientas y repositorio](TAREAS/0200_arranque_guiado.md)
+- [III. Análisis del miniproyecto](TAREAS/0200_plantilla_documentacion.md) <!-- Escribir el análisis en el README.md del repositorio privado de la pareja; enunciado completo en Aula Virtual. -->
+- [IV. Estructura y corrección · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
+- <a aria-disabled="true">V. Tarea 1 · Ficha válida</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- [VI. Semántica y multimedia · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
+- <a aria-disabled="true">VII. Tarea 2 · Multimedia</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- [VIII. Comprobar e integrar](TAREAS/0200_entrega.md)
+- [IX. Listas y navegación · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
+- <a aria-disabled="true">X. Tarea 3 · Navegación</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- [XI. Tablas HTML · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
+- <a aria-disabled="true">XII. Tarea 4 · Horario</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- [XIII. Formularios HTML · PPT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)
+- <a aria-disabled="true">XIV. Tarea 5 · Formulario</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- [XV. Integración y documentación](TAREAS/0200_plantilla_documentacion.md)
+- [XVI. Revisión y correcciones](TAREAS/0200_entrega.md)
+- [XVII. Incorporar CSS](cierre_css/README.md)
+- <a aria-disabled="true">XVIII. Entrega del miniproyecto</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- <a aria-disabled="true">XIX. Examen UT · Test</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- <a aria-disabled="true">XX. Examen UT · Miniproyecto</a> <!-- Añadir href cuando se disponga del enlace de Moodle. -->
+- [XXI. Cierre de UT](https://1drv.ms/f/c/FB7A28DA04B6A8F8/IgBbXhaVOjzwQbqM4siVTUI-AZpXMTytxyB2ZWyAaE-AYn8?e=6qadeO)

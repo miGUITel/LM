@@ -52,7 +52,7 @@ Ambos copian la dirección HTTPS del repositorio desde **Code**. En VS Code, abr
 
 ## 4. Identificar las aportaciones y guardar una versión
 
-En el terminal, dentro de `ficha-alumno`, cada integrante configura su identidad para este repositorio. Sustituid los ejemplos por vuestro nombre y el correo verificado de vuestra cuenta, o el correo privado `noreply` que os muestre GitHub:
+En el terminal, dentro de `ficha-alumno`, cada integrante configura su identidad predeterminada para sus repositorios. Sustituid los ejemplos por vuestro nombre y el correo verificado de vuestra cuenta, o el correo privado `noreply` que os muestre GitHub:
 
 ```text
 git config --global user.name "Tu nombre"
@@ -65,7 +65,7 @@ Los dos últimos comandos comprueban la identidad. No escribáis la contraseña 
 
 El primer integrante copia el `index.html` de la prueba dentro de `ficha-alumno`. Desde ahora trabaja sobre esta copia. Abre **Control de código fuente**, revisa el cambio, pulsa **+** para prepararlo, escribe `Crea la primera ficha HTML` y pulsa **Commit**. Después usa **Push / Enviar** en el menú de esa vista.
 
-El segundo integrante, sin cambios locales pendientes, ejecuta `git pull --ff-only`. Comprueba que aparece `index.html`, añade al `README.md` su aportación inicial y guarda, prepara, confirma y envía el cambio. El primero lo recibe también con `git pull --ff-only`.
+El segundo integrante, sin cambios locales pendientes, abre **Control de código fuente → … → Pull**. Comprueba que aparece `index.html`, añade al `README.md` su aportación inicial y guarda. Después revisa el cambio, pulsa **+**, escribe un mensaje, pulsa **Commit** y usa **… → Push**. El primero recibe el cambio con **… → Pull**.
 
 | Operación | Qué hace |
 |---|---|
@@ -74,6 +74,8 @@ El segundo integrante, sin cambios locales pendientes, ejecuta `git pull --ff-on
 | Commit | Registra una versión local con un mensaje. |
 | Push / Enviar | Envía los commits a GitHub. |
 | Pull | Recibe e integra lo enviado por el compañero. |
+
+**Sincronizar cambios** hace primero Pull y después Push. Para aprender qué hace cada operación, usad los controles separados. Si aparece un conflicto o se rechaza el envío, avisad al profesor antes de repetir la operación.
 
 **Comprobación:** GitHub muestra una aportación de cada integrante. Ambos explican por qué guardar no envía el archivo al compañero.
 
@@ -97,9 +99,9 @@ Copiad el [favicon de práctica](recursos/favicon.svg) a `recursos/imagenes/favi
 
 ## 6. Rutina de pareja
 
-Antes de editar, acordad quién trabaja en cada archivo y ejecutad `git status`. Si no hay cambios pendientes, recibid las novedades con `git pull --ff-only`. Trabajad por turnos sobre un mismo archivo y alternad quién escribe y quién revisa.
+Antes de editar, acordad quién trabaja en cada archivo y mirad **Control de código fuente** para comprobar si hay cambios pendientes. Si no los hay, pulsad **… → Pull** para recibir las novedades. Trabajad por turnos sobre un mismo archivo y alternad quién escribe y quién revisa.
 
-Al terminar: guardad, probad en el navegador, revisad el cambio, preparadlo, haced commit con un mensaje concreto y enviadlo. Comprobad el resultado en GitHub. Si el envío se rechaza, el pull falla o aparece un conflicto, revisadlo con el profesor; no borréis la carpeta ni forcéis el envío.
+Al terminar: guardad, probad en el navegador, revisad el cambio en **Control de código fuente**, preparadlo con **+**, escribid un mensaje concreto y pulsad **Commit**. Después pulsad **… → Push** y comprobad el resultado en GitHub. Si el envío se rechaza, Pull falla o aparece un conflicto, revisadlo con el profesor; no borréis la carpeta ni forcéis el envío.
 
 | Si sucede esto… | Comprobad primero… |
 |---|---|
@@ -110,4 +112,4 @@ Al terminar: guardad, probad en el navegador, revisad el cambio, preparadlo, hac
 
 Consultad en Aula Virtual el encargo del miniproyecto y completad su análisis antes de empezar la **Tarea 1. Ficha válida**, cuyo enunciado también facilita el profesor allí. La prueba inicial es un ensayo; entregáis desde `ficha-alumno`.
 
-Referencias: [Git en VS Code](https://code.visualstudio.com/docs/sourcecontrol/quickstart), [repositorios y remotos](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes), [crear un repositorio](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository), [invitar colaboradores](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository), [identidad en Git](https://git-scm.com/docs/git-config) y [git pull](https://git-scm.com/docs/git-pull).
+Referencias: [Git en VS Code](https://code.visualstudio.com/docs/sourcecontrol/quickstart), [repositorios y remotos](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes), [crear un repositorio](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository), [invitar colaboradores](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository) e [identidad en Git](https://git-scm.com/docs/git-config).

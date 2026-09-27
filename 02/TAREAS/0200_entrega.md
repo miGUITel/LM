@@ -9,21 +9,15 @@ Cada taller se entrega con el **proyecto acumulado**, el **enlace al repositorio
 1. Revisad la lista del taller y abrid en el navegador las páginas que ya existan.
 2. Revisad el HTML con el [validador de W3C](https://validator.w3.org/#validate_by_input), pegando todo el contenido del archivo en la caja de entrada directa y pulsando **Check**. Corregid en VS Code y repetid la comprobación. No necesitáis publicar la página. Corregid los errores y leed los avisos. Usad datos ficticios. El validador no comprueba por vosotros que funcionen enlaces y recursos locales.
 3. Actualizad el `README.md`: comprobaciones, aportaciones, recursos, ayuda de IA si la hubo y partes pendientes. No marquéis como probado algo que todavía no existe.
-4. Guardad, revisad los cambios, haced commit y enviadlo. Comprobad la versión en GitHub y el acceso del profesor.
+4. Guardad y revisad los cambios en **Control de código fuente**. Preparadlos con **+**, escribid un mensaje, pulsad **Commit** y después **… → Push**. Comprobad la versión en GitHub y el acceso del profesor.
 
 ## Crear el ZIP de la versión confirmada
 
-En el terminal de VS Code, dentro de `ficha-alumno`, ejecutad:
+Comprobad primero en **Control de código fuente** que no hay cambios pendientes y que el último commit está enviado a GitHub. Consultad allí su identificador.
 
-```text
-git status
-git rev-parse --short HEAD
-git archive --format=zip --prefix=ficha-alumno/ --output=../ficha-alumno-t01.zip HEAD
-```
+Desde el **Explorador de archivos de Windows**, seleccionad y comprimid los archivos y carpetas que consideréis adecuados para entregar este avance. El ZIP debe contener el proyecto que acabáis de confirmar y enviar, sin la carpeta interna `.git` ni archivos ajenos al trabajo. Decidid vosotros qué necesita la entrega para funcionar.
 
-`git status` debe indicar que no quedan cambios pendientes; si los hay, revisadlos y confirmadlos antes. Copiad el identificador del segundo comando. En el tercero, cambiad `t01` por el taller que entregáis (`t02`, `t03`…). El ZIP se crea en la carpeta contenedora, fuera del proyecto, y contiene los archivos confirmados, sin `.git`. Los archivos sin confirmar no entran en el ZIP.
-
-Extraedlo en otra carpeta y abrid el `index.html` extraído. Probad los enlaces y los recursos de este avance. No basta con abrirlos dentro del comprimido. Si corregís algo, repetid commit, envío y generación del ZIP.
+Extraed el ZIP en otra carpeta y abrid el `index.html` extraído. Probad los enlaces y los recursos de este avance: no basta con abrirlos dentro del comprimido. Si descubrís que falta algo o que hay un error, corregid el proyecto, haced **Commit** y **Push** y generad de nuevo el ZIP.
 
 ## Entrega en Aula Virtual
 
@@ -40,5 +34,3 @@ Uso de IA y revisión realizada, si lo hubo:
 ```
 
 Seguid la indicación del profesor sobre quién registra la entrega de la pareja. Ambos deben poder explicar el conjunto y reproducir una modificación sencilla. Las ampliaciones se señalan aparte y se muestran al profesor para solicitar su valoración.
-
-Referencia: [git archive](https://git-scm.com/docs/git-archive).
