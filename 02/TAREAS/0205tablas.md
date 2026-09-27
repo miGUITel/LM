@@ -1,6 +1,6 @@
-# Taller 5. El horario del alumno
+# Taller 4. El horario del alumno
 
-[Volver a los talleres](README.md)
+Enunciado de la tarea disponible desde Aula Virtual. Trabajo por parejas sobre el mismo miniproyecto.
 
 ## Qué vais a hacer
 
@@ -17,7 +17,7 @@ Añadiréis a `index.html` una tabla con el horario ficticio del alumno. Represe
 
 ## Qué se incorpora y entrega
 
-El horario dentro de la ficha, manteniendo las tres páginas, navegación y multimedia. Entregad según la [entrega común](0200_entrega.md), como `t05`.
+El horario dentro de la ficha, manteniendo las tres páginas, navegación y multimedia. Entregad según la [entrega común](0200_entrega.md), como `t04`.
 
 ## Cómo comprobarlo y qué se valorará
 

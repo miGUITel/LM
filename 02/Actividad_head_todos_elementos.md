@@ -1,6 +1,6 @@
 # Consulta sobre la cabecera
 
-Para el proyecto, seguid el [taller 1](TAREAS/0201head.md) y consultad la [explicación de los metadatos](LM02p23_meta.md). No se pide incluir todos los elementos posibles de `head`.
+Para el proyecto, consultad en Aula Virtual la **Tarea 1. Ficha válida** y utilizad la [explicación de los metadatos](LM02p23_meta.md) como ayuda. No se pide incluir todos los elementos posibles de `head`.
 
 El mínimo trabajado incluye codificación, título propio, descripción, autoría, viewport y favicon. El idioma se indica en `html`.
 

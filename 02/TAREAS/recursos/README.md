@@ -4,7 +4,7 @@
 
 - [Favicon de práctica](favicon.svg): guardadlo como `recursos/imagenes/favicon.svg` en vuestro proyecto.
 - [Cabecera para analizar](cabecera.html): abrid el código en VS Code para el taller 1.
-- [HTML con errores intencionados](errores.html): ejercicio del taller 2; no es una plantilla correcta.
+- [HTML con errores intencionados](errores.html): ejercicio de la tarea 1; no es una plantilla correcta.
 - [Paquete multimedia del curso](../multimedia.rar): recursos de práctica ya facilitados por el profesor. Descargadlo y extraedlo antes de copiar los archivos. Si vuestro equipo no abre RAR, pedid ayuda al profesor.
 
 El paquete multimedia contiene estos archivos. Copiad solo los que utilicéis y simplificad sus nombres:

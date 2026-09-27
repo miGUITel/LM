@@ -1,6 +1,6 @@
-# Taller 4. Listas y navegación
+# Taller 3. Listas y navegación
 
-[Volver a los talleres](README.md)
+Enunciado de la tarea disponible desde Aula Virtual. Trabajo por parejas sobre el mismo miniproyecto.
 
 ## Qué vais a hacer
 
@@ -17,7 +17,7 @@ Conectaréis las tres páginas del proyecto y organizaréis los intereses con li
 
 ## Qué se incorpora y entrega
 
-Las tres páginas conectadas, listas y enlaces, conservando la multimedia. Entregad según la [entrega común](0200_entrega.md), como `t04`. La solicitud todavía puede ser una presentación sin formulario.
+Las tres páginas conectadas, listas y enlaces, conservando la multimedia. Entregad según la [entrega común](0200_entrega.md), como `t03`. La solicitud todavía puede ser una presentación sin formulario.
 
 ## Cómo comprobarlo y qué se valorará
 

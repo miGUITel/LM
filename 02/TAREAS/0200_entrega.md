@@ -7,7 +7,7 @@ Cada taller se entrega con el **proyecto acumulado**, el **enlace al repositorio
 ## Antes de generar el ZIP
 
 1. Revisad la lista del taller y abrid en el navegador las páginas que ya existan.
-2. Revisad el HTML con el [validador de W3C](https://validator.w3.org/nu/), cargando el archivo o pegando el código. Corregid los errores y leed los avisos. Usad datos ficticios. El validador no comprueba por vosotros que funcionen enlaces y recursos locales.
+2. Revisad el HTML con el [validador de W3C](https://validator.w3.org/#validate_by_input), pegando todo el contenido del archivo en la caja de entrada directa y pulsando **Check**. Corregid en VS Code y repetid la comprobación. No necesitáis publicar la página. Corregid los errores y leed los avisos. Usad datos ficticios. El validador no comprueba por vosotros que funcionen enlaces y recursos locales.
 3. Actualizad el `README.md`: comprobaciones, aportaciones, recursos, ayuda de IA si la hubo y partes pendientes. No marquéis como probado algo que todavía no existe.
 4. Guardad, revisad los cambios, haced commit y enviadlo. Comprobad la versión en GitHub y el acceso del profesor.
 

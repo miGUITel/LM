@@ -4,7 +4,7 @@ En parejas, vais a construir un pequeño sitio web para consultar la ficha de un
 
 La presentación del profesor será vuestra guía principal. Consultad los apuntes y ejemplos enlazados cuando los necesitéis.
 
-Para empezar, seguid el [arranque guiado](0200_arranque_guiado.md). El [índice de talleres](README.md) enlaza las seis prácticas que construirán este proyecto. Cada avance sigue la [comprobación y entrega común](0200_entrega.md).
+Para empezar, seguid el [arranque guiado](0200_arranque_guiado.md). El [índice de talleres](README.md) recoge las cinco prácticas que construirán este proyecto. Cada avance sigue la [comprobación y entrega común](0200_entrega.md).
 
 ## El encargo
 

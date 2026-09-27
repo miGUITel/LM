@@ -10,7 +10,7 @@ Investigaréis un HTML con errores intencionados y aplicaréis lo aprendido a vu
 
 1. Descargad [el archivo de práctica](recursos/errores.html) y guardad una copia sin modificar en `documentacion/depuracion/original.html`. Duplicadla como `corregido.html` en esa misma carpeta.
 2. Antes de usar herramientas, leed el código y abrid el original en el navegador. Anotad lo que os parezca incorrecto y probad el enlace interno.
-3. Revisad la copia con el [validador HTML](https://validator.w3.org/nu/). Usad VS Code para corregirla; sus ayudas están permitidas, pero debéis explicar cada cambio.
+3. Revisad la copia con el [validador HTML](https://validator.w3.org/#validate_by_input). Usad VS Code para corregirla; sus ayudas están permitidas, pero debéis explicar cada cambio.
 4. Cread `documentacion/depuracion/registro.md` con una tabla: **línea del original | fragmento | problema | corrección | comprobación**. Un error puede provocar varios mensajes del validador: no contéis los mensajes como errores independientes automáticamente.
 5. Revisad cierres y anidamiento, identificadores, estructura de listas y destino del enlace. Volved a validar y a probar en el navegador. Explicad un problema que el navegador disimula y otro que exige probar el funcionamiento.
 6. Aplicad la revisión a vuestro `index.html`. Organizadlo con `header`, `main` y `footer`, encabezados coherentes y datos ficticios completos. El menú común se trabajará después. Anotad los cambios de vuestra ficha en el registro, separados de los del ejercicio.

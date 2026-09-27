@@ -1,12 +1,12 @@
 # HTML: guía y materiales de consulta
 
-La presentación del profesor es la guía principal. Este índice reúne los enunciados, las ayudas y los ejemplos que se consultan durante el trabajo.
+La presentación del profesor es la guía principal. Esta página reúne las ayudas y los ejemplos. Los enunciados del miniproyecto se consultan desde Aula Virtual.
 
 ## El proyecto y sus talleres
 
-- [Encargo: ficha de un alumno](TAREAS/0200_miniproyecto_ficha_alumno.md).
+- <a aria-disabled="true">Encargo: ficha de un alumno</a> <!-- Enunciado disponible desde Aula Virtual. -->.
 - [Arranque guiado: VS Code, archivos, rutas y Git](TAREAS/0200_arranque_guiado.md).
-- [Los seis talleres y sus entregas](TAREAS/README.md).
+- [Los cinco talleres y sus entregas](TAREAS/README.md).
 - [Plantilla breve de documentación](TAREAS/0200_plantilla_documentacion.md).
 - [Comprobar y entregar repositorio y ZIP](TAREAS/0200_entrega.md).
 
@@ -26,6 +26,6 @@ Los nombres antiguos de algunos archivos conservan números de diapositiva. Busc
 ## Referencias externas
 
 - [HTML Living Standard](https://html.spec.whatwg.org/): referencia normativa.
-- [Validador HTML](https://validator.w3.org/nu/): comprobación del código.
+- [Validador HTML](https://validator.w3.org/#validate_by_input): comprobación del código.
 - [Referencia de etiquetas de W3Schools](https://www.w3schools.com/tags/default.asp): consulta con ejemplos; no es el organismo W3C.
 - [Ejemplos externos del profesor](https://miguitel.github.io/AWEB_disenioWeb/menu.html): consulta complementaria. Algunos incluyen CSS o contenidos posteriores y no sustituyen los enunciados del proyecto.

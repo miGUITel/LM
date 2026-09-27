@@ -108,6 +108,6 @@ Al terminar: guardad, probad en el navegador, revisad el cambio, preparadlo, hac
 | No puedo clonar | Cuenta correcta, invitación aceptada y dirección del repositorio. |
 | No carga un recurso | Archivo existente, extensión, mayúsculas y ruta desde el HTML. |
 
-Completad ahora el análisis del [miniproyecto](0200_miniproyecto_ficha_alumno.md) y empezad el [taller 1](0201head.md). La prueba inicial es un ensayo; entregáis desde `ficha-alumno`.
+Consultad en Aula Virtual el encargo del miniproyecto y completad su análisis antes de empezar la **Tarea 1. Ficha válida**, cuyo enunciado también facilita el profesor allí. La prueba inicial es un ensayo; entregáis desde `ficha-alumno`.
 
 Referencias: [Git en VS Code](https://code.visualstudio.com/docs/sourcecontrol/quickstart), [repositorios y remotos](https://code.visualstudio.com/docs/sourcecontrol/repos-remotes), [crear un repositorio](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository), [invitar colaboradores](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/repository-access-and-collaboration/inviting-collaborators-to-a-personal-repository), [identidad en Git](https://git-scm.com/docs/git-config) y [git pull](https://git-scm.com/docs/git-pull).

@@ -1,6 +1,6 @@
-# Taller 3. Intereses y multimedia
+# Taller 2. Intereses y multimedia
 
-[Volver a los talleres](README.md)
+Enunciado de la tarea disponible desde Aula Virtual. Trabajo por parejas sobre el mismo miniproyecto.
 
 ## Qué vais a hacer
 
@@ -8,7 +8,7 @@ Crearéis `intereses.html` para presentar los intereses del alumno ficticio medi
 
 ## Pasos
 
-1. Cread la segunda página con la estructura de documento trabajada y un título propio. Organizadla en `header`, `main` y `footer`, con un `h1` y secciones con encabezados coherentes.
+1. Cread la segunda página con la estructura de documento trabajada y un título propio. Organizadla en `header`, `main` y `footer`, con un `h1` y secciones con encabezados coherentes. Aplicad también esta estructura a `index.html`, que hasta ahora era una ficha básica.
 2. Utilizad los [recursos de práctica](recursos/README.md) o recursos reutilizables elegidos con el profesor. Guardadlos en `recursos/imagenes`, `recursos/audio` y `recursos/video`. No enlacéis archivos situados fuera del proyecto.
 3. Incorporad una imagen dentro de `figure`, con texto alternativo adecuado y `figcaption`. El texto alternativo describe la imagen; el pie puede explicar su relación con el interés del alumno.
 4. Incorporad audio y vídeo con controles y rutas relativas. Añadid una explicación breve y un enlace al archivo para abrirlo directamente. La reproducción debe iniciarla el usuario: no se pide reproducción automática ni en bucle.
@@ -17,7 +17,7 @@ Crearéis `intereses.html` para presentar los intereses del alumno ficticio medi
 
 ## Qué se incorpora y entrega
 
-`intereses.html`, los recursos locales y las comprobaciones, conservando el trabajo anterior. Entregad según la [entrega común](0200_entrega.md), como `t03`. `solicitud.html` todavía no es obligatoria.
+`intereses.html`, los recursos locales y las comprobaciones, conservando el trabajo anterior. Entregad según la [entrega común](0200_entrega.md), como `t02`. `solicitud.html` todavía no es obligatoria.
 
 ## Cómo comprobarlo y qué se valorará
 
