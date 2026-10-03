@@ -12,7 +12,7 @@ Crearéis `intereses.html` para presentar los intereses del alumno ficticio medi
 2. Utilizad los [recursos de práctica](recursos/README.md) o recursos reutilizables elegidos con el profesor. Guardadlos en `recursos/imagenes`, `recursos/audio` y `recursos/video`. No enlacéis archivos situados fuera del proyecto.
 3. Incorporad una imagen dentro de `figure`, con texto alternativo adecuado y `figcaption`. El texto alternativo describe la imagen; el pie puede explicar su relación con el interés del alumno.
 4. Incorporad audio y vídeo con controles y rutas relativas. Añadid una explicación breve y un enlace al archivo para abrirlo directamente. La reproducción debe iniciarla el usuario: no se pide reproducción automática ni en bucle.
-5. Añadid un enlace de vuelta a `index.html` y otro desde la ficha a `intereses.html`. El menú completo se construirá en el taller siguiente.
+5. ***OPCIONAL: (corresponde a la siguiente tarea)*** Añadid un enlace de vuelta a `index.html` y otro desde la ficha a `intereses.html`. El menú completo se construirá en el taller siguiente.
 6. Anotad en el `README.md` el origen de cada recurso y las pruebas de carga, reproducción, pausa y volumen. Comprobad que los formatos se reproducen en el navegador del aula.
 
 ## Qué se incorpora y entrega
