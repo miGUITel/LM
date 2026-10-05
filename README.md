@@ -1,6 +1,7 @@
 # LM
 Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
-
+[Configurar las herramientas: VSC, GIT, github, ...](./02/TAREAS/0200_arranque_guiado.md)
+        
 # UT1
 
 [Funciones en java para manejar cadenas](./01/UT01_java_strings.md)
