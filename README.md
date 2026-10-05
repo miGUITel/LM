@@ -1,14 +1,15 @@
 # LM
 Apuntes, ejemplos y ampliaciones de Lenguaje de Marcas
+
 [Configurar las herramientas: VSC, GIT, github, ...](./02/TAREAS/0200_arranque_guiado.md)
+
+[Más sobre git](#git--en-ed)
         
 # UT1
 
-[Funciones en java para manejar cadenas](./01/UT01_java_strings.md)
+[Clasificación ampliada de los Lenguajes de Marcas](./01/UT01_clasificación.md)
 
-[Clasificación de los Lenguajes de Marcas](./01/UT01_clasificación.md)
-
-[Introducción a Mark Down (para el diario)](./01/01_MARK.md)
+[Introducción a Mark Down (para escribir buenos README.md)](./01/01_MARK.md)
 
 # UT2
 
