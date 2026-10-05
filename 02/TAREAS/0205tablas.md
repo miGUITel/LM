@@ -9,8 +9,8 @@ Añadiréis a `index.html` una tabla con el horario ficticio del alumno. Represe
 ## Pasos
 
 1. Dibujad una cuadrícula: columna de tramo horario y cinco columnas de días. Inventad al menos cuatro tramos lectivos y una fila de recreo. No hace falta copiar vuestro horario real.
-2. Cread la tabla dentro de una sección del contenido principal, con un encabezado y un `caption` que identifique el horario.
-3. Separad encabezados y datos mediante `thead` y `tbody`. Usad `th` para días y tramos, con `scope="col"` o `scope="row"` según corresponda, y `td` para las actividades.
+2. Cread la tabla dentro de una sección del contenido principal, con un encabezado que identifique el horario.
+3. Separad encabezados y datos mediante `thead` y `tbody`. ***Buscad cómo se usan.***
 4. Representad el recreo combinando las cinco columnas de días mediante `colspan`. La columna del tramo queda separada. Todas las filas deben ocupar la misma cuadrícula lógica aunque no tengan el mismo número de etiquetas de celda.
 5. No uséis celdas vacías para desplazar contenidos ni atributos de presentación como `border`, `bgcolor` o `align`. Trabajad sin CSS; no copiéis los estilos de las plantillas antiguas.
 6. Validad el HTML y revisad la tabla en el navegador. Registrad en el `README.md` qué celdas son encabezados y por qué el recreo necesita esa combinación.
