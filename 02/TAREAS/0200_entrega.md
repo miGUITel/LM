@@ -8,7 +8,7 @@ Cada taller se entrega con el **proyecto acumulado**, el **enlace al repositorio
 
 1. Revisad la lista del taller y abrid en el navegador las páginas que ya existan.
 2. Revisad el HTML con el [validador de W3C](https://validator.w3.org/#validate_by_input), pegando todo el contenido del archivo en la caja de entrada directa y pulsando **Check**. Corregid en VS Code y repetid la comprobación. No necesitáis publicar la página. Corregid los errores y leed los avisos. Usad datos ficticios. El validador no comprueba por vosotros que funcionen enlaces y recursos locales.
-3. Actualizad el `README.md`: comprobaciones, aportaciones, recursos, ayuda de IA si la hubo y partes pendientes. No marquéis como probado algo que todavía no existe.
+3. **Actualizad el `README.md`: comprobaciones, aportaciones, recursos, ayuda de IA si la hubo y partes pendientes. Incluid al principio del `README.md` un índice con un enlace interno a la sección correspondiente a cada tarea. No marquéis como probado algo que todavía no existe.**
 4. Guardad y revisad los cambios en **Control de código fuente**. Preparadlos con **+**, escribid un mensaje, pulsad **Commit** y después **… → Push**. Comprobad la versión en GitHub y el acceso del profesor.
 
 ## Crear el ZIP de la versión confirmada
@@ -21,16 +21,11 @@ Extraed el ZIP en otra carpeta y abrid el `index.html` extraído. Probad los enl
 
 ## Entrega en Aula Virtual
 
-Adjuntad el ZIP y escribid:
+Adjuntad únicamente el ZIP y escribid solo:
 
 ```text
-Taller:
-Integrantes:
+Integrantes del grupo:
 Enlace al repositorio privado:
-Commit incluido en el ZIP:
-Comprobación del ZIP extraído:
-Partes pendientes, si las hay:
-Uso de IA y revisión realizada, si lo hubo:
 ```
 
 Seguid la indicación del profesor sobre quién registra la entrega de la pareja. Ambos deben poder explicar el conjunto y reproducir una modificación sencilla. Las ampliaciones se señalan aparte y se muestran al profesor para solicitar su valoración.

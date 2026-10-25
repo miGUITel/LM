@@ -151,8 +151,18 @@ p {
 </html>
 ```
 
+#### Pruebas con el ejemplo
+
+1. Copia el código completo en un archivo HTML. Antes de abrirlo en el navegador, predice el color de cada párrafo. Después comprueba tu predicción.
+2. Añade al final del bloque de estilos otra regla: `p { color: purple; }`. Observa el primer párrafo. Mueve esa nueva regla antes de la regla `p` que declara azul y comprueba qué cambia. Al terminar, elimina la regla añadida.
+3. Intercambia el orden de las reglas `#especial` y `p#especial`. Comprueba el segundo párrafo y explica si el orden basta para decidir su color en este caso.
+4. Abre el inspector con F12 y selecciona el párrafo especial. En sus estilos, identifica la declaración de color aplicada y las anuladas. Desactiva solo `color: red` de `p#especial`, comprueba qué color queda aplicado y localiza la regla de la que procede. Vuelve a activarla.
+5. Selecciona el primer párrafo y desactiva `color: blue` de la regla `p`. Localiza el color que recibe ahora del `body` y comprueba también de dónde procede su tipo de letra. Reactiva la declaración y compara el color heredado con el declarado directamente en el párrafo.
+
+Al terminar, debes poder justificar qué declaración se aplica en cada prueba y distinguir la competencia entre reglas de la herencia. Los cambios hechos en el inspector son temporales y desaparecen al recargar la página.
+
 En este ejemplo:
-- El primer párrafo será de color **azul**, ya que la regla `p` tiene mayor especificidad que la herencia del color negro del `body`.
+- El primer párrafo será de color **azul**, porque la regla `p` declara ese color directamente y sustituye el negro que el párrafo recibiría por herencia del `body`.
 - El segundo párrafo (con el ID `especial`) será de color **rojo** porque la regla `p#especial` tiene una especificidad más alta que `#especial` o `p`.
 
 ### Conclusión
