@@ -40,8 +40,8 @@
 </main>
 <script>
 function render() {
-  const blue = '#order-demo .sample { color: #1757a6; }';
-  const red = '#order-demo .sample { color: #b42335; }';
+  const blue = '#order-demo .sample { color: blue; }';
+  const red = '#order-demo .sample { color: red; }';
   const order = G.checked('reverse-order') ? red + '\n' + blue : blue + '\n' + red;
   G.text('live-order', order); G.text('order-code', order);
   const spec = (G.checked('id-active') ? '#spec-target { color: #176046; }\n' : '') + '.regla-clase { color: #b42335' + (G.checked('class-important') ? ' !important' : '') + '; }';
