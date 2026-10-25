@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cascada y herencia · Ejemplo CSS</title>
+<link rel="stylesheet" href="ejemplos.css">
+<style>#inherit-parent .sample { background: #edf3f8; }</style>
+<script src="comun.js"></script>
+</head>
+<body>
+<main id="selector-top">
+<header><a href="../LM0304_prioridad.html">Consultar los apuntes</a><h1>Cascada y herencia</h1><p>Predice qué color tendrá cada texto. Cambia una condición, observa el resultado y consulta la regla CSS que se está aplicando.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
+<noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
+<section>
+<h2>1. Mis reglas tienen la misma importancia y especificidad</h2>
+<ol class="instructions"><li>Lee las dos reglas y predice mi color.</li><li>Invierte su orden y observa si cambio.</li><li>Abre F12: identifica la declaración aplicada y la que aparece anulada.</li></ol>
+<form class="controls"><label class="check"><input type="checkbox" id="reverse-order">Colocar la regla azul al final</label></form>
+<div class="stage" id="order-demo"><p class="sample">Soy el mismo párrafo: las dos reglas me seleccionan.</p></div>
+<pre id="order-code"></pre>
+</section>
+<section>
+<h2>2. Mi clase compite con mi ID</h2>
+<ol class="instructions"><li>La regla de clase aparece al final. Predice si eso basta para que gane.</li><li>Desactiva la regla de ID y vuelve a activarla.</li><li>Con ambas activas, añade <code>!important</code> a la declaración de clase. Observa qué criterio decide ahora.</li></ol>
+<form class="controls"><label class="check"><input type="checkbox" id="id-active" checked>Activar la regla de ID</label><label class="check"><input type="checkbox" id="class-important">Añadir !important al color de la clase</label></form>
+<div class="stage"><p class="sample regla-clase" id="spec-target">Tengo class="regla-clase" e id="spec-target".</p></div>
+<pre id="spec-code"></pre>
+<p class="note">Estas declaraciones pertenecen al autor y al mismo contexto. Primero se compara su importancia; si empatan, su especificidad; si también empatan, su orden.</p>
+</section>
+<section>
+<h2>3. Mi color puede llegar por herencia</h2>
+<ol class="instructions"><li>Cambia el color de mi padre mientras no tengo una declaración propia.</li><li>Activa mi color propio y cambia otra vez el del padre.</li><li>Desactiva mi color propio. Comprueba de dónde vuelvo a recibirlo.</li></ol>
+<form class="controls"><label>Color del padre<select id="parent-color"><option value="#176046">Verde</option><option value="#7540a3">Violeta</option></select></label><label class="check"><input type="checkbox" id="child-color">Declarar azul directamente en el hijo</label></form>
+<div class="stage" id="inherit-parent"><p>Soy el padre. Mi color es heredable.</p><p class="sample" id="inherit-child">Soy su hijo. Comprueba si heredo o tengo mi propio color.</p></div>
+<pre id="inherit-code"></pre>
+<p class="note">La herencia proporciona un valor cuando corresponde; no hace competir la especificidad del selector del padre con una declaración directa del hijo.</p>
+</section>
+<style id="live-order"></style><style id="live-specificity"></style><style id="live-inherit"></style>
+<footer><button type="button" data-reset>Restablecer</button><p><a href="../LM0304_prioridad.html">Consultar los apuntes</a></p></footer>
+</main>
+<script>
+function render() {
+  const blue = '#order-demo .sample { color: #1757a6; }';
+  const red = '#order-demo .sample { color: #b42335; }';
+  const order = G.checked('reverse-order') ? red + '\n' + blue : blue + '\n' + red;
+  G.text('live-order', order); G.text('order-code', order);
+  const spec = (G.checked('id-active') ? '#spec-target { color: #176046; }\n' : '') + '.regla-clase { color: #b42335' + (G.checked('class-important') ? ' !important' : '') + '; }';
+  G.text('live-specificity', spec); G.text('spec-code', spec);
+  const inheritance = '#inherit-parent { color: ' + G.value('parent-color') + '; }' + (G.checked('child-color') ? '\n#inherit-child { color: #1757a6; }' : '');
+  G.text('live-inherit', inheritance); G.text('inherit-code', inheritance);
+}
+G.setup(render);
+</script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid: columnas, áreas y líneas · Ejemplo CSS</title>
+<link rel="stylesheet" href="ejemplos.css">
+<style>#grid-stage { min-height: 360px; padding: 16px; background: #edf2f5; }
+.grid-item { min-width: 0; padding: 12px; border: 1px solid #658292; color: #20313d; font-size: 17px; overflow-wrap: anywhere; }
+.area-cabecera { background: #dce9f8; }.area-menu { background: #f5e6ca; }.area-contenido { background: #daeee7; }.area-pie { background: #e9e0f2; }
+.grid-selected { outline: 3px solid #a4562d; outline-offset: -4px; }</style>
+<script src="comun.js"></script>
+</head>
+<body>
+<main id="selector-top">
+<header><a href="../LM030701_caja.html">Consultar los apuntes</a><h1>Grid: columnas, áreas y líneas</h1><p>Las mismas cuatro cajas pueden distribuirse de varias formas. Compara una propiedad cada vez y relaciona el mapa de áreas con las líneas de la cuadrícula.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
+<noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
+<section><h2>1. Cuatro distribuciones con las mismas cajas</h2>
+<ol class="instructions"><li>Compara las cuatro distribuciones sin cambiar las otras opciones.</li><li>Elige una y cambia solo la proporción de las columnas. Después cambia gap.</li><li>Selecciona una caja y lee las líneas que delimitan el espacio que ocupa.</li></ol>
+<form class="controls"><label>Distribución<select id="preset"><option value="0">1. Cabecera y pie completos</option><option value="1">2. Contenido a la derecha</option><option value="2">3. Contenido de dos columnas</option><option value="3">4. Distribución asimétrica</option></select></label><label>Anchura de las columnas<select id="ratio"><option value="equal">Iguales</option><option value="first">Primera: triple</option><option value="last">Última: triple</option></select></label><label>Gap: <span id="gap-label"></span><input id="gap" type="range" min="0" max="32" step="4" value="12"></label><label>Caja que quieres identificar<select id="grid-target"><option value="cabecera">Cabecera</option><option value="menu">Menú</option><option value="contenido">Contenido</option><option value="pie">Pie</option></select></label></form>
+<div class="stage scroll-stage"><div id="grid-stage"><div class="grid-item area-cabecera">Cabecera</div><div class="grid-item area-menu">Menú</div><div class="grid-item area-contenido">Contenido</div><div class="grid-item area-pie">Pie</div></div></div>
+<output id="grid-lines" class="readout" aria-live="polite"></output>
+</section>
+<section><h2>2. La misma colocación por áreas o por líneas</h2>
+<ol class="instructions"><li>Conserva la distribución elegida y cambia de áreas a líneas.</li><li>Comprueba que las cajas mantienen sus posiciones. Compara el CSS.</li><li>Busca un intervalo como <code>grid-column: 1 / 3</code>: va de la línea 1 a la 3 y ocupa dos columnas.</li></ol>
+<form class="controls"><label>Colocación<select id="grid-mode"><option value="areas">Por áreas</option><option value="lines">Por líneas</option></select></label></form><pre id="grid-code"></pre>
+</section>
+<section><h2>3. Un área con nombre debe formar un rectángulo</h2>
+<ol class="instructions"><li>Elige «Por áreas» y activa la plantilla inválida.</li><li>Busca «contenido» en dos posiciones que no forman un rectángulo. Observa el resultado y el aviso.</li><li>Desactiva la prueba para recuperar la plantilla válida.</li></ol>
+<form class="controls"><label class="check"><input type="checkbox" id="invalid-area">Probar un área «contenido» no rectangular</label></form><p class="warning" id="grid-warning" hidden></p>
+<p class="note">Si una declaración de grid-template-areas es inválida, el navegador la descarta. Una plantilla sí puede reservar un área que ningún elemento ocupe; eso por sí solo no la hace inválida.</p>
+</section><style id="live-grid"></style>
+<footer><button type="button" data-reset>Restablecer</button><p><a href="../LM030701_caja.html">Consultar los apuntes</a></p></footer>
+</main>
+<script>
+const templates = [
+  [['cabecera','cabecera'],['menu','contenido'],['pie','pie']],
+  [['cabecera','cabecera','contenido'],['menu','menu','contenido'],['pie','pie','pie']],
+  [['cabecera','cabecera','cabecera'],['contenido','contenido','menu'],['contenido','contenido','menu'],['pie','pie','pie']],
+  [['cabecera','cabecera','menu'],['contenido','contenido','menu'],['contenido','contenido','pie']]
+];
+function areaRect(matrix,name) {
+  const cells=[]; matrix.forEach((row,y)=>row.forEach((cell,x)=>{ if(cell===name)cells.push([x,y]); }));
+  return {c1:Math.min(...cells.map(c=>c[0]))+1,c2:Math.max(...cells.map(c=>c[0]))+2,r1:Math.min(...cells.map(c=>c[1]))+1,r2:Math.max(...cells.map(c=>c[1]))+2};
+}
+function render() {
+  const mode=G.value('grid-mode'), invalid=mode==='areas' && G.checked('invalid-area');
+  G.q('#invalid-area').disabled=mode!=='areas';
+  const matrix=invalid ? [['cabecera','cabecera'],['contenido','menu'],['pie','contenido']] : templates[Number(G.value('preset'))];
+  const count=matrix[0].length, weights=Array(count).fill('1fr');
+  if(G.value('ratio')==='first')weights[0]='3fr'; if(G.value('ratio')==='last')weights[count-1]='3fr';
+  const map=matrix.map(row=>'"'+row.join(' ')+'"').join('\n    ');
+  const names=['cabecera','menu','contenido','pie'];
+  let base='display: grid;\n  grid-template-columns: '+weights.join(' ')+';\n  gap: '+G.value('gap')+'px;\n  grid-template-rows: repeat('+matrix.length+', minmax(64px, 1fr));';
+  if(mode==='areas')base+='\n  grid-template-areas:\n    '+map+';';
+  let code='#grid-stage {\n  '+base+'\n}';
+  for(const name of names) {
+    const r=areaRect(matrix,name);
+    code+='\n.area-'+name+' { '+(mode==='areas'?'grid-area: '+name+';':'grid-column: '+r.c1+' / '+r.c2+'; grid-row: '+r.r1+' / '+r.r2+';')+' }';
+  }
+  G.text('live-grid',code); G.text('grid-code',code); G.text('gap-label',G.value('gap')+'px');
+  G.all('.grid-item').forEach(el=>el.classList.toggle('grid-selected',el.classList.contains('area-'+G.value('grid-target'))));
+  const r=areaRect(matrix,G.value('grid-target'));
+  G.text('grid-lines',invalid?'La declaración grid-template-areas no es válida: se ha descartado.':G.value('grid-target')+': grid-column: '+r.c1+' / '+r.c2+'; grid-row: '+r.r1+' / '+r.r2+'; ocupa '+(r.c2-r.c1)+' columna(s) y '+(r.r2-r.r1)+' fila(s).');
+  G.q('#grid-warning').hidden=!invalid;
+  G.text('grid-warning', invalid ? 'Plantilla inválida. «contenido» no forma un rectángulo. El navegador descarta ese mapa; las cajas ya no siguen la distribución indicada por él.' : '');
+}
+G.setup(render);
+</script>
+</body>
+</html>

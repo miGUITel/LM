@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qué elementos selecciona una regla · Ejemplo CSS</title>
+<link rel="stylesheet" href="ejemplos.css">
+<style>.selector-stage article > *, .selector-stage article > div > p, .nth-demo > * { margin: 8px 0; padding: 8px; border: 2px solid transparent; font-size: 18px; font-weight: 400; }
+.selector-stage article > div { padding: 6px; border: 1px dashed #718c9d; }
+.selector-stage .matched, .nth-demo .matched { border: 2px solid #996121; background: #fff0c9; color: #20313d; }
+.state-link { display: inline-block; padding: 10px; }
+.state-link:hover { background: #daeee7; }
+.first-line-demo { max-width: 55ch; }
+.first-line-demo::first-letter { font-size: 2em; }
+.first-line-demo::first-line { color: #7540a3; }</style>
+<script src="comun.js"></script>
+</head>
+<body>
+<main id="selector-top">
+<header><a href="../LM0306_selectores.html">Consultar los apuntes</a><h1>Qué elementos selecciona una regla</h1><p>Lee el HTML, predice qué elementos coincidirán con el selector y después muéstralos. El resaltado indica coincidencia, no prioridad entre reglas.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
+<noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
+<section>
+<h2>1. Tipo, clase, ID y combinadores</h2>
+<ol class="instructions"><li>Elige un selector y busca sus coincidencias en el HTML.</li><li>Pulsa «Mostrar coincidencias» para comprobarlo.</li><li>Compara <code>p</code>, <code>.destacado</code>, <code>#unico</code>, <code>article p</code>, <code>article &gt; p</code>, <code>h3 + p</code> y <code>h3 ~ p</code>.</li></ol>
+<form class="controls"><label>Selector<select id="selector"><option>p</option><option>.destacado</option><option>#unico</option><option>h3, p</option><option>article p</option><option>article &gt; p</option><option>h3 + p</option><option>h3 ~ p</option><option>[data-servicio]</option></select></label><button type="button" id="show-matches">Mostrar coincidencias</button></form>
+<div class="split"><pre>&lt;article&gt;
+  &lt;p&gt;A. Antes del título&lt;/p&gt;
+  &lt;h3&gt;B. El título&lt;/h3&gt;
+  &lt;p class="destacado"&gt;C. Justo después&lt;/p&gt;
+  &lt;div&gt;
+    &lt;p id="unico"&gt;D. Dentro de un div&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p data-servicio="corte"&gt;E. Otro hermano posterior&lt;/p&gt;
+&lt;/article&gt;</pre>
+<div class="stage selector-stage"><article id="selector-tree"><p>A. Estoy antes del título.</p><h3>B. Soy el título.</h3><p class="destacado">C. Estoy justo después del título.</p><div><p id="unico">D. Soy descendiente del article, dentro de un div.</p></div><p data-servicio="corte">E. Soy otro hermano posterior del título.</p></article></div></div>
+<output id="selector-result" class="readout" aria-live="polite"></output>
+<pre id="selector-code"></pre>
+</section>
+<section>
+<h2>2. Mi posición entre los hijos y entre los de mi tipo</h2>
+<ol class="instructions"><li>Sin el h3 intermedio, compara <code>p:nth-child(2)</code> y <code>p:nth-of-type(2)</code>.</li><li>Introduce el h3 antes del segundo párrafo. Predice qué seleccionará cada regla y compruébalo.</li><li>Prueba las posiciones 1, 2 y 3. Cuenta todos los hijos elemento para <code>nth-child</code> y solo los párrafos para <code>nth-of-type</code>.</li></ol>
+<form class="controls"><label>Posición<select id="nth-number"><option>1</option><option selected>2</option><option>3</option></select></label><label class="check"><input type="checkbox" id="insert-heading">Introducir un h3 antes del segundo párrafo</label></form>
+<div class="split"><div><h3 id="nth-child-title"></h3><div class="stage nth-demo" id="nth-child-demo"></div></div><div><h3 id="nth-type-title"></h3><div class="stage nth-demo" id="nth-type-demo"></div></div></div>
+<pre id="nth-html"></pre><output class="readout" id="nth-result" aria-live="polite"></output>
+</section>
+<section><h2>3. Estado y parte de un elemento</h2><ol class="instructions"><li>Pasa el ratón por el enlace y después llega hasta él con Tab.</li><li>Estrecha la ventana y observa qué texto pertenece a la primera línea del párrafo.</li></ol><div class="stage"><a class="state-link" href="#selector-top">Soy un enlace: prueba hover y focus.</a><p class="first-line-demo">Mi primera letra está destacada. Mi primera línea también tiene un estilo propio, y cambia qué palabras la forman cuando varía el espacio disponible para el texto. El resto del párrafo conserva su aspecto normal.</p></div><pre>.state-link:hover { background: #daeee7; }
+.state-link:focus-visible { outline: 3px solid #b75c2e; }
+.first-line-demo::first-letter { font-size: 2em; }
+.first-line-demo::first-line { color: #7540a3; }</pre></section>
+<footer><button type="button" data-reset>Restablecer</button><p><a href="../LM0306_selectores.html">Consultar los apuntes</a></p></footer>
+</main>
+<script>
+let reveal = false;
+G.q('#show-matches').addEventListener('click', () => { reveal = true; render(); });
+G.q('#selector').addEventListener('input', () => { reveal = false; });
+function render() {
+  const tree = G.q('#selector-tree');
+  G.all('.matched', tree).forEach(el => el.classList.remove('matched'));
+  const selector = G.value('selector');
+  const matches = G.all(selector, tree);
+  if (reveal) matches.forEach(el => el.classList.add('matched'));
+  G.text('selector-result', reveal ? 'Coinciden ' + matches.length + ' elementos: ' + matches.map(el => el.textContent.trim().slice(0, 1)).join(', ') : 'Predice las coincidencias y pulsa Mostrar coincidencias.');
+  G.text('selector-code', selector + ' { /* estilo para los elementos que coinciden */ }');
+  const inserted = G.checked('insert-heading');
+  const html = '<p>Párrafo 1</p>' + (inserted ? '<h3>Un título intermedio</h3>' : '') + '<p>Párrafo 2</p><p>Párrafo 3</p>';
+  const n = G.value('nth-number');
+  G.q('#nth-child-demo').innerHTML = html; G.q('#nth-type-demo').innerHTML = html;
+  const a = 'p:nth-child(' + n + ')', b = 'p:nth-of-type(' + n + ')';
+  G.text('nth-child-title', a); G.text('nth-type-title', b);
+  const child = G.q(a, G.q('#nth-child-demo')), type = G.q(b, G.q('#nth-type-demo'));
+  if (child) child.classList.add('matched'); if (type) type.classList.add('matched');
+  G.text('nth-html', html.replaceAll('><', '>\n<'));
+  G.text('nth-result', a + ': ' + (child ? child.textContent : 'ningún párrafo') + ' · ' + b + ': ' + (type ? type.textContent : 'ningún párrafo'));
+}
+G.setup(render, () => { reveal = false; });
+</script>
+</body>
+</html>

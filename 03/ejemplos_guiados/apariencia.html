@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Propiedades de apariencia · Ejemplo CSS</title>
+<link rel="stylesheet" href="ejemplos.css">
+<style>.reference-text, .styled-text { margin: 0; font: 400 18px/1.5 Arial, sans-serif; text-align: left; overflow-wrap: anywhere; }
+.appearance-box { width: 220px; max-width: 100%; min-height: 100px; padding: 14px; border: 2px solid #367366; background: #daeee7; box-sizing: content-box; overflow-wrap: anywhere; }
+#appearance-list { max-width: 45ch; margin: 0; padding-left: 30px; }
+#appearance-list li { padding: 4px; background: #edf2f5; }</style>
+<script src="comun.js"></script>
+</head>
+<body>
+<main id="selector-top">
+<header><a href="../LM030704_texto.html">Consultar los apuntes</a><h1>Propiedades de apariencia</h1><p>Utiliza el mismo contenido para comparar las propiedades. Cambia una sola, observa su efecto y relaciona el resultado con el CSS que aparece debajo.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
+<noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
+<section><h2>1. El mismo párrafo, distintos estilos</h2>
+<ol class="instructions"><li>Compara la referencia con el texto de prueba. Empiezan iguales.</li><li>Cambia una propiedad cada vez. Prueba fuente, tamaño, cursiva, grosor, decoración, alineación y altura de línea.</li><li>Restablece antes de estudiar otra propiedad. Después localiza la regla en el inspector.</li></ol>
+<form class="controls"><label>Familia<select id="font-family"><option value="Arial, sans-serif">Arial, sans-serif</option><option value="Georgia, serif">Georgia, serif</option><option value="Consolas, monospace">Consolas, monospace</option></select></label><label>Tamaño<select id="font-size"><option>18px</option><option>24px</option><option>32px</option></select></label><label>Estilo<select id="font-style"><option>normal</option><option>italic</option></select></label><label>Grosor<select id="font-weight"><option value="400">400 (normal)</option><option value="700">700 (negrita)</option></select></label><label>Decoración<select id="decoration"><option>none</option><option>underline</option><option>line-through</option><option>overline</option></select></label><label>Alineación<select id="text-align"><option>left</option><option>center</option><option>justify</option></select></label><label>Altura de línea<select id="line-height"><option>1.5</option><option>1.2</option><option>2</option></select></label></form>
+<div class="split"><div><h3>Referencia</h3><div class="stage"><p class="reference-text">Soy el mismo párrafo en las dos muestras. Una peluquería presenta sus servicios de corte y peinado con un texto claro. Compara cómo cambia su lectura al variar una propiedad.</p></div></div><div><h3>Texto de prueba</h3><div class="stage"><p class="styled-text" id="styled-text">Soy el mismo párrafo en las dos muestras. Una peluquería presenta sus servicios de corte y peinado con un texto claro. Compara cómo cambia su lectura al variar una propiedad.</p></div></div></div><pre id="text-code"></pre></section>
+<section><h2>2. Fondo, borde y contorno</h2>
+<ol class="instructions"><li>Cambia el fondo, el estilo de borde y border-radius por separado.</li><li>Activa y desactiva el contorno. Observa si cambia el tamaño calculado de la caja.</li><li>Aumenta el grosor del borde y compara sus efectos con los del contorno.</li></ol>
+<form class="controls"><label>Fondo<select id="background"><option value="#daeee7">Verde suave</option><option value="#dce9f8">Azul suave</option><option value="#f5e2d7">Melocotón suave</option><option value="#ffffff">Blanco</option></select></label><label>Estilo del borde<select id="border-style"><option>solid</option><option>dashed</option><option>dotted</option></select></label><label>Grosor del borde<select id="border-width"><option>2px</option><option>8px</option></select></label><label>Radio<select id="radius"><option>0px</option><option>16px</option><option>36px</option></select></label><label class="check"><input type="checkbox" id="outline">Mostrar outline de 4px</label></form>
+<div class="stage"><div class="appearance-box" id="appearance-box">Soy una caja: cambia mi fondo, borde y contorno.</div></div><output class="readout" id="appearance-values" aria-live="polite"></output><pre id="appearance-code"></pre>
+<p class="note">Outline se dibuja fuera del borde y no ocupa espacio en el cálculo de la caja. Aquí width mide el contenido porque se usa content-box.</p></section>
+<section><h2>3. Marcadores de una lista</h2><ol class="instructions"><li>Compara los tipos de marcador.</li><li>Cambia outside por inside y observa la posición del marcador y las líneas que se parten.</li></ol>
+<form class="controls"><label>Tipo de marcador<select id="list-type"><option>disc</option><option>circle</option><option>square</option><option>none</option></select></label><label>Posición<select id="list-position"><option>outside</option><option>inside</option></select></label></form>
+<div class="stage"><ul id="appearance-list"><li>Corte de cabello.</li><li>Peinado para una ocasión especial. Este texto es más largo para que puedas observar cómo se distribuyen sus líneas.</li><li>Tratamiento capilar.</li></ul></div><pre id="list-code"></pre></section>
+<footer><button type="button" data-reset>Restablecer</button><p><a href="../LM030704_texto.html">Consultar los apuntes</a></p></footer>
+</main>
+<script>
+function render() {
+  const text=G.q('#styled-text');
+  const textStyle={fontFamily:G.value('font-family'),fontSize:G.value('font-size'),fontStyle:G.value('font-style'),fontWeight:G.value('font-weight'),textDecoration:G.value('decoration'),textAlign:G.value('text-align'),lineHeight:G.value('line-height')};
+  Object.assign(text.style,textStyle);
+  G.text('text-code','.texto {\n  font-family: '+G.value('font-family')+';\n  font-size: '+G.value('font-size')+';\n  font-style: '+G.value('font-style')+';\n  font-weight: '+G.value('font-weight')+';\n  text-decoration: '+G.value('decoration')+';\n  text-align: '+G.value('text-align')+';\n  line-height: '+G.value('line-height')+';\n}');
+  const box=G.q('#appearance-box');
+  Object.assign(box.style,{backgroundColor:G.value('background'),borderStyle:G.value('border-style'),borderWidth:G.value('border-width'),borderRadius:G.value('radius'),outline:G.checked('outline')?'4px solid #7540a3':'none',outlineOffset:'4px'});
+  G.text('appearance-code','.caja {\n  width: 220px; padding: 14px;\n  box-sizing: content-box;\n  background: '+G.value('background')+';\n  border: '+G.value('border-width')+' '+G.value('border-style')+' #367366;\n  border-radius: '+G.value('radius')+';\n  outline: '+(G.checked('outline')?'4px solid #7540a3':'none')+';\n  outline-offset: 4px;\n}');
+  G.text('appearance-values','Caja con borde: '+G.px(box.getBoundingClientRect().width)+' · el contorno '+(G.checked('outline')?'está visible':'está desactivado')+'.');
+  Object.assign(G.q('#appearance-list').style,{listStyleType:G.value('list-type'),listStylePosition:G.value('list-position')});
+  G.text('list-code','ul {\n  list-style-type: '+G.value('list-type')+';\n  list-style-position: '+G.value('list-position')+';\n}');
+}
+G.setup(render);
+</script>
+</body>
+</html>

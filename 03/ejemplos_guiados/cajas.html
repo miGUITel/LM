@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El modelo de cajas · Ejemplo CSS</title>
+<link rel="stylesheet" href="ejemplos.css">
+<style>.margin-zone { display: flow-root; width: 100%; min-width: 440px; background: #f6dce5; }
+.model-box { width: 240px; background: #cce6db; border: 4px solid #367366; padding: 16px; margin: 16px; box-sizing: content-box; }
+.model-content { background: white; color: #20313d; font-size: 17px; line-height: 1.5; overflow-wrap: anywhere; }</style>
+<script src="comun.js"></script>
+</head>
+<body>
+<main id="selector-top">
+<header><a href="../LM030701_caja.html">Consultar los apuntes</a><h1>El modelo de cajas</h1><p>Soy una caja con una anchura declarada. Cambia mi margen, relleno y borde por separado y comprueba cómo se calcula mi tamaño.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
+<noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
+<section><h2>1. Distingue las zonas</h2>
+<ol class="instructions"><li>Deja los demás valores como están y aumenta solo mi <strong>padding</strong>. Observa el espacio verde entre el borde y el contenido blanco.</li><li>Restablece y aumenta solo el <strong>border</strong>.</li><li>Restablece y aumenta solo el <strong>margin</strong>. El margen es transparente: el rosa es el fondo del contenedor que ves a través de él.</li></ol>
+<form class="controls"><label>Margin: <span id="margin-label"></span><input id="margin" type="range" min="0" max="40" step="4" value="16"></label><label>Padding: <span id="padding-label"></span><input id="padding" type="range" min="0" max="40" step="4" value="16"></label><label>Borde: <span id="border-label"></span><input id="border" type="range" min="0" max="16" step="2" value="4"></label><label>Cálculo de mi anchura<select id="sizing"><option value="content-box">content-box</option><option value="border-box">border-box</option></select></label></form>
+<div class="stage scroll-stage"><div class="margin-zone"><div class="model-box" id="model-box"><div class="model-content">Soy el contenido.<br>Mi anchura declarada es 240px.</div></div></div></div>
+<output id="box-values" class="readout" aria-live="polite"></output><pre id="box-code"></pre>
+</section>
+<section><h2>2. La misma anchura, dos cálculos</h2>
+<ol class="instructions"><li>Pulsa Restablecer y observa mi anchura total con <code>content-box</code>.</li><li>Cambia únicamente a <code>border-box</code>. La declaración sigue siendo <code>width: 240px</code>. ¿Qué parte se reduce?</li><li>Comprueba las cifras y localiza contenido, relleno, borde y margen en el modelo de cajas del inspector.</li></ol>
+<p class="note"><code>content-box</code>: width mide el contenido. <code>border-box</code>: width incluye contenido, relleno y borde. El margen queda fuera en ambos casos.</p></section>
+<footer><button type="button" data-reset>Restablecer</button><p><a href="../LM030701_caja.html">Consultar los apuntes</a></p></footer>
+</main>
+<script>
+function render() {
+  const margin = Number(G.value('margin')), padding = Number(G.value('padding')), border = Number(G.value('border'));
+  const box = G.q('#model-box');
+  Object.assign(box.style, { margin: margin+'px', padding: padding+'px', borderWidth: border+'px', boxSizing: G.value('sizing') });
+  for (const id of ['margin','padding','border']) G.text(id+'-label', G.value(id)+'px');
+  const total = box.getBoundingClientRect().width;
+  const content = total - 2*padding - 2*border;
+  G.text('box-values', 'Contenido: '+G.px(content)+' · relleno: '+padding+'px por lado · borde: '+border+'px por lado · caja con borde: '+G.px(total)+' · con márgenes horizontales: '+G.px(total+2*margin));
+  G.text('box-code', '.caja {\n  width: 240px;\n  margin: '+margin+'px;\n  padding: '+padding+'px;\n  border: '+border+'px solid #367366;\n  box-sizing: '+G.value('sizing')+';\n}');
+}
+G.setup(render);
+</script>
+</body>
+</html>
