@@ -18,13 +18,13 @@
 <header><a href="../LM030701_caja.html">Consultar los apuntes</a><h1>Dirección y alineación con Flexbox</h1><p>Las cajas conservan el orden 1, 2, 3 y 4 en el HTML. Cambia una propiedad y observa qué sucede con su orden visual, sus ejes y el espacio libre.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
 <noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
 <section><h2>1. Dirección y alineación</h2>
-<ol class="instructions"><li>Compara row, row-reverse, column y column-reverse. Identifica el eje principal antes de alinear.</li><li>Con el crecimiento desactivado, cambia justify-content y después align-items. ¿En qué eje actúa cada propiedad?</li><li>Activa flex-grow: 1. Comprueba por qué algunas distribuciones de justify-content dejan de distinguirse.</li><li>Estrecha la ventana. Si las cajas no caben en la fila, prueba flex-wrap.</li></ol>
+<ol class="instructions"><li>Compara row, row-reverse, column y column-reverse. Identifica el eje principal antes de alinear.</li><li>Con el crecimiento desactivado, cambia justify-content y después align-items. ¿En qué eje actúa cada propiedad?</li><li>Activa flex-grow: 1. Comprueba por qué algunas distribuciones de justify-content dejan de distinguirse.</li><li>Activa flex-wrap: el ejemplo ampliará la base de las cajas a 240px. Después estrecha y ensancha la ventana para observar los saltos de línea.</li></ol>
 <form class="controls"><label>flex-direction<select id="direction"><option>row</option><option>row-reverse</option><option>column</option><option>column-reverse</option></select></label><label>justify-content<select id="justify"><option value="flex-start">flex-start</option><option>center</option><option value="flex-end">flex-end</option><option>space-between</option><option>space-around</option><option>space-evenly</option></select></label><label>align-items<select id="align"><option>center</option><option value="flex-start">flex-start</option><option value="flex-end">flex-end</option><option>stretch</option></select></label><label class="check"><input type="checkbox" id="grow">flex-grow: 1</label><label class="check"><input type="checkbox" id="wrap">flex-wrap: wrap</label></form>
 <output id="axis" class="readout" aria-live="polite"></output>
 <div class="stage scroll-stage"><div id="flex-stage"><div class="flex-item">1</div><div class="flex-item">2</div><div class="flex-item">3</div><div class="flex-item">4</div></div></div>
 <p id="grow-note" class="note" hidden>El crecimiento permite que las cajas consuman el espacio libre del eje principal. Si ya no queda espacio para distribuir, cambiar justify-content puede no producir una diferencia visible.</p>
 <pre id="flex-code"></pre>
-<p class="note">La base de cada caja es 72px y flex-shrink es 0 en esta prueba. Así se ve el espacio libre y se puede observar el efecto de wrap al estrechar el contenedor.</p></section>
+<p id="basis-note" class="note">La base de cada caja es 72px y flex-shrink es 0. Así queda espacio libre para las pruebas de alineación.</p></section>
 <section><h2>2. Un contenedor y sus hijos pueden tener distribuciones distintas</h2>
 <ol class="instructions"><li>Activa Flexbox en el contenedor exterior: observa los grupos A y B.</li><li>Actívalo también dentro de los grupos: observa sus números.</li><li>Desactiva cada nivel por separado. Cada display afecta a los hijos directos de ese contenedor.</li></ol>
 <form class="controls"><label class="check"><input type="checkbox" id="outer-flex">Flex en el contenedor exterior</label><label class="check"><input type="checkbox" id="inner-flex">Flex dentro de A y B</label></form>
@@ -34,12 +34,14 @@
 <script>
 function render() {
   const direction=G.value('direction'), grow=G.checked('grow'), wrap=G.checked('wrap');
+  const basis=wrap?240:72;
   Object.assign(G.q('#flex-stage').style,{flexDirection:direction,justifyContent:G.value('justify'),alignItems:G.value('align'),flexWrap:wrap?'wrap':'nowrap'});
-  G.all('.flex-item').forEach(el=>el.style.flexGrow=grow?'1':'0');
+  G.all('.flex-item').forEach(el=>Object.assign(el.style,{flexGrow:grow?'1':'0',flexBasis:basis+'px'}));
   const column=direction.startsWith('column'), reverse=direction.endsWith('reverse');
   G.text('axis','Eje principal: '+(column?'vertical, de '+(reverse?'abajo arriba':'arriba abajo'):'horizontal, de '+(reverse?'derecha a izquierda':'izquierda a derecha'))+' · eje transversal: '+(column?'horizontal':'vertical')+'.');
   G.q('#grow-note').hidden=!grow;
-  G.text('flex-code','.contenedor {\n  display: flex;\n  flex-direction: '+direction+';\n  justify-content: '+G.value('justify')+';\n  align-items: '+G.value('align')+';\n  flex-wrap: '+(wrap?'wrap':'nowrap')+';\n  gap: 12px;\n}\n.caja { flex: '+(grow?'1':'0')+' 0 72px; }');
+  G.text('flex-code','.contenedor {\n  display: flex;\n  flex-direction: '+direction+';\n  justify-content: '+G.value('justify')+';\n  align-items: '+G.value('align')+';\n  flex-wrap: '+(wrap?'wrap':'nowrap')+';\n  gap: 12px;\n}\n.caja { flex: '+(grow?'1':'0')+' 0 '+basis+'px; }');
+  G.text('basis-note',wrap?'Con wrap activado, el ejemplo amplía la base a 240px para hacer visibles los saltos al estrechar la ventana. En fila, esa base es la anchura; en columna, es la altura. Flex-shrink continúa en 0.':'La base de cada caja es 72px y flex-shrink es 0. Así queda espacio libre para las pruebas de alineación.');
   G.q('#nested-outer').style.display=G.checked('outer-flex')?'flex':'block';
   G.all('.nested-inner').forEach(el=>el.style.display=G.checked('inner-flex')?'flex':'block');
   G.text('nested-code','.exterior { display: '+(G.checked('outer-flex')?'flex':'block')+'; }\n.interior { display: '+(G.checked('inner-flex')?'flex':'block')+'; }');
