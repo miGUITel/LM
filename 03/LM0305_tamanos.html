@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tamaños en CSS: prueba px, %, em y rem</title>
+  <style>
+    html { font-size: 16px; scroll-behavior: smooth; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f6f8fa; color: #20313d; font: 18px/1.55 system-ui, sans-serif; }
+    main { margin: 0 32px; padding: 36px 0 48px; }
+    header, .intro, .instructions { max-width: 78ch; }
+    h1 { margin: 8px 0 12px; font-size: 40px; line-height: 1.15; }
+    h2 { margin: 0 0 12px; font-size: 27px; line-height: 1.25; }
+    h3 { margin: 0 0 6px; font-size: 20px; }
+    p { margin: 8px 0 16px; }
+    a { color: #17566a; text-underline-offset: 3px; }
+    code { padding: 1px 5px; border-radius: 3px; background: #e7edf1; font-family: Consolas, monospace; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 20px 0 28px; }
+    section { margin-top: 38px; padding-top: 28px; border-top: 2px solid #d4dfe5; scroll-margin-top: 20px; }
+    ol { padding-left: 26px; }
+    li + li { margin-top: 8px; }
+    .stage { margin: 18px 0; padding: 20px; border: 1px solid #b5c8d1; background: white; }
+    .readout { display: block; margin: 10px 0 20px; color: #435b69; font: 16px/1.5 Consolas, monospace; }
+    .width-stage { overflow-x: auto; }
+    .width-track { width: 100%; }
+    .width-box { display: grid; place-items: center; min-height: 76px; padding: 12px; border: 2px solid #527893; text-align: center; font-size: 18px; font-weight: 650; }
+    .width-fixed { width: 320px; background: #dce9f8; }
+    .width-relative { width: 50%; border-color: #3d776b; background: #daeee7; }
+    .sample-caption { max-width: 76ch; margin: 10px 0 20px; }
+    .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; margin: 20px 0; }
+    fieldset { margin: 0; padding: 10px 14px 14px; border: 1px solid #a8beca; }
+    legend { padding: 0 6px; font-size: 16px; font-weight: 650; }
+    label { display: inline-flex; align-items: center; gap: 4px; margin-right: 12px; cursor: pointer; font-size: 16px; }
+    label:last-child { margin-right: 0; }
+    input { accent-color: #17566a; }
+    button { padding: 10px 16px; border: 1px solid #17566a; border-radius: 4px; background: #17566a; color: white; cursor: pointer; font: 600 16px/1.3 system-ui, sans-serif; }
+    button:hover { background: #103f4e; }
+    :focus-visible { outline: 3px solid #ba5d2b; outline-offset: 4px; }
+    .font-parent { font-size: 16px; }
+    .sample-rule { margin: 18px 0 8px; font-size: 16px; }
+    .font-em, .font-rem { margin: 0; padding: 12px 16px; border-left: 6px solid #3d776b; background: #edf6f1; line-height: 1.3; overflow-wrap: anywhere; }
+    .font-em { font-size: 2em; }
+    .font-rem { border-color: #ac6547; background: #fbefe8; font-size: 2rem; }
+    .font-explanation { margin: 8px 0 22px; font-size: 18px; }
+    .padding-box { margin: 8px 0 16px; border: 2px solid #3d776b; background: #daeee7; font-size: 16px; }
+    .padding-em { padding: 1em; }
+    .padding-rem { padding: 1rem; border-color: #ac6547; background: #f5e2d7; }
+    .padding-content { background: white; color: #20313d; line-height: 1.4; }
+    .note { max-width: 78ch; padding-left: 14px; border-left: 4px solid #8ca8b6; }
+    footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid #d4dfe5; }
+    @media (max-width: 600px) {
+      main { margin: 0 16px; padding-top: 24px; }
+      h1 { font-size: 32px; }
+      h2 { font-size: 24px; }
+      .stage { padding: 14px; }
+      .controls { align-items: flex-start; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <a href="LM0305_unidades.html">Volver a valores y unidades</a>
+      <h1>Tamaños en CSS</h1>
+      <p>Estas cajas ya tienen sus medidas aplicadas. Sigue las pruebas en orden: cambia el tamaño de la ventana y utiliza los controles para descubrir de qué depende cada medida.</p>
+      <p>Empieza con el zoom del navegador al <strong>100 %</strong>. Los controles cambian las fuentes del ejemplo; no necesitas editar el código.</p>
+    </header>
+
+    <nav aria-label="Pruebas">
+      <a href="#anchuras">1. Anchuras: px y %</a>
+      <a href="#fuentes">2. Letras: em y rem</a>
+      <a href="#rellenos">3. Rellenos: em y rem</a>
+    </nav>
+    <noscript><p class="note">Activa JavaScript para utilizar los controles y ver las medidas calculadas. La prueba de redimensionar la ventana funciona también sin JavaScript.</p></noscript>
+
+    <section id="anchuras" aria-labelledby="title-width">
+      <h2 id="title-width">1. Mi anchura: fija o relativa</h2>
+      <ol class="instructions">
+        <li>Con la ventana ancha, compara las dos cajas y sus medidas.</li>
+        <li>Estrecha y ensancha la ventana arrastrando uno de sus bordes. Mantén el mismo zoom.</li>
+        <li>Comprueba qué caja conserva su anchura y cuál sigue ocupando la mitad del espacio disponible dentro del contenedor.</li>
+      </ol>
+      <div class="stage width-stage">
+        <div class="width-track" id="width-track">
+          <h3>Anchura absoluta</h3>
+          <p><code>width: 320px;</code></p>
+          <div class="width-box width-fixed" id="width-fixed">Mi anchura es 320px</div>
+          <p class="sample-caption">Soy una caja con anchura en píxeles CSS. Al estrechar la ventana, sigo midiendo 320px. Si ya no quepo, aparece una barra de desplazamiento en este ejemplo.</p>
+          <h3>Anchura relativa</h3>
+          <p><code>width: 50%;</code></p>
+          <div class="width-box width-relative" id="width-relative">Mi anchura es 50%</div>
+          <p class="sample-caption">Soy una caja con anchura en porcentaje. Mido la mitad de mi contenedor: cuando él cambia de anchura, yo también cambio.</p>
+        </div>
+      </div>
+      <output class="readout" id="width-values" aria-label="Medidas actuales de las anchuras"></output>
+      <p class="note">«Fija» significa que conservo esos píxeles CSS al redimensionar la ventana. Si cambias el zoom, también cambia mi tamaño visual en pantalla.</p>
+    </section>
+
+    <section id="fuentes" aria-labelledby="title-font">
+      <h2 id="title-font">2. Mi letra: em y rem</h2>
+      <p class="intro">Las dos letras empiezan con el mismo tamaño. El contenedor y el elemento raíz <code>html</code> parten de <code>16px</code>.</p>
+      <ol class="instructions">
+        <li>Pulsa <strong>Restablecer</strong>. Cambia solo la <strong>fuente del contenedor</strong> a 24px y después a 32px. Observa cuál de los dos textos aumenta.</li>
+        <li>Pulsa <strong>Restablecer</strong>. Cambia solo la <strong>fuente de html</strong> a 24px y después a 32px. Observa cuál aumenta ahora.</li>
+        <li>Relaciona el tamaño que ves con la regla y las medidas calculadas que aparecen debajo.</li>
+      </ol>
+      <div class="controls">
+        <fieldset>
+          <legend>Fuente del contenedor</legend>
+          <label><input type="radio" name="parent-font" value="16" checked>16px</label>
+          <label><input type="radio" name="parent-font" value="24">24px</label>
+          <label><input type="radio" name="parent-font" value="32">32px</label>
+        </fieldset>
+        <fieldset>
+          <legend>Fuente de html</legend>
+          <label><input type="radio" name="root-font" value="16" checked>16px</label>
+          <label><input type="radio" name="root-font" value="24">24px</label>
+          <label><input type="radio" name="root-font" value="32">32px</label>
+        </fieldset>
+        <button type="button" data-reset>Restablecer</button>
+      </div>
+      <div class="stage font-parent" id="font-parent">
+        <p class="sample-rule"><code>font-size: 2em;</code></p>
+        <p class="font-em" id="font-em">Mi letra depende de la fuente de mi padre.</p>
+        <p class="font-explanation">En mi <code>font-size</code>, 2em equivale al doble del tamaño de fuente heredado de este contenedor.</p>
+        <p class="sample-rule"><code>font-size: 2rem;</code></p>
+        <p class="font-rem" id="font-rem">Mi letra depende de la fuente de html.</p>
+        <p class="font-explanation">2rem equivale al doble del tamaño de fuente del elemento raíz. Mi padre tiene un tamaño explícito, pero no es mi referencia.</p>
+      </div>
+      <output class="readout" id="font-values" aria-live="polite"></output>
+    </section>
+
+    <section id="rellenos" aria-labelledby="title-padding">
+      <h2 id="title-padding">3. Mi relleno: em y rem</h2>
+      <p class="intro">La franja de color es el relleno (<code>padding</code>) entre el borde y el contenido blanco. Las dos cajas empiezan con fuente de 16px y relleno de 16px.</p>
+      <ol class="instructions">
+        <li>Pulsa <strong>Restablecer</strong>. Cambia la <strong>fuente de estas cajas</strong> a 24px y después a 32px.</li>
+        <li>La letra crece en ambas. Compara la franja de color: ¿en cuál aumenta también el relleno?</li>
+        <li>Mantén la fuente de las cajas en 32px y cambia la <strong>fuente de html</strong> a 32px. Comprueba qué relleno cambia ahora.</li>
+      </ol>
+      <div class="controls">
+        <fieldset>
+          <legend>Fuente de estas cajas</legend>
+          <label><input type="radio" name="box-font" value="16" checked>16px</label>
+          <label><input type="radio" name="box-font" value="24">24px</label>
+          <label><input type="radio" name="box-font" value="32">32px</label>
+        </fieldset>
+        <fieldset>
+          <legend>Fuente de html</legend>
+          <label><input type="radio" name="root-font-padding" value="16" checked>16px</label>
+          <label><input type="radio" name="root-font-padding" value="24">24px</label>
+          <label><input type="radio" name="root-font-padding" value="32">32px</label>
+        </fieldset>
+        <button type="button" data-reset>Restablecer</button>
+      </div>
+      <div class="stage">
+        <p class="sample-rule"><code>padding: 1em;</code></p>
+        <div class="padding-box padding-em" id="padding-em">
+          <div class="padding-content">Mi relleno depende de mi propia fuente.</div>
+        </div>
+        <p class="sample-rule"><code>padding: 1rem;</code></p>
+        <div class="padding-box padding-rem" id="padding-rem">
+          <div class="padding-content">Mi relleno depende de la fuente de html.</div>
+        </div>
+      </div>
+      <output class="readout" id="padding-values" aria-live="polite"></output>
+      <p class="note">Fíjate en la referencia de <code>em</code>: al definir <code>font-size</code> utiliza el tamaño heredado; al definir <code>padding</code> utiliza el tamaño de fuente del propio elemento.</p>
+    </section>
+
+    <footer>
+      <button type="button" data-reset>Restablecer todo a 16px</button>
+      <p><a href="LM0305_unidades.html">Consultar valores y unidades</a> · <a href="LM0305_colores.html">Abrir el ejemplo de colores</a></p>
+    </footer>
+  </main>
+  <script>
+    const byId = id => document.getElementById(id);
+    const pixels = value => `${Number.parseFloat(value).toLocaleString('es-ES', { maximumFractionDigits: 1 })}px`;
+    const selected = name => document.querySelector(`input[name="${name}"]:checked`).value;
+
+    function showMeasurements() {
+      byId('width-values').textContent = `Contenedor: ${pixels(getComputedStyle(byId('width-track')).width)} · caja en px: ${pixels(getComputedStyle(byId('width-fixed')).width)} · caja al 50%: ${pixels(getComputedStyle(byId('width-relative')).width)}`;
+      byId('font-values').textContent = `Contenedor: ${selected('parent-font')}px · html: ${selected('root-font')}px · texto a 2em: ${pixels(getComputedStyle(byId('font-em')).fontSize)} · texto a 2rem: ${pixels(getComputedStyle(byId('font-rem')).fontSize)}`;
+      byId('padding-values').textContent = `Fuente de las cajas: ${selected('box-font')}px · html: ${selected('root-font')}px · relleno a 1em: ${pixels(getComputedStyle(byId('padding-em')).paddingTop)} · relleno a 1rem: ${pixels(getComputedStyle(byId('padding-rem')).paddingTop)}`;
+    }
+
+    function applyFonts() {
+      document.documentElement.style.fontSize = `${selected('root-font')}px`;
+      byId('font-parent').style.fontSize = `${selected('parent-font')}px`;
+      for (const id of ['padding-em', 'padding-rem']) byId(id).style.fontSize = `${selected('box-font')}px`;
+      showMeasurements();
+    }
+
+    document.querySelectorAll('input[type="radio"]').forEach(input => {
+      input.addEventListener('change', () => {
+        if (input.name === 'root-font' || input.name === 'root-font-padding') {
+          for (const name of ['root-font', 'root-font-padding']) {
+            document.querySelector(`input[name="${name}"][value="${input.value}"]`).checked = true;
+          }
+        }
+        applyFonts();
+      });
+    });
+
+    document.querySelectorAll('[data-reset]').forEach(button => {
+      button.addEventListener('click', () => {
+        for (const name of ['parent-font', 'root-font', 'root-font-padding', 'box-font']) {
+          document.querySelector(`input[name="${name}"][value="16"]`).checked = true;
+        }
+        applyFonts();
+      });
+    });
+
+    window.addEventListener('resize', showMeasurements);
+    new ResizeObserver(showMeasurements).observe(byId('width-track'));
+    applyFonts();
+  </script>
+</body>
+</html>
