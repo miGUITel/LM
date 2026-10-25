@@ -6,11 +6,11 @@ En esta página exploraremos cómo CSS decide qué estilos aplicar cuando hay m�
 
 ### 1. La cascada
 
-El término "cascada" en CSS se refiere al proceso por el cual el navegador decide qué reglas aplicar cuando existen múltiples reglas que coinciden con un mismo elemento. Cuando esto ocurre, CSS utiliza un conjunto de principios para determinar el orden de prioridad:
+La cascada decide qué declaración prevalece cuando varias compiten por una propiedad de un elemento. En los ejemplos de esta UT comparamos declaraciones del autor del mismo contexto, sin capas de cascada:
 
-1. **Importancia**: Las reglas con `!important` tienen la mayor prioridad y siempre se aplican, independientemente de su posición en el archivo CSS.
-2. **Especificidad**: Si dos o más reglas tienen el mismo nivel de importancia, CSS evalúa su especificidad (se explica más adelante).
-3. **Orden en la hoja de estilo**: Si las reglas tienen la misma especificidad, se aplicará la última definida en el archivo CSS.
+1. **Importancia**: Una declaración con `!important` prevalece sobre una normal. La marca afecta a la declaración que la lleva, no a toda la regla.
+2. **Especificidad**: Si las declaraciones tienen la misma importancia, se compara la especificidad de sus selectores.
+3. **Orden de aparición**: Si también empatan en especificidad, prevalece la declaración que aparece después.
 
 #### Ejemplo de la cascada:
 
@@ -42,18 +42,15 @@ Aquí, el color del texto será **azul** a pesar de que la regla azul está defi
 
 ### 2. Especificidad
 
-La especificidad es un valor que CSS asigna a las reglas en función de cuán específicas son. A mayor especificidad, mayor prioridad tendrá la regla. La especificidad se calcula a partir del tipo de selectores utilizados en una regla. Se agrupan en cuatro niveles principales:
+La especificidad permite comparar los selectores cuando las declaraciones tienen la misma importancia dentro del contexto explicado. Para los selectores de estos ejemplos se representa mediante una terna **(ID, clases, tipos)**:
 
-- **Selectores inline** (atributo `style` en HTML): tienen la mayor especificidad.
-- **Selectores de ID**: un selector con `#` tiene alta especificidad.
-- **Selectores de clase, atributos o pseudoclases**: un selector con `.`, `[]`, o `:hover` tiene especificidad media.
-- **Selectores de tipo o pseudoelementos**: selectores como `h1`, `p`, `::before` tienen la menor especificidad.
+- **ID**: número de selectores de ID, como `#mi-parrafo`.
+- **Clases**: número de clases, atributos y pseudoclases, como `.destacado`, `[title]` o `:hover`.
+- **Tipos**: número de selectores de tipo y pseudoelementos, como `h1`, `p` o `::before`.
 
-La especificidad de una regla CSS se representa como un número de cuatro partes (a, b, c, d), donde:
-- **a**: si se utiliza `!important`.
-- **b**: número de selectores `ID`.
-- **c**: número de clases, atributos o pseudoclases.
-- **d**: número de selectores de tipo o pseudoelementos.
+Se compara primero el componente ID; solo si empata se compara el de clases y, si también empata, el de tipos. Los componentes no se suman entre sí. `!important` no forma parte de la especificidad: se considera antes.
+
+Los **estilos inline**, declarados con el atributo `style` de HTML, no son un tipo de selector ni se incluyen en esta terna. Entre declaraciones del autor con la misma importancia y en el mismo contexto, prevalecen sobre las declaradas mediante selectores en hojas de estilo.
 
 #### Ejemplo de especificidad:
 
@@ -72,9 +69,9 @@ div p {
 }
 ```
 
-- El selector `p` tiene una especificidad de (0, 0, 0, 1).
-- El selector `#mi-parrafo` tiene una especificidad de (0, 1, 0, 0).
-- El selector `div p` tiene una especificidad de (0, 0, 0, 2).
+- El selector `p` tiene una especificidad de **(0, 0, 1)**.
+- El selector `#mi-parrafo` tiene una especificidad de **(1, 0, 0)**.
+- El selector `div p` tiene una especificidad de **(0, 0, 2)**.
 
 En este caso, si un párrafo tiene el ID `mi-parrafo`, su color será **rojo** porque el selector `#mi-parrafo` tiene mayor especificidad que los otros selectores.
 
@@ -85,6 +82,7 @@ En CSS, algunos estilos se **heredan** automáticamente de los elementos superio
 Sin embargo, no todas las propiedades se heredan. Las propiedades que generalmente **sí** se heredan incluyen:
 - `color`
 - `font-family`
+- `font-size`
 - `line-height`
 
 Por otro lado, propiedades como `margin`, `border` y `padding` **no** se heredan de forma predeterminada.
@@ -103,12 +101,12 @@ p {
 }
 ```
 
-En este ejemplo, todos los elementos dentro del `body` (incluidos los párrafos) heredarán el color **negro** porque `color` es una propiedad heredada. Sin embargo, el tamaño de fuente de los párrafos (`font-size`) se especifica de manera independiente, ya que esa propiedad no se hereda automáticamente.
+En este ejemplo, los párrafos reciben el color **negro** por herencia del `body`, porque no tienen una declaración propia de color. **`font-size` también se hereda**, pero aquí la regla `p` declara directamente `16px` y sustituye el tamaño que recibirían por herencia.
 
 #### Controlar la herencia con `inherit`, `initial` y `unset`:
 
 - `inherit`: fuerza a que una propiedad herede su valor del elemento padre.
-- `initial`: restablece una propiedad a su valor predeterminado.
+- `initial`: restablece una propiedad a su valor inicial definido por CSS.
 - `unset`: restablece una propiedad a su valor heredado si es heredable, o a su valor inicial si no lo es.
 
 ```css
