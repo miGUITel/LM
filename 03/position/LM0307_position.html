@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -32,6 +32,7 @@
             height: 100px;
             background-color: green;
             position: relative;
+            z-index: 1;
             left: 30px;
             top: 20px;
             text-align: center;
@@ -42,6 +43,7 @@
             height: 100px;
             background-color: rgb(153, 223, 229);
             position: absolute;
+            z-index: 2;
             left: 150px;
             top: 50px;
             text-align: center;
@@ -52,7 +54,7 @@
             height: 100px;
             background-color: orange;
             position: fixed;
-            left: 900px;
+            right: 10px;
             top: 10px;
             text-align: center;
             line-height: 100px;
@@ -73,7 +75,12 @@
 <body>
     <div class="header"><p>HEADER</p>
     <h2>Prueba: multiplica cada uno de los tipos de cajas para ver el efecto, algunos position mantienen el flujo y otros se salen del flujo.</h2></div>
-    <h2>Prueba: modifica el top de sticky para ver el efecto</h2>
+    <h2>Pruebas de posición, flujo y apilamiento</h2>
+    <ol>
+        <li>Cambia top y left de relative y absolute. Comprueba desde dónde se cuentan y qué hueco conserva cada caja.</li>
+        <li>Haz scroll: fixed conserva su lugar en la ventana; sticky se limita por su umbral y por su contenedor. Continúa hasta el texto posterior al contenedor.</li>
+        <li>Para superponer las cajas verde y celeste, prueba left: 80px y top: 150px en .absolute-box. Compara z-index: 1 y 2 e intercambia esos valores entre ambas cajas.</li>
+    </ol>
     <div class="container"><p>CONTAINER</p>
         <div class="static-box">static</div>
         <div class="relative-box">relative</div>
@@ -145,5 +152,6 @@
         <p>Scroll para ver el efecto de "sticky" y "fixed".</p>    
     </div>
     
+    <div style="min-height: 70vh"><p>Ya has pasado el final del contenedor: sticky sale con él; fixed continúa en la ventana.</p></div>
 </body>
 </html>

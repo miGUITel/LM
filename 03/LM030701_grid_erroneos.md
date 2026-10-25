@@ -1,195 +1,113 @@
-Aquí tienes una **versión didáctica, clara y lista para entregar a tus alumnos**, explicando cada error de forma visual y sencilla. Está pensada para que puedas copiarla directamente a tu repositorio como guía.
+[Volver a Grid](./LM030701_caja.md#4-grid)
 
----
+# Grid: errores reales y resultados que pueden sorprender
 
-# ❌ **Errores frecuentes al usar `grid-template-columns` y `grid-template-areas`**
+Un resultado distinto al esperado no implica siempre CSS inválido. En cada caso, distingue si el navegador descarta la plantilla, si el mapa es válido pero no coincide con tu intención o si el código funciona sin problema.
 
-En CSS Grid, la plantilla de columnas (`grid-template-columns`) y el mapa de zonas (`grid-template-areas`) deben encajar perfectamente.
-Cada error que se muestra aquí es típico cuando uno empieza a experimentar con `grid`.
-
----
-
-## 🚫 **1. Columnas que no coinciden con las áreas**
-
-### Código incorrecto
+## 1. Tres columnas dimensionadas y un mapa de dos columnas
 
 ```css
 grid-template-columns: 1fr 1fr 1fr;
-
 grid-template-areas:
   "header header"
   "main sidebar"
   "footer footer";
 ```
 
-### Por qué es un error
+**Válido, pero puede no ser lo que buscabas.** La cuadrícula tiene tres columnas; las áreas del mapa solo ocupan las dos primeras. La tercera sigue existiendo. Por eso header y footer no abarcan todo el ancho. El resultado sigue las reglas de Grid; no es impredecible.
 
-* El grid tiene **3 columnas**, pero las áreas solo dibujan **2**.
-* El navegador intenta corregirlo, pero el resultado es impredecible.
+Si pretendías dos columnas, ajusta sus tamaños. Si pretendías tres, revisa el mapa. Como hábito inicial, hacer coincidir el número de columnas dimensionadas y las celdas de cada fila facilita entender el diseño, pero no es una condición de validez.
 
-📌 **Regla:** todas las filas deben tener el mismo número de columnas que definas en `grid-template-columns`.
-
----
-
-## 🚫 **2. Cada fila tiene un número distinto de áreas**
-
-### Código incorrecto
+## 2. Filas con distinto número de celdas
 
 ```css
 grid-template-columns: 1fr 1fr 1fr;
-
 grid-template-areas:
   "header header header"
-  "main sidebar extra footer";   /* 4 columnas */
+  "main sidebar extra footer";
 ```
 
-### Por qué es un error
+**Plantilla inválida.** La primera cadena describe tres celdas y la segunda cuatro. Todas las cadenas deben describir el mismo número de celdas. El navegador descarta la declaración grid-template-areas; otras declaraciones válidas pueden seguir aplicándose.
 
-* La primera fila tiene **3 columnas**.
-* La segunda tiene **4**.
-
-📌 **Regla:** todas las filas deben tener la misma cantidad de nombres.
-
----
-
-## 🚫 **3. Área que no existe en el HTML**
-
-### Código incorrecto
+## 3. Un área que ningún elemento ocupa
 
 ```css
 grid-template-columns: 2fr 1fr;
-
 grid-template-areas:
   "main phantom"
   "footer footer";
 ```
 
-### Por qué es un error
+**Válido.** Definir phantom no crea un elemento HTML. Esa zona puede quedar sin ocupar y mostrar el fondo del contenedor. Puede ser un espacio reservado intencionadamente o una asignación que has olvidado.
 
-* `"phantom"` no corresponde a ningún elemento que tenga `grid-area: phantom;`.
+El nombre se relaciona con el valor de grid-area, no con el selector. Por ejemplo, `.contenido { grid-area: main; }` es correcto. Si renombras un área del mapa y una caja sigue apuntando al nombre anterior, su colocación puede generar pistas implícitas y un resultado inesperado. Revisa ambas partes.
 
-📌 **Regla:** los nombres del área deben coincidir con los selectores definidos.
-
----
-
-## 🚫 **4. Un área aparece separada y no forma un rectángulo**
-
-### Código incorrecto
+## 4. Una misma área aparece separada
 
 ```css
 grid-template-columns: 1fr 1fr 1fr;
-
 grid-template-areas:
   "header header header"
-  "main   sidebar main"
+  "main sidebar main"
   "footer footer footer";
 ```
 
-### Por qué es un error
+**Plantilla inválida.** Las celdas de main quedan separadas por sidebar. Cada área con nombre debe ocupar un rectángulo completo, sin huecos.
 
-* `"main"` aparece en dos columnas separadas dentro de la misma fila.
-* CSS Grid exige que cada área sea un **bloque continuo**.
-
-📌 **Regla:** un área debe ocupar un rectángulo sin huecos.
-
----
-
-## 🚫 **5. Áreas colocadas en diagonal**
-
-### Código incorrecto
+## 5. Áreas en diagonal
 
 ```css
 grid-template-columns: 1fr 1fr;
-
 grid-template-areas:
-  "main  sidebar"
+  "main sidebar"
   "sidebar main";
 ```
 
-### Por qué es un error
+**Plantilla inválida.** Las apariciones de cada nombre están separadas en diagonal. Tampoco sería válido un área en forma de L: estar conectada no basta, debe formar un rectángulo completo.
 
-* El área `"main"` ocupa dos posiciones que no son rectangulares.
-* Queda en forma de “L” o diagonal.
-
-📌 **Regla:** una misma zona no puede aparecer en posiciones no contiguas.
-
----
-
-## 🚫 **6. Nombres de áreas no válidos**
-
-### Código incorrecto
+## 6. Un punto dentro de lo que parece un nombre
 
 ```css
 grid-template-columns: 1fr 2fr;
-
 grid-template-areas:
   "header ."
   ". side.bar";
 ```
 
-### Por qué es un error
+**Plantilla inválida, pero la causa requiere mirar las celdas.** El navegador interpreta side.bar como tres celdas: side, una celda vacía y bar. La segunda fila describe cuatro celdas en total, frente a las dos de la primera.
 
-* `side.bar` no es un nombre válido → contiene un punto.
-* El punto (`.`) solo puede usarse para “celda vacía”.
+Un punto no permite unir esas partes en un único nombre. Si querías un área llamada sidebar, escribe ese nombre. Usa nombres sencillos y separa las celdas con espacios para leerlas con claridad.
 
-📌 **Regla:** los nombres deben ser palabras simples sin caracteres especiales.
-
----
-
-## 🚫 **7. Fila con menos celdas que las demás**
-
-### Código incorrecto
+## 7. Una fila con menos celdas
 
 ```css
 grid-template-columns: 1fr 1fr 1fr;
-
 grid-template-areas:
   "header header header"
   "main ."
   "footer footer footer";
 ```
 
-### Por qué es un error
+**Plantilla inválida.** Las filas describen tres, dos y tres celdas. El punto cuenta como una celda vacía. Si querías dejar dos celdas vacías en la segunda fila, escribe `"main . ."`.
 
-* La segunda fila solo tiene **2 tokens**, pero debería tener **3**.
-
-📌 **Regla:** cada fila debe tener exactamente tantas áreas como columnas existan.
-
----
-
-## 🚫 **8. Espacios extra o tokens sueltos**
-
-### Código incorrecto
+## 8. Espacios adicionales
 
 ```css
 grid-template-columns: 1fr 1fr;
-
 grid-template-areas:
   "header  header"
   "main    sidebar "
   "footer footer";
 ```
 
-### Por qué es un error
+**Válido y sin un problema de distribución por esos espacios.** Varios espacios y los espacios al final no crean celdas ni columnas fantasma. Puedes utilizarlos para alinear visualmente los nombres en el código. Para expresar una celda vacía, utiliza un punto.
 
-* El espacio final en `"sidebar "` genera un token vacío.
-* Produce áreas invisibles o columnas fantasma.
+## Qué revisar
 
-📌 **Regla:** no debe quedar ningún espacio suelto dentro de las comillas.
+1. Todas las filas del mapa deben tener el mismo número de celdas, incluidas las vacías.
+2. Cada área con nombre debe formar un rectángulo completo.
+3. Revisa el número y tamaño de columnas si aparece espacio que no esperabas.
+4. Comprueba las asignaciones grid-area si falta contenido en una zona o una caja aparece fuera del mapa previsto.
+5. Distingue una declaración inválida de una distribución válida que no coincide con el encargo. Los espacios adicionales, por sí solos, no son un error.
 
----
-
-# ✅ **Conclusión para el alumno**
-
-Cuando uses `grid-template-areas`:
-
-1. Las columnas definidas deben coincidir con el número de palabras en cada fila.
-2. Todas las filas deben tener el mismo número de áreas.
-3. Los nombres deben ser válidos y existir en el CSS.
-4. Cada área debe formar un bloque rectangular continuo.
-5. Los puntos (`.`) solo se usan como zonas vacías.
-6. No dejes espacios extra dentro de cada fila.
-
----
-
-Si quieres, puedo preparar una **versión en HTML + CSS completa** de esta guía, lista para ser visualizada directamente en el navegador por tus alumnos. También puedo generar **ejercicios autocorregibles** basados en estos errores.
+[Volver a Grid](./LM030701_caja.md#4-grid)

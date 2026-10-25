@@ -1,6 +1,6 @@
 ### LM030705-list-properties.md
 
-[Back to Index](../index.md)
+[Volver al índice](./LM03.md)
 
 Las propiedades CSS relacionadas con las listas permiten controlar la apariencia y el comportamiento de las listas ordenadas (`<ol>`) y no ordenadas (`<ul>`). A través de estas propiedades, es posible definir el estilo de los marcadores, la posición de los mismos y otros aspectos que afectan la presentación de los elementos listados.
 
@@ -24,6 +24,8 @@ Las propiedades CSS relacionadas con las listas permiten controlar la apariencia
 
 4. **list-style**: Propiedad abreviada que permite establecer `list-style-type`, `list-style-position` y `list-style-image` en una sola línea.
 
+[Descargar la imagen del ejemplo](./recursos/marcador-lista.svg)
+
 #### Ejemplo de uso de propiedades de listas
 
 ```html
@@ -46,7 +48,7 @@ Las propiedades CSS relacionadas con las listas permiten controlar la apariencia
         .list-position-outside { list-style-position: outside; }
 
         .list-image {
-            list-style-image: url('https://via.placeholder.com/15');
+            list-style-image: url('./recursos/marcador-lista.svg');
         }
     </style>
 </head>
@@ -115,7 +117,7 @@ En este ejemplo, se muestran diferentes valores aplicados a las propiedades más
         .list-position-outside { list-style-position: outside; }
 
         .list-image {
-            list-style-image: url('https://via.placeholder.com/15');
+            list-style-image: url('./recursos/marcador-lista.svg');
         }
     </style>
 </head>
@@ -160,4 +162,4 @@ En este ejemplo, se muestran diferentes valores aplicados a las propiedades más
 </html>
 
 
-[Back to Index](../index.md)
+[Volver al índice](./LM03.md)

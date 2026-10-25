@@ -56,14 +56,14 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
     <!-- Selector Básico -->
     <section>
         <h2>Selector Básico</h2>
-        <p>Este texto está dentro de un &lt;h1&gt; y se aplica un color y tamaño específico usando un selector básico.</p>
+        <p>El título principal de la página es un &lt;h1&gt; y recibe su color y tamaño mediante el selector básico h1. Este párrafo es otro elemento.</p>
     </section>
 
     <!-- Selector de Agrupación -->
     <section>
         <h2>Selector de Agrupación</h2>
-        <h3>Este título <h2> y el siguiente <h3> comparten el mismo estilo.</h3>
-        <p>Usamos un selector de agrupación para aplicar el mismo estilo a ambos elementos <h2> y <h3>.</p>
+        <h3>Este título &lt;h3&gt; y el anterior &lt;h2&gt; comparten el mismo estilo.</h3>
+        <p>Usamos un selector de agrupación para aplicar el mismo estilo a ambos elementos &lt;h2&gt; y &lt;h3&gt;.</p>
     </section>
 
     <!-- Selector Descendiente -->
@@ -84,7 +84,7 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
     <!-- Selector Adyacente -->
     <section>
         <h2>Selector Adyacente</h2>
-        <p>Este párrafo sigue inmediatamente al &lt;h2&gt;, por lo que se le aplica el estilo de color naranja y negrita.</p>
+        <p>Este párrafo sigue inmediatamente al &lt;h2&gt;, por lo que se le aplica el estilo de color naranja oscuro y negrita.</p>
     </section>
 
     <!-- Selector de Hermano General -->
@@ -106,6 +106,7 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
 - **Selector de Hermano General**: Aplica estilo a todos los elementos hermanos que siguen al elemento especificado (`h3 ~ p`).
 
 
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -117,7 +118,7 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
             color: darkblue;
             font-size: 24px;
             text-align: center;
-        }       
+        }
 
         /* Selector de agrupación: aplica el mismo estilo a <h2> y <h3> */
         h2, h3 {
@@ -138,20 +139,19 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
             background-color: lightgray;
             padding: 10px;
             border-radius: 5px;
-            color: red;
         }
 
         /* Selector adyacente: aplica estilo al <p> que sigue inmediatamente a un <h2> */
         h2 + p {
-            color: blue;
+            color: darkorange;
             font-weight: bold;
         }
 
         /* Selector de hermano general: aplica estilo a todos los <p> hermanos de <h3> */
         h3 ~ p {
-            border: 4px solid darkgray;
-            padding-left: 20px;
-            margin-top: 30px;
+            border-left: 4px solid darkgray;
+            padding-left: 10px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -161,14 +161,14 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
     <!-- Selector Básico -->
     <section>
         <h2>Selector Básico</h2>
-        <p>Este texto está dentro de un &lt;h1&gt; y se aplica un color y tamaño específico usando un selector básico.</p>
+        <p>El título principal de la página es un &lt;h1&gt; y recibe su color y tamaño mediante el selector básico h1. Este párrafo es otro elemento.</p>
     </section>
 
     <!-- Selector de Agrupación -->
     <section>
-        <h2>&lt;h2&gt; Selector de Agrupación. Este título &lt;h2&gt; y el siguiente &lt;h3&gt; comparten el mismo estilo.</h2>
-        <h3>Título con &lt;h3&gt;</h3>
-        <p>Usamos un selector de agrupación para aplicar el mismo estilo a ambos elementos h2 y h3.</p>
+        <h2>Selector de Agrupación</h2>
+        <h3>Este título &lt;h3&gt; y el anterior &lt;h2&gt; comparten el mismo estilo.</h3>
+        <p>Usamos un selector de agrupación para aplicar el mismo estilo a ambos elementos &lt;h2&gt; y &lt;h3&gt;.</p>
     </section>
 
     <!-- Selector Descendiente -->
@@ -189,7 +189,7 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
     <!-- Selector Adyacente -->
     <section>
         <h2>Selector Adyacente</h2>
-        <p>Este párrafo sigue inmediatamente al &lt;h2&gt;, por lo que se le aplica el estilo de color naranja y negrita.</p>
+        <p>Este párrafo sigue inmediatamente al &lt;h2&gt;, por lo que se le aplica el estilo de color naranja oscuro y negrita.</p>
     </section>
 
     <!-- Selector de Hermano General -->
@@ -200,3 +200,5 @@ Ejemplo en HTML con CSS interno que muestra los selectores CSS básicos, de agru
     </section>
 </body>
 </html>
+
+[Volver al índice](./LM03.md)

@@ -1,9 +1,6 @@
-Aquí tienes **ejemplos variados y distintos a los que ya usas**, mostrando **solo** las propiedades:
+# Ejemplos de distribuciones con Grid
 
-* `grid-template-columns`
-* `grid-template-areas`
-
-Cada uno propone un diseño diferente para que tus alumnos visualicen posibilidades diversas sin repetir tus esquemas.
+Prueba estas plantillas en una copia del ejemplo de Grid. Cambia una distribución cada vez y comprueba las zonas asignadas mediante `grid-area`. Puedes definir áreas adicionales sin ocuparlas: una zona solo mostrará contenido si se coloca un elemento en ella. Si cambias un nombre, revisa también la asignación de los elementos.
 
 ---
 

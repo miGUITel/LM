@@ -1,6 +1,6 @@
 ### LM030709-background-border-outline.md
 
-[Back to Index](../index.md)
+[Volver al índice](./LM03.md)
 
 En CSS, las propiedades de **background**, **border** y **outline** son fundamentales para definir el estilo visual de los elementos, ya que permiten controlar el fondo, los bordes y los contornos externos de los mismos.
 
@@ -82,6 +82,8 @@ Las propiedades de CSS relacionadas con fondos, bordes y contornos permiten defi
 5. **outline**: Propiedad abreviada que puede incluir `outline-width`, `outline-style`, y `outline-color` en una sola línea.
    - Ejemplo: `outline: 2px dashed red;`
 
+[Descargar la imagen del ejemplo](./recursos/fondo-ejemplo.svg)
+
 #### Ejemplo de uso de `background`, `border` y `outline`
 
 ```html
@@ -94,7 +96,7 @@ Las propiedades de CSS relacionadas con fondos, bordes y contornos permiten defi
     <style>
         .background-example {
             background-color: lightblue;
-            background-image: url('https://via.placeholder.com/100');
+            background-image: url('./recursos/fondo-ejemplo.svg');
             background-repeat: no-repeat;
             background-position: top right;
             background-size: 50px 50px;
@@ -149,7 +151,7 @@ En este ejemplo:
     <style>
         .background-example {
             background-color: lightblue;
-            background-image: url('https://via.placeholder.com/100');
+            background-image: url('./recursos/fondo-ejemplo.svg');
             background-repeat: no-repeat;
             background-position: top right;
             background-size: 50px 50px;
@@ -189,4 +191,4 @@ En este ejemplo:
 </body>
 </html>
 
-[Back to Index](../index.md)
+[Volver al índice](./LM03.md)

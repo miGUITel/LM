@@ -81,7 +81,7 @@ Los selectores combinados permiten seleccionar elementos según su relación en 
 
   Este selector selecciona el párrafo `p` que aparece inmediatamente después de un `h1`.
 
-- **Selector de hermano general**: Selecciona todos los elementos hermanos de otro elemento. Se indica con el símbolo `~`.
+- **Selector de hermano general**: Selecciona los elementos hermanos que aparecen después de otro elemento y comparten su padre. Se indica con el símbolo `~`.
 
   ```css
   h1 ~ p {
@@ -89,9 +89,9 @@ Los selectores combinados permiten seleccionar elementos según su relación en 
   }
   ```
 
-  En este caso, se seleccionan todos los párrafos `p` que sean hermanos de un `h1` en el mismo contenedor.
+  En este caso, se seleccionan los párrafos `p` que sean hermanos posteriores de un `h1` en el mismo contenedor.
 
-### 4. Pseudoclases  [+ listado completo](LM0306a.md)
+### 4. Pseudoclases  [+ listado de consulta](LM0306a.md)
 
 Las pseudoclases permiten aplicar estilos a los elementos en un estado específico, como cuando el usuario interactúa con ellos o según su posición en el árbol DOM.
 
@@ -113,7 +113,7 @@ Las pseudoclases permiten aplicar estilos a los elementos en un estado específi
   }
   ```
 
-  Este selector aplica un color de fondo gris claro al segundo elemento `li` de una lista.
+  Este selector aplica el fondo a un `li` que sea el segundo hijo elemento de su padre. No cuenta únicamente los `li`.
 
 - **`:first-child`**: Selecciona el primer hijo de su contenedor.
 
@@ -123,7 +123,7 @@ Las pseudoclases permiten aplicar estilos a los elementos en un estado específi
   }
   ```
 
-  En este caso, el primer párrafo dentro de un contenedor tendrá el texto en negrita.
+  En este caso, se aplica negrita a un `p` que sea el primer hijo elemento de su padre; si antes hay un encabezado, ese párrafo no coincide.
 
 - **`:not(selector)`**: Selecciona todos los elementos que no coinciden con el selector dado.
 
@@ -135,7 +135,23 @@ Las pseudoclases permiten aplicar estilos a los elementos en un estado específi
 
   Aquí, todos los párrafos que no tienen la clase `excluido` serán verdes.
 
-### 5. Pseudoelementos [+ listado completo](LM0306a.md)
+#### Comparar posición y tipo
+
+Observa este HTML, distinto al de las tareas:
+
+```html
+<div>
+    <p>Presentación</p>
+    <p>Horario</p>
+    <p>Contacto</p>
+</div>
+```
+
+Compara `p:nth-child(2)` y `p:nth-of-type(2)`. Después introduce un `h2` antes del segundo párrafo y predice qué seleccionará cada regla. `nth-child` cuenta todos los hijos elemento; `nth-of-type` cuenta los del mismo tipo. Ambos admiten números y fórmulas como `2n`.
+
+[Comprobarlo en el ejemplo guiado de selectores](./ejemplos_guiados/selectores.html)
+
+### 5. Pseudoelementos [+ listado de consulta](LM0306a.md)
 
 Los pseudoelementos permiten aplicar estilos a partes específicas de un elemento, como la primera letra o línea de un bloque de texto, o insertar contenido antes o después de un elemento.
 

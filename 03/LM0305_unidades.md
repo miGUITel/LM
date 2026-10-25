@@ -8,9 +8,9 @@ En esta página exploraremos los valores y unidades más comunes utilizados en C
 
 CSS utiliza diferentes tipos de datos para definir los valores de las propiedades. Los más comunes son:
 
-- **Entero**: Representa números sin decimales. Se utiliza en propiedades que requieren valores completos como `z-index`, `border-width` o `line-height` cuando no es fraccional. Ejemplo: `border-width: 2px;` donde el valor es un entero.
+- **Entero**: Número sin decimales. Ejemplo: `z-index: 2;`. En `border-width: 2px`, el valor completo es una dimensión, porque incluye una unidad.
   
-- **Decimal**: Se usa para definir números que incluyen una parte fraccionaria, lo que permite una mayor precisión. Es común en propiedades que afectan dimensiones o escalas, como `opacity` o `font-size`. Ejemplo: `opacity: 0.75;`, donde `0.75` es un valor decimal.
+- **Decimal**: Número con parte fraccionaria. Ejemplo: `opacity: 0.75;`. En una longitud como `font-size: 1.5em`, el número forma parte de una dimensión y lleva una unidad.
   
 - **Dimensión**: Los valores de dimensión son combinaciones de un número (entero o decimal) con una unidad, como `px`, `em`, `rem`, etc. Ejemplo: `width: 100px;` donde `100px` es una dimensión.
   
@@ -29,11 +29,11 @@ body {
 
 ### 2. Longitud absoluta
 
-Las longitudes absolutas representan unidades fijas que no dependen del contexto en el que se usan. Son útiles cuando se requiere un diseño preciso e inmutable, aunque se recomienda utilizarlas con precaución para no comprometer la adaptabilidad de la página.
+Las unidades de longitud absoluta tienen relaciones fijas entre sí. Una medida en píxeles CSS conserva esos píxeles al redimensionar la ventana, pero el zoom también cambia su tamaño visual en pantalla.
 
 #### Unidades de longitud absoluta más comunes:
 
-- `px`: **Píxeles**. Es la unidad más utilizada y representa un punto en la pantalla. Ejemplo: `font-size: 16px;`.
+- `px`: **Píxeles CSS**. Un píxel CSS no equivale necesariamente a un píxel físico de la pantalla. Ejemplo: `font-size: 16px;`.
 - `cm`: **Centímetros**.
 - `mm`: **Milímetros**.
 - `in`: **Pulgadas**.
@@ -55,9 +55,9 @@ Las longitudes relativas se definen en relación con otras propiedades o element
 
 #### Unidades de longitud relativa más comunes:
 
-- `em`: Se basa en el tamaño de la fuente del elemento padre. Si el tamaño de la fuente del contenedor es `16px`, entonces `1em` es igual a `16px`. Ejemplo: `font-size: 2em;` sería igual a 32 píxeles.
+- `em`: En `font-size`, toma como referencia el tamaño de fuente heredado del padre: si es `16px`, `font-size: 2em` equivale a `32px`. En propiedades como `padding`, toma como referencia la fuente del propio elemento.
 - `rem`: Similar a `em`, pero se basa en el tamaño de la fuente de la raíz (generalmente `<html>`). Ejemplo: `font-size: 1rem;`.
-- `%`: Representa un porcentaje del tamaño del contenedor. Ejemplo: `width: 50%` indica que el elemento ocupará la mitad del ancho del contenedor padre.
+- `%`: Su referencia depende de la propiedad. En los ejemplos habituales, `width: 50%` utiliza la anchura del bloque contenedor; en `font-size`, el porcentaje se refiere a la fuente heredada.
 - `vw`: **Viewport width**. Representa un porcentaje del ancho de la ventana gráfica (viewport). `1vw` es igual al 1% del ancho del viewport.
 - `vh`: **Viewport height**. Similar a `vw`, pero representa un porcentaje de la altura del viewport.
 
@@ -73,6 +73,8 @@ p {
     margin: 10%;
 }
 ```
+
+[Pruebas guiadas de tamaños: px, %, em y rem](./LM0305_tamanos.html)
 
 ### 4. Colores
 
@@ -121,7 +123,7 @@ body {
 }
 
 h1 {
-    font-size: 2rem; /* 2 veces el tamaño base del cuerpo */
+    font-size: 2rem; /* 2 veces el tamaño de fuente del elemento raíz */
     font-weight: bold;
 }
 ```
