@@ -17,13 +17,20 @@
 <noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
 <section><h2>1. Cuatro distribuciones con las mismas cajas</h2>
 <ol class="instructions"><li>Compara las cuatro distribuciones sin cambiar las otras opciones.</li><li>Elige una y cambia solo la proporción de las columnas. Después cambia gap.</li><li>Selecciona una caja y lee las líneas que delimitan el espacio que ocupa.</li></ol>
-<form class="controls"><label>Distribución<select id="preset"><option value="0">1. Cabecera y pie completos</option><option value="1">2. Contenido a la derecha</option><option value="2">3. Contenido de dos columnas</option><option value="3">4. Distribución asimétrica</option></select></label><label>Anchura de las columnas<select id="ratio"><option value="equal">Iguales</option><option value="first">Primera: triple</option><option value="last">Última: triple</option></select></label><label>Gap: <span id="gap-label"></span><input id="gap" type="range" min="0" max="32" step="4" value="12"></label><label>Caja que quieres identificar<select id="grid-target"><option value="cabecera">Cabecera</option><option value="menu">Menú</option><option value="contenido">Contenido</option><option value="pie">Pie</option></select></label></form>
+<form class="controls">
+<label>Distribución<select id="preset"><option value="0">1. Cabecera y pie completos</option><option value="1">2. Contenido a la derecha</option><option value="2">3. Contenido de dos columnas</option><option value="3">4. Distribución asimétrica</option></select></label>
+<label>Anchura de las columnas<select id="ratio"><option value="equal">Iguales</option><option value="first">Primera: triple</option><option value="last">Última: triple</option></select></label>
+<label>Gap: <span id="gap-label"></span><input id="gap" type="range" min="0" max="32" step="4" value="12"></label>
+<label>Caja que quieres identificar<select id="grid-target"><option value="cabecera">Cabecera</option><option value="menu">Menú</option><option value="contenido">Contenido</option><option value="pie">Pie</option></select></label>
+<label>Colocación<select id="grid-mode"><option value="areas">Por áreas</option><option value="lines">Por líneas</option></select></label>
+</form>
 <div class="stage scroll-stage"><div id="grid-stage"><div class="grid-item area-cabecera">Cabecera</div><div class="grid-item area-menu">Menú</div><div class="grid-item area-contenido">Contenido</div><div class="grid-item area-pie">Pie</div></div></div>
 <output id="grid-lines" class="readout" aria-live="polite"></output>
+<h3>CSS de esta distribución</h3>
+<pre id="grid-code"></pre>
 </section>
 <section><h2>2. La misma colocación por áreas o por líneas</h2>
-<ol class="instructions"><li>Conserva la distribución elegida y cambia de áreas a líneas.</li><li>Comprueba que las cajas mantienen sus posiciones. Compara el CSS.</li><li>Busca un intervalo como <code>grid-column: 1 / 3</code>: va de la línea 1 a la 3 y ocupa dos columnas.</li></ol>
-<form class="controls"><label>Colocación<select id="grid-mode"><option value="areas">Por áreas</option><option value="lines">Por líneas</option></select></label></form><pre id="grid-code"></pre>
+<ol class="instructions"><li>Conserva la distribución elegida y utiliza «Colocación», junto a los demás controles, para cambiar de áreas a líneas.</li><li>Comprueba que las cajas mantienen sus posiciones. Compara el CSS situado justo debajo de la cuadrícula.</li><li>Busca un intervalo como <code>grid-column: 1 / 3</code>: va de la línea 1 a la 3 y ocupa dos columnas.</li></ol>
 </section>
 <section><h2>3. Un área con nombre debe formar un rectángulo</h2>
 <ol class="instructions"><li>Elige «Por áreas» y activa la plantilla inválida.</li><li>Busca «contenido» en dos posiciones que no forman un rectángulo. Observa el resultado y el aviso.</li><li>Desactiva la prueba para recuperar la plantilla válida.</li></ol>
