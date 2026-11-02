@@ -1,18 +1,17 @@
- /* Hexadecimal */
-        h1 {
+         h1 {
             font-size: 200px;
         }
         section {
             font-size: 5px;
         }
-        
+ /* Hexadecimal */      
         div {
             background-color: #FF0000;
             color: white;
             padding: 20px;
             margin: 10px;
             text-align: center;
-            font-size: 2em;
+            font-size: 5em;
         }
         .hex-green {
             background-color: #00FF00;
@@ -21,7 +20,7 @@
             margin: 10px;
             text-align: center;
             /* muestra cómo se aplica solo a un DIV, el 1er verde */
-            font-size: 10em; 
+            font-size: 50em; 
 
         }
         .hex-orange {
