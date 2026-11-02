@@ -1,0 +1,79 @@
+ /* Hexadecimal */
+        h1 {
+            font-size: 200px;
+        }
+        section {
+            font-size: 5px;
+        }
+        
+        div {
+            background-color: #FF0000;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            font-size: 2em;
+        }
+        .hex-green {
+            background-color: #00FF00;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            /* muestra cómo se aplica solo a un DIV, el 1er verde */
+            font-size: 10em; 
+
+        }
+        .hex-orange {
+            background-color: #FFA500;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* RGB */
+        .rgb-red {
+            background-color: rgb(255, 0, 0);
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .rgb-green {
+            background-color: rgb(0, 255, 0);
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .rgb-orange {
+            background-color: rgb(255, 165, 0);
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        /* Palabra clave */
+        .keyword-red {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .keyword-green {
+            background-color: lime;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+        .keyword-orange {
+            background-color: orange;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
