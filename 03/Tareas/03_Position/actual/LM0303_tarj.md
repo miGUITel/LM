@@ -22,6 +22,8 @@ Crea una **tarjeta informativa sobre un servicio de la peluquería** del minipro
 
 ### Referencia visual aproximada
 
+![alt text](image-1.png)
+
 ![Ejemplo de tarjeta de un servicio de peluquería](image.png)
 
 Puedes utilizar esta [imagen de la peluquería](peluqueria.png). Los textos y el aspecto de tu tarjeta pueden variar, respetando los requisitos.
