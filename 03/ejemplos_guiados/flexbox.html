@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dirección y alineación con Flexbox · Ejemplo CSS</title>
-<link rel="stylesheet" href="ejemplos_guiados/ejemplos.css">
+<link rel="stylesheet" href="ejemplos.css">
 <style>#flex-stage { display: flex; height: 480px; gap: 12px; padding: 16px; background: #edf2f5; }
 .flex-item { flex: 0 0 72px; min-height: 56px; padding: 12px; border: 2px solid #367366; background: #daeee7; font: 700 22px/1.3 system-ui; text-align: center; }
 .axis-controls { align-items: stretch; }
@@ -32,11 +32,11 @@
 .nested-group { flex: 1 1 200px; padding: 12px; margin-bottom: 12px; border: 1px solid #8ba5b5; background: #edf2f5; }
 .nested-inner { gap: 8px; flex-wrap: wrap; margin-top: 8px; }
 .nested-inner span { display: block; margin: 4px 0; padding: 8px; background: #daeee7; border: 1px solid #367366; }</style>
-<script src="ejemplos_guiados/comun.js"></script>
+<script src="comun.js"></script>
 </head>
 <body>
 <main id="selector-top">
-<header><a href="LM030701_caja.html">Consultar los apuntes</a><h1>Dirección y alineación con Flexbox</h1><p>Las cajas conservan el orden 1, 2, 3 y 4 en el HTML. Cambia una propiedad y observa qué sucede con su orden visual, sus ejes y el espacio libre.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
+<header><a href="../LM030701_caja.html">Consultar los apuntes</a><h1>Dirección y alineación con Flexbox</h1><p>Las cajas conservan el orden 1, 2, 3 y 4 en el HTML. Cambia una propiedad y observa qué sucede con su orden visual, sus ejes y el espacio libre.</p><p>Cambia una condición cada vez. Las reglas se muestran junto al resultado y puedes volver al inicio con «Restablecer».</p><button type="button" data-reset>Restablecer</button></header>
 <noscript><p class="warning">Activa JavaScript para utilizar los controles de este ejemplo.</p></noscript>
 <section><h2>1. Dirección y alineación</h2>
 <ol class="instructions"><li>Compara row, row-reverse, column y column-reverse. Identifica el eje principal antes de alinear.</li><li>Con el crecimiento desactivado, cambia justify-content y después align-items. ¿En qué eje actúa cada propiedad?</li><li>Activa flex-grow: 1. Comprueba por qué algunas distribuciones de justify-content dejan de distinguirse.</li><li>Activa flex-wrap: el ejemplo ampliará la base de las cajas a 240px. Después estrecha y ensancha la ventana para observar los saltos de línea.</li></ol>
@@ -79,7 +79,7 @@
 <ol class="instructions"><li>Activa Flexbox en el contenedor exterior: observa los grupos A y B.</li><li>Actívalo también dentro de los grupos: observa sus números.</li><li>Desactiva cada nivel por separado. Cada display afecta a los hijos directos de ese contenedor.</li></ol>
 <form class="controls"><label class="check"><input type="checkbox" id="outer-flex">Flex en el contenedor exterior</label><label class="check"><input type="checkbox" id="inner-flex">Flex dentro de A y B</label></form>
 <div class="stage"><div class="nested-outer" id="nested-outer"><div class="nested-group"><strong>Grupo A</strong><div class="nested-inner"><span>A1</span><span>A2</span><span>A3</span></div></div><div class="nested-group"><strong>Grupo B</strong><div class="nested-inner"><span>B1</span><span>B2</span><span>B3</span></div></div></div></div><pre id="nested-code"></pre></section>
-<footer><button type="button" data-reset>Restablecer</button><p><a href="LM030701_caja.html">Consultar los apuntes</a></p></footer>
+<footer><button type="button" data-reset>Restablecer</button><p><a href="../LM030701_caja.html">Consultar los apuntes</a></p></footer>
 </main>
 <script>
 function render() {
